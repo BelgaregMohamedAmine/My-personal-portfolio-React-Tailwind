@@ -1,0 +1,67 @@
+import React, { useState, useEffect } from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+
+/** components */
+import { Header } from './components/layout/Header';
+import { Sidebar } from './components/layout/Sidebar';
+
+/** pages */
+import Home from './Pages/Home';
+import Blog from './Pages/Blog';
+import Portfolio from './Pages/Portfolio';
+import Contact from './Pages/Contact';
+
+const App = () => {
+  const [isSidebarOpen, setSidebarOpen] = useState(true);
+  const [isLargeScreen, setIsLargeScreen] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      const large = window.innerWidth >= 1024;
+      setIsLargeScreen(large);
+      if (large) setSidebarOpen(true);
+    };
+
+    handleResize();
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
+  return (
+    <Router>
+      <div className="min-h-screen bg-white dark:bg-gray-900 transition-colors duration-200">
+        <Header 
+          isLargeScreen={isLargeScreen} 
+          isSidebarOpen={isSidebarOpen} 
+          setSidebarOpen={setSidebarOpen} 
+        />
+        <Sidebar 
+          isSidebarOpen={isSidebarOpen} 
+          isLargeScreen={isLargeScreen}
+          setSidebarOpen={setSidebarOpen}
+        />
+
+        {!isLargeScreen && isSidebarOpen && (
+          <div
+            className="fixed inset-0 bg-black bg-opacity-50 z-10"
+            onClick={() => setSidebarOpen(false)}
+          />
+        )}
+
+        {/* Main content */}
+        <main 
+          className={`pt-16 ${isSidebarOpen ? 'lg:ml-64' : ''} p-4 text-gray-900 dark:text-white transition-colors duration-200`}
+        >
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/blog" element={<Blog />} />
+            <Route path="/portfolio" element={<Portfolio />} />
+            <Route path="/contact" element={<Contact />} />
+          </Routes>
+        </main>
+      </div>
+    </Router>
+  );
+};
+
+export default App;
