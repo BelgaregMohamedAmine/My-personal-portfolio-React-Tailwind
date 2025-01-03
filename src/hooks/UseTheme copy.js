@@ -4,9 +4,7 @@ import { useState, useEffect } from 'react';
 export const useTheme = () => {
   const [isDarkMode, setIsDarkMode] = useState(() => {
     if (typeof window !== 'undefined') {
-      // Check the localStorage for theme preference on initial load
-      const savedTheme = localStorage.getItem('darkMode');
-      return savedTheme === 'true' ? true : false;
+      return document.documentElement.classList.contains('dark');
     }
     return false;
   });
@@ -20,6 +18,13 @@ export const useTheme = () => {
       localStorage.setItem('darkMode', 'false');
     }
   }, [isDarkMode]);
+
+  useEffect(() => {
+    const darkModePreference = localStorage.getItem('darkMode');
+    if (darkModePreference === 'true') {
+      setIsDarkMode(true);
+    }
+  }, []);
 
   const toggleTheme = () => setIsDarkMode(prev => !prev);
 

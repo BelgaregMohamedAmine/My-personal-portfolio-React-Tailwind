@@ -10,7 +10,7 @@ export const Sidebar = ({ isSidebarOpen, isLargeScreen, setSidebarOpen }) => {
     <div
       className={`fixed ${isLargeScreen ? 'top-16' : 'top-0'} mt-0 bottom-0 left-0 w-64 bg-gray-50 dark:bg-gray-800 border-r border-gray-200 dark:border-gray-700 transform transition-all duration-300 ease-in-out ${
         isSidebarOpen ? 'translate-x-0' : '-translate-x-full'
-      } ${!isLargeScreen ? 'z-20' : ''}`}
+      } ${!isLargeScreen ? 'z-20' : ''} overflow-y-auto`}
     >
       <div className="flex flex-col h-full">
         {/* Close button - only visible on small screens */}
@@ -53,7 +53,7 @@ export const Sidebar = ({ isSidebarOpen, isLargeScreen, setSidebarOpen }) => {
               href="https://github.com/yourusername"
               target="_blank"
               rel="noopener noreferrer"
-              className="p-2 text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white transition-colors"
+              className="p-2 text-gray-700 dark:text-gray-300 hover:text-orange-500 dark:hover:text-orange-700 transition-colors"
             >
               <Github size={20} />
             </a>
@@ -61,7 +61,7 @@ export const Sidebar = ({ isSidebarOpen, isLargeScreen, setSidebarOpen }) => {
               href="https://linkedin.com/in/yourusername"
               target="_blank"
               rel="noopener noreferrer"
-              className="p-2 text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white transition-colors"
+              className="p-2 text-gray-700 dark:text-gray-300 hover:text-orange-500 dark:hover:text-orange-700  transition-colors"
             >
               <Linkedin size={20} />
             </a>
@@ -69,7 +69,7 @@ export const Sidebar = ({ isSidebarOpen, isLargeScreen, setSidebarOpen }) => {
               href="https://twitter.com/yourusername"
               target="_blank"
               rel="noopener noreferrer"
-              className="p-2 text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white transition-colors"
+              className="p-2 text-gray-700 dark:text-gray-300 hover:text-orange-500 dark:hover:text-orange-700  transition-colors"
             >
               <Twitter size={20} />
             </a>
@@ -77,7 +77,7 @@ export const Sidebar = ({ isSidebarOpen, isLargeScreen, setSidebarOpen }) => {
               href="https://facebook.com/yourusername"
               target="_blank"
               rel="noopener noreferrer"
-              className="p-2 text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white transition-colors" 
+              className="p-2 text-gray-700 dark:text-gray-300 hover:text-orange-500 dark:hover:text-orange-700  transition-colors" 
             >
               <Facebook size={20} />
             </a>
@@ -85,7 +85,7 @@ export const Sidebar = ({ isSidebarOpen, isLargeScreen, setSidebarOpen }) => {
               href="https://instagram.com/yourusername"
               target="_blank"
               rel="noopener noreferrer"
-              className="p-2 text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white transition-colors"
+              className="p-2 text-gray-700 dark:text-gray-300 hover:text-orange-500 dark:hover:text-orange-700  transition-colors"
             >
               <Instagram size={20} />
             </a>
