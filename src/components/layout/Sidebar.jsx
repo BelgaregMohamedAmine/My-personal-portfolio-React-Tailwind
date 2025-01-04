@@ -50,7 +50,7 @@ export const Sidebar = ({ isSidebarOpen, isLargeScreen, setSidebarOpen }) => {
           <p className="text-sm text-gray-600 dark:text-gray-400 mb-3">Follow me on</p>
           <div className="flex justify-center space-x-1">
             <a
-              href="https://github.com/yourusername"
+              href="https://github.com/BelgaregMohamedAmine"
               target="_blank"
               rel="noopener noreferrer"
               className="p-2 text-gray-700 dark:text-gray-300 hover:text-orange-500 dark:hover:text-orange-700 transition-colors"
@@ -58,7 +58,7 @@ export const Sidebar = ({ isSidebarOpen, isLargeScreen, setSidebarOpen }) => {
               <Github size={20} />
             </a>
             <a
-              href="https://linkedin.com/in/yourusername"
+              href="https://www.linkedin.com/in/mohamed-amine-belgareg-bi-analyst/"
               target="_blank"
               rel="noopener noreferrer"
               className="p-2 text-gray-700 dark:text-gray-300 hover:text-orange-500 dark:hover:text-orange-700  transition-colors"
@@ -66,7 +66,7 @@ export const Sidebar = ({ isSidebarOpen, isLargeScreen, setSidebarOpen }) => {
               <Linkedin size={20} />
             </a>
             <a
-              href="https://twitter.com/yourusername"
+              href="https://x.com/MohamedAmi87477"
               target="_blank"
               rel="noopener noreferrer"
               className="p-2 text-gray-700 dark:text-gray-300 hover:text-orange-500 dark:hover:text-orange-700  transition-colors"
@@ -74,7 +74,7 @@ export const Sidebar = ({ isSidebarOpen, isLargeScreen, setSidebarOpen }) => {
               <Twitter size={20} />
             </a>
             <a
-              href="https://facebook.com/yourusername"
+              href="https://www.facebook.com/profile.php?id=100087518705181"
               target="_blank"
               rel="noopener noreferrer"
               className="p-2 text-gray-700 dark:text-gray-300 hover:text-orange-500 dark:hover:text-orange-700  transition-colors" 
@@ -82,7 +82,7 @@ export const Sidebar = ({ isSidebarOpen, isLargeScreen, setSidebarOpen }) => {
               <Facebook size={20} />
             </a>
             <a
-              href="https://instagram.com/yourusername"
+              href="https://www.instagram.com/belgareg.mohamed.amine/"
               target="_blank"
               rel="noopener noreferrer"
               className="p-2 text-gray-700 dark:text-gray-300 hover:text-orange-500 dark:hover:text-orange-700  transition-colors"

@@ -17,7 +17,7 @@ export const Header = ({ isLargeScreen, isSidebarOpen, setSidebarOpen }) => {
         )}
         
         <div className="flex items-center">
-          <span className="ml-2 text-xl font-bold text-gray-900 dark:text-white ">
+          <span className="ml-2 text-xl font-bold text-gray-900 dark:text-white">
             Belgareg
           </span>
         </div>

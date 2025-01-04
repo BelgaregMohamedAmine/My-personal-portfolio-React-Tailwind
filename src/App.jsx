@@ -4,12 +4,16 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 /** components */
 import { Header } from './components/layout/Header';
 import { Sidebar } from './components/layout/Sidebar';
+import Footer from './components/layout/Footer';
+
+
 
 /** pages */
 import Home from './Pages/Home';
 import Blog from './Pages/Blog';
 import Portfolio from './Pages/Portfolio';
 import Contact from './Pages/Contact';
+import ContactForm from './Pages/ContactForm';
 
 const App = () => {
   const [isSidebarOpen, setSidebarOpen] = useState(true);
@@ -17,7 +21,7 @@ const App = () => {
 
   useEffect(() => {
     const handleResize = () => {
-      const large = window.innerWidth >= 1024;
+      const large = window.innerWidth > 1024;
       setIsLargeScreen(large);
       if (large) setSidebarOpen(true);
     };
@@ -50,16 +54,30 @@ const App = () => {
 
         {/* Main content */}
         <main 
-          className={`pt-16 ${isSidebarOpen ? 'lg:ml-64' : ''} p-4 text-gray-900 dark:text-white transition-colors duration-200`}
+          className={`pt-16 ${isLargeScreen ? 'lg:ml-64' : 'ml-0'} p-0 text-gray-900 dark:text-white transition-colors duration-200`}
         >
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/blog" element={<Blog />} />
             <Route path="/portfolio" element={<Portfolio />} />
-            <Route path="/contact" element={<Contact />} />
+            <Route path="/contact" element={<ContactForm />} />
           </Routes>
         </main>
+
+       {/* Footer */}
+        <div
+          className={`${
+            isSidebarOpen ? 'lg:ml-64' : ''
+          } fixed bottom-0 left-0 w-full bg-orange-500 dark:bg-orange-500 text-gray-900 dark:text-white transition-colors duration-200`}
+        >
+          <div className="container mx-auto px-4 py-2">
+            <Footer />
+          </div>
+        </div>
+
+
       </div>
+      
     </Router>
   );
 };
