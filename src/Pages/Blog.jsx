@@ -2,6 +2,7 @@ import React, { useState, useMemo } from 'react';
 import { Book, Clock, User, ChevronRight, Search, Filter, X, ChevronLeft, ChevronRight as ChevronRightIcon } from 'lucide-react';
 import { Mail } from 'lucide-react';
 import blogData from '../data/blogData.json';
+import { Link } from 'react-router-dom';
 
 // Custom Dialog Components remain the same
 const DialogOverlay = ({ children, onClose }) => (
@@ -267,7 +268,7 @@ const BlogPage = () => {
                 <div className="flex items-center justify-between text-sm text-gray-500 dark:text-gray-400">
                   <div className="flex items-center gap-2">
                     <User className="w-4 h-4" />
-                    <span>{blog.author}</span>
+                    <span>{blog.author.name}</span>
                   </div>
                   <div className="flex items-center gap-2">
                     <Clock className="w-4 h-4" />
@@ -285,6 +286,7 @@ const BlogPage = () => {
                   <button className="flex items-center gap-1 text-blue-600 dark:text-blue-400 hover:gap-2 transition-all">
                     Read More <ChevronRight className="w-4 h-4" />
                   </button>
+                  <Link to={`/blog/${blog.id}`}>{blog.title}</Link>
                 </div>
               </div>
             </article>
