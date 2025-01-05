@@ -13,7 +13,14 @@ export default {
       transitionDuration: {
         '300': '300ms',
       },
+      colors : {
+        'primary': '#1A1D23',
+        'secondary': '#F7F7F7',
+        'tertiary': '#19aad7',
+        'quaternary': '#4CAF50',
+      }
     },
+   
   },
   plugins: [],
   darkMode: 'class',

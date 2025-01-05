@@ -12,7 +12,6 @@ import Footer from './components/layout/Footer';
 import Home from './Pages/Home';
 import Blog from './Pages/Blog';
 import Portfolio from './Pages/Portfolio';
-import Contact from './Pages/Contact';
 import ContactForm from './Pages/ContactForm';
 
 const App = () => {

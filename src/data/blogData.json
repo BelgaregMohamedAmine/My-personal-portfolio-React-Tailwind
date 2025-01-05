@@ -7,9 +7,9 @@
         "content": "Full article content goes here...",
         "category": "Data Analysis",
         "author": "Mohamed Amine",
-        "date": "2024-03-15",
+        "date": "2024-12-15",
         "readTime": "5 min read",
-        "image": "/api/placeholder/800/600",
+        "image": "https://img.freepik.com/photos-gratuite/concept-rendu-3d-du-recepteur-telephonique-illustration-conception-art-3d_460848-9667.jpg?t=st=1736068970~exp=1736072570~hmac=4c97aed59d34083ca7141d4ad9459fab39e440730f3bf36104d1ccef0d4be709&w=996",
         "tags": ["data", "analysis", "beginners"],
         "views": 1250
       },
@@ -20,9 +20,9 @@
         "content": "Full article content goes here...",
         "category": "Business Intelligence",
         "author": "Mohamed Amine",
-        "date": "2024-03-10",
+        "date": "2024-12-10",
         "readTime": "8 min read",
-        "image": "/api/placeholder/800/600",
+        "image": "https://img.freepik.com/photos-gratuite/concept-rendu-3d-du-recepteur-telephonique-illustration-conception-art-3d_460848-9667.jpg?t=st=1736068970~exp=1736072570~hmac=4c97aed59d34083ca7141d4ad9459fab39e440730f3bf36104d1ccef0d4be709&w=996",
         "tags": ["BI", "business", "strategy"],
         "views": 980
       },
@@ -33,9 +33,9 @@
         "content": "Full article content goes here...",
         "category": "Web Development",
         "author": "Mohamed Amine",
-        "date": "2024-03-05",
+        "date": "2024-10-05",
         "readTime": "10 min read",
-        "image": "/api/placeholder/800/600",
+        "image": "https://img.freepik.com/photos-gratuite/concept-rendu-3d-du-recepteur-telephonique-illustration-conception-art-3d_460848-9667.jpg?t=st=1736068970~exp=1736072570~hmac=4c97aed59d34083ca7141d4ad9459fab39e440730f3bf36104d1ccef0d4be709&w=996",
         "tags": ["react", "web", "javascript"],
         "views": 2100
       },
@@ -46,9 +46,9 @@
         "content": "Full article content goes here...",
         "category": "Business Intelligence",
         "author": "Mohamed Amine",
-        "date": "2024-03-01",
+        "date": "2025-01-01",
         "readTime": "7 min read",
-        "image": "/api/placeholder/800/600",
+        "image": "https://img.freepik.com/photos-gratuite/concept-rendu-3d-du-recepteur-telephonique-illustration-conception-art-3d_460848-9667.jpg?t=st=1736068970~exp=1736072570~hmac=4c97aed59d34083ca7141d4ad9459fab39e440730f3bf36104d1ccef0d4be709&w=996",
         "tags": ["powerBI", "dashboard", "visualization"],
         "views": 1500
       },
@@ -59,9 +59,9 @@
         "content": "Full article content goes here...",
         "category": "Data Analysis",
         "author": "Mohamed Amine",
-        "date": "2024-02-28",
+        "date": "2025-01-02",
         "readTime": "12 min read",
-        "image": "/api/placeholder/800/600",
+        "image": "https://img.freepik.com/photos-gratuite/concept-rendu-3d-du-recepteur-telephonique-illustration-conception-art-3d_460848-9667.jpg?t=st=1736068970~exp=1736072570~hmac=4c97aed59d34083ca7141d4ad9459fab39e440730f3bf36104d1ccef0d4be709&w=996",
         "tags": ["python", "data science", "pandas"],
         "views": 1800
       },
@@ -74,7 +74,7 @@
         "author": "Mohamed Amine",
         "date": "2024-02-25",
         "readTime": "6 min read",
-        "image": "/api/placeholder/800/600",
+        "image": "https://img.freepik.com/photos-gratuite/concept-rendu-3d-du-recepteur-telephonique-illustration-conception-art-3d_460848-9667.jpg?t=st=1736068970~exp=1736072570~hmac=4c97aed59d34083ca7141d4ad9459fab39e440730f3bf36104d1ccef0d4be709&w=996",
         "tags": ["css", "web design", "frontend"],
         "views": 950
       },
@@ -87,7 +87,7 @@
         "author": "Mohamed Amine",
         "date": "2024-02-20",
         "readTime": "9 min read",
-        "image": "/api/placeholder/800/600",
+        "image": "https://img.freepik.com/photos-gratuite/concept-rendu-3d-du-recepteur-telephonique-illustration-conception-art-3d_460848-9667.jpg?t=st=1736068970~exp=1736072570~hmac=4c97aed59d34083ca7141d4ad9459fab39e440730f3bf36104d1ccef0d4be709&w=996",
         "tags": ["sql", "database", "analysis"],
         "views": 1650
       },
@@ -100,7 +100,7 @@
         "author": "Mohamed Amine",
         "date": "2024-02-15",
         "readTime": "8 min read",
-        "image": "/api/placeholder/800/600",
+        "image": "https://img.freepik.com/photos-gratuite/concept-rendu-3d-du-recepteur-telephonique-illustration-conception-art-3d_460848-9667.jpg?t=st=1736068970~exp=1736072570~hmac=4c97aed59d34083ca7141d4ad9459fab39e440730f3bf36104d1ccef0d4be709&w=996",
         "tags": ["tableau", "visualization", "BI"],
         "views": 1100
       },
@@ -113,7 +113,7 @@
         "author": "Mohamed Amine",
         "date": "2024-02-10",
         "readTime": "11 min read",
-        "image": "/api/placeholder/800/600",
+        "image": "https://img.freepik.com/photos-gratuite/concept-rendu-3d-du-recepteur-telephonique-illustration-conception-art-3d_460848-9667.jpg?t=st=1736068970~exp=1736072570~hmac=4c97aed59d34083ca7141d4ad9459fab39e440730f3bf36104d1ccef0d4be709&w=996",
         "tags": ["react", "redux", "state"],
         "views": 1900
       },
@@ -126,7 +126,7 @@
         "author": "Mohamed Amine",
         "date": "2024-02-05",
         "readTime": "7 min read",
-        "image": "/api/placeholder/800/600",
+        "image": "https://img.freepik.com/photos-gratuite/concept-rendu-3d-du-recepteur-telephonique-illustration-conception-art-3d_460848-9667.jpg?t=st=1736068970~exp=1736072570~hmac=4c97aed59d34083ca7141d4ad9459fab39e440730f3bf36104d1ccef0d4be709&w=996",
         "tags": ["visualization", "design", "data"],
         "views": 1300
       }

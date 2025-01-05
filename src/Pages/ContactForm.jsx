@@ -1,11 +1,12 @@
 import React from 'react';
 import { Mail, Phone, MapPin, Github, Linkedin, Twitter, Instagram, Facebook } from 'lucide-react';
 
+
 const ContactPage = () => {
   return (
-    <div className="bg-orange-200 dark:bg-gray-900 text-gray-900 dark:text-white min-h-screen">
+    <div className="bg-gray-200 dark:bg-gray-900 text-gray-900 dark:text-white min-h-screen">
       {/* Hero Section */}
-      <div className="h-72 bg-[url('https://www.shutterstock.com/image-illustration/contact-us-email-call-message-600nw-766338313.jpg')] bg-center bg-cover bg-no-repeat">
+      <div className="h-72 bg-[url('./assets/contactCover.webp')] bg-center bg-cover bg-no-repeat">
         <div className="relative container mx-auto px-4 lg:px-8 h-full flex items-center  ">
           <div className="max-w-5xl ">
             <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-white mb-4 transition-all">
