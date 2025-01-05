@@ -1,27 +1,6 @@
 import React, { useState, useMemo } from 'react';
-import { Book, Clock, User, ChevronRight, Search, TrendingUp, Mail, Filter, X } from 'lucide-react';
+import { Book, Clock, User, ChevronRight, Search, TrendingUp, Mail } from 'lucide-react';
 import blogData from '../data/blogData.json';
-
-// Custom Dialog Components
-const DialogOverlay = ({ children, onClose }) => (
-  <div className="fixed inset-0 bg-black/50 z-50 flex items-center justify-center p-4">
-    <div className="relative bg-white dark:bg-gray-800 rounded-lg w-full max-w-md">
-      {children}
-    </div>
-  </div>
-);
-
-const DialogContent = ({ children, onClose }) => (
-  <div className="relative">
-    <button 
-      onClick={onClose}
-      className="absolute right-4 top-4 hover:bg-gray-100 dark:hover:bg-gray-700 p-1 rounded-full"
-    >
-      <X className="w-4 h-4" />
-    </button>
-    {children}
-  </div>
-);
 
 const BlogPage = () => {
   // States for filters and newsletter
@@ -30,7 +9,6 @@ const BlogPage = () => {
   const [selectedPeriod, setSelectedPeriod] = useState('all');
   const [email, setEmail] = useState('');
   const [isSubscribed, setIsSubscribed] = useState(false);
-  const [isFilterDialogOpen, setIsFilterDialogOpen] = useState(false);
 
   // Get unique categories from blogs
   const categories = ['All Posts', ...new Set(blogData.blogs.map(blog => blog.category))];
@@ -49,7 +27,8 @@ const BlogPage = () => {
     if (email) {
       setIsSubscribed(true);
       setEmail('');
-      setTimeout(() => setIsSubscribed(false), 3000);
+      // Here you would typically make an API call to handle the subscription
+      setTimeout(() => setIsSubscribed(false), 3000); // Reset after 3 seconds
     }
   };
 
@@ -98,20 +77,12 @@ const BlogPage = () => {
     setSearchQuery('');
     setSelectedCategory('All Posts');
     setSelectedPeriod('all');
-    setIsFilterDialogOpen(false);
   };
-
-  // Count active filters
-  const activeFiltersCount = [
-    selectedCategory !== 'All Posts',
-    selectedPeriod !== 'all',
-    searchQuery !== ''
-  ].filter(Boolean).length;
 
   return (
     <div className="bg-orange-200 dark:bg-gray-900 min-h-screen text-gray-900 dark:text-white">
       {/* Hero Section */}
-      <div className="bg-gradient-to-r from-orange-400 to-orange-500 dark:from-orange-400 dark:to-dark-600">
+      <div className="bg-gradient-to-r from-blue-600 to-blue-800 dark:from-blue-900 dark:to-gray-900">
         <div className="container mx-auto px-4 py-16">
           <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">
             Blog & Insights
@@ -122,103 +93,73 @@ const BlogPage = () => {
         </div>
       </div>
 
-      {/* Compact Filters Section */}
+      {/* Filters Section */}
       <div className="container mx-auto px-4 py-8">
-        <div className="flex items-center gap-4 flex-wrap">
-          {/* Search Bar */}
-          <div className="relative flex-1 min-w-[200px]">
-            <input
-              type="text"
-              placeholder="Search articles..."
-              value={searchQuery}
-              onChange={(e) => setSearchQuery(e.target.value)}
-              className="w-full px-4 py-2 pl-10 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800 focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-colors"
-            />
-            <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 w-4 h-4" />
+        <div className="flex flex-col gap-4">
+          {/* Search and Time Period */}
+          <div className="flex flex-col md:flex-row gap-4">
+            {/* Search Bar */}
+            <div className="relative flex-1">
+              <input
+                type="text"
+                placeholder="Search articles..."
+                value={searchQuery}
+                onChange={(e) => setSearchQuery(e.target.value)}
+                className="w-full px-4 py-2 pl-10 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800 focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-colors"
+              />
+              <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 w-4 h-4" />
+            </div>
+
+            {/* Time Period Filter */}
+            <div className="flex gap-2 overflow-x-auto">
+              {timePeriods.map((period) => (
+                <button
+                  key={period.value}
+                  onClick={() => setSelectedPeriod(period.value)}
+                  className={`px-4 py-2 rounded-lg transition-colors whitespace-nowrap
+                    ${selectedPeriod === period.value
+                      ? 'bg-blue-600 text-white'
+                      : 'bg-white dark:bg-gray-800 hover:bg-blue-50 dark:hover:bg-gray-700'}`}
+                >
+                  {period.label}
+                </button>
+              ))}
+            </div>
           </div>
 
-          {/* Filter Button */}
-          <button 
-            onClick={() => setIsFilterDialogOpen(true)}
-            className="flex items-center gap-2 px-4 py-2 bg-white dark:bg-gray-800 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors"
-          >
-            <Filter className="w-4 h-4" />
-            Filters
-            {activeFiltersCount > 0 && (
-              <span className="bg-blue-600 text-white text-xs rounded-full w-5 h-5 flex items-center justify-center">
-                {activeFiltersCount}
-              </span>
+          {/* Categories */}
+          <div className="flex gap-2 overflow-x-auto pb-2">
+            {categories.map((category, index) => (
+              <button
+                key={index}
+                onClick={() => setSelectedCategory(category)}
+                className={`px-4 py-2 rounded-full transition-colors whitespace-nowrap
+                  ${selectedCategory === category 
+                    ? 'bg-blue-600 text-white' 
+                    : 'bg-white dark:bg-gray-800 hover:bg-blue-50 dark:hover:bg-gray-700'}`}
+              >
+                {category}
+              </button>
+            ))}
+          </div>
+
+          {/* Results count and Reset filters */}
+          <div className="flex justify-between items-center">
+            <div className="text-sm text-gray-600 dark:text-gray-400">
+              Showing {sortedBlogs.length} {sortedBlogs.length === 1 ? 'result' : 'results'}
+            </div>
+            {(searchQuery || selectedCategory !== 'All Posts' || selectedPeriod !== 'all') && (
+              <button
+                onClick={handleResetFilters}
+                className="text-sm text-blue-600 dark:text-blue-400 hover:underline"
+              >
+                Reset filters
+              </button>
             )}
-          </button>
-
-          {/* Custom Filter Dialog */}
-          {isFilterDialogOpen && (
-            <DialogOverlay onClose={() => setIsFilterDialogOpen(false)}>
-              <DialogContent onClose={() => setIsFilterDialogOpen(false)}>
-                <div className="p-6">
-                  <h2 className="text-lg font-semibold mb-4">Filter Articles</h2>
-                  <div className="space-y-6">
-                    {/* Categories */}
-                    <div className="space-y-2">
-                      <label className="font-medium">Categories</label>
-                      <div className="grid grid-cols-2 gap-2">
-                        {categories.map((category, index) => (
-                          <button
-                            key={index}
-                            onClick={() => setSelectedCategory(category)}
-                            className={`px-3 py-2 rounded-lg text-sm transition-colors
-                              ${selectedCategory === category 
-                                ? 'bg-blue-600 text-white' 
-                                : 'bg-gray-100 dark:bg-gray-700 hover:bg-gray-200 dark:hover:bg-gray-600'}`}
-                          >
-                            {category}
-                          </button>
-                        ))}
-                      </div>
-                    </div>
-
-                    {/* Time Periods */}
-                    <div className="space-y-2">
-                      <label className="font-medium">Time Period</label>
-                      <div className="grid grid-cols-2 gap-2">
-                        {timePeriods.map((period) => (
-                          <button
-                            key={period.value}
-                            onClick={() => setSelectedPeriod(period.value)}
-                            className={`px-3 py-2 rounded-lg text-sm transition-colors
-                              ${selectedPeriod === period.value
-                                ? 'bg-blue-600 text-white'
-                                : 'bg-gray-100 dark:bg-gray-700 hover:bg-gray-200 dark:hover:bg-gray-600'}`}
-                          >
-                            {period.label}
-                          </button>
-                        ))}
-                      </div>
-                    </div>
-
-                    {/* Reset Filters */}
-                    {(selectedCategory !== 'All Posts' || selectedPeriod !== 'all') && (
-                      <button
-                        onClick={handleResetFilters}
-                        className="w-full px-4 py-2 bg-gray-100 dark:bg-gray-700 rounded-lg text-sm hover:bg-gray-200 dark:hover:bg-gray-600 transition-colors"
-                      >
-                        Reset all filters
-                      </button>
-                    )}
-                  </div>
-                </div>
-              </DialogContent>
-            </DialogOverlay>
-          )}
-
-          {/* Results count */}
-          <div className="text-sm text-gray-600 dark:text-gray-400">
-            {sortedBlogs.length} {sortedBlogs.length === 1 ? 'result' : 'results'}
           </div>
         </div>
       </div>
 
-      {/* Rest of the component remains the same... */}
       {/* Blog Grid */}
       <div className="container mx-auto px-4 py-8">
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -249,6 +190,7 @@ const BlogPage = () => {
                 <p className="text-gray-600 dark:text-gray-300 mb-4 line-clamp-3">
                   {blog.excerpt}
                 </p>
+                {/* Tags */}
                 <div className="flex flex-wrap gap-2 mb-4">
                   {blog.tags.map((tag, index) => (
                     <span
@@ -271,7 +213,7 @@ const BlogPage = () => {
                 </div>
                 <div className="mt-4 flex items-center justify-between">
                   <span className="text-sm text-gray-500 dark:text-gray-400">
-                    {new Date(blog.date).toLocaleDateString('en-US', {
+                    {new Date(blog.date).toLocaleDateString('fr-FR', {
                       year: 'numeric',
                       month: 'long',
                       day: 'numeric'
@@ -315,7 +257,7 @@ const BlogPage = () => {
           {/* Content */}
           <div className="relative z-10">
             <Mail className="w-12 h-12 mx-auto mb-4 text-blue-600 dark:text-blue-400" />
-            <h2 className="text-2xl font-bold mb-4">Subscribe to Our Newsletter</h2>
+            <h2 className="text-2xl font-bold mb-4">Subscribe to My Newsletter</h2>
             <p className="text-gray-600 dark:text-gray-300 mb-6 max-w-2xl mx-auto">
               Stay updated with the latest insights in data analysis, business intelligence, and web development.
               Get exclusive content and early access to new articles.
