@@ -146,7 +146,9 @@
        "content": "Choosing between ETL, ELT, and ETLT depends on your specific data needs and infrastructure. Each method offers unique advantages and challenges. By understanding these approaches and aligning them with your business goals, you can optimize your data integration process and drive more informed decision-making."
      }
     ]
-    }
+    } ,
+    
+    // les  autre blog 
   ],
 
   "trending": [

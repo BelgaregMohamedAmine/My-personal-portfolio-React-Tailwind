@@ -2,16 +2,16 @@
   "blogs": [
     {
       "id": 1,
-      "firstimage": "./src/assets/blogs/understanding-etl-elt-etlt-data-integration-approaches/blog-Full-scheme.webp",
+      "firstimage": "/src/assets/blogs/understanding-etl-elt-etlt-data-integration-approaches/blog-Full-scheme.webp",
       "excerpt": "Learn the fundamentals of data analysis and how to get started with basic tools and techniques. We'll cover data cleaning, visualization, and basic statistical analysis.",
-      "image": "./src/assets/blogs/understanding-etl-elt-etlt-data-integration-approaches/understanding-etl-elt-etlt-data-integration-approaches.webp",
+      "image": "/src/assets/blogs/understanding-etl-elt-etlt-data-integration-approaches/understanding-etl-elt-etlt-data-integration-approaches.webp",
       "slug": "understanding-etl-elt-etlt-data-integration-approaches",
       "title": "Understanding ETL, ELT, and ETLT: Navigating Data Integration Approaches",
       "readTime": "5 min read",
       "category": "Business Intelligence",
       "author": {
         "name": "Belgareg Med Amine",
-        "avatar": "./src/assets/bg_one.png",
+        "avatar": "/src/assets/profile.png",
         "bio": "Med Amine excels in Business Intelligence and Web Development, delivering sophisticated data insights and cutting-edge digital solutions with a focus on excellence and innovation."
       },
       "date": "2024-09-03",
@@ -149,16 +149,16 @@
     },
     {
       "id": 2,
-      "firstimage": "/./src/assets/blogs/the-ultimate-guide-to-data-cleaning-with-sql/blog-Full-scheme.webp",
+      "firstimage": "/src/assets/blogs/the-ultimate-guide-to-data-cleaning-with-sql/blog-Full-scheme.webp",
       "excerpt": "Learn the fundamentals of data analysis and how to get started with basic tools and techniques. We'll cover data cleaning, visualization, and basic statistical analysis.",
-      "image": "/./src/assets/blogs/the-ultimate-guide-to-data-cleaning-with-sql/the-ultimate-guide-to-data-cleaning-with-sql.webp",
+      "image": "/src/assets/blogs/the-ultimate-guide-to-data-cleaning-with-sql/the-ultimate-guide-to-data-cleaning-with-sql.webp",
       "slug": "the-ultimate-guide-to-data-cleaning-with-sql",
       "title": "The Ultimate Guide to Data Cleaning with SQL: A Comprehensive Book for Beginners",
       "readTime": "5 min read",
       "category": "Data Cleaning",
       "author": {
         "name": "Belgareg Med Amine",
-        "avatar": "./src/assets/bg_one.png",
+        "avatar": "/src/assets/profile.png",
         "bio": "Med Amine excels in Business Intelligence and Web Development, delivering sophisticated data insights and cutting-edge digital solutions with a focus on excellence and innovation."
       },
       "date": "2024-08-24",
@@ -168,23 +168,23 @@
         {
         "type": "pdf",
         "src": "https://drive.google.com/file/d/1soDWQarnL_C3dbvZYNSPbpBzZvo8mxX5/preview",
-        "srcLoad":"/./src/assets/blogs/the-ultimate-guide-to-data-cleaning-with-sql/The Ultimate Guide to Data Cleaning with SQL.pdf"
+        "srcLoad":"/src/assets/blogs/the-ultimate-guide-to-data-cleaning-with-sql/The Ultimate Guide to Data Cleaning with SQL.pdf"
         }
       
     ]
     },
     {
       "id": 3,
-      "firstimage": "/./src/assets/blogs/enhance-data-analysis-vocabulary-expertise/blog-Full-scheme.webp",
+      "firstimage": "/src/assets/blogs/enhance-data-analysis-vocabulary-expertise/blog-Full-scheme.webp",
       "excerpt": "Learn the fundamentals of data analysis and how to get started with basic tools and techniques. We'll cover data cleaning, visualization, and basic statistical analysis.",
-      "image": "/./src/assets/blogs/enhance-data-analysis-vocabulary-expertise/enhance-data-analysis-vocabulary-expertise.webp",
+      "image": "/src/assets/blogs/enhance-data-analysis-vocabulary-expertise/enhance-data-analysis-vocabulary-expertise.webp",
       "slug": "enhance-data-analysis-vocabulary-expertise",
       "title": "Enhance Your Data Analysis Expertise: Essential Vocabulary for Success",
       "readTime": "5 min read",
       "category": "Data Analysis",
       "author": {
         "name": "Belgareg Med Amine",
-        "avatar": "./src/assets/bg_one.png",
+        "avatar": "/src/assets/profile.png",
         "bio": "Med Amine excels in Business Intelligence and Web Development, delivering sophisticated data insights and cutting-edge digital solutions with a focus on excellence and innovation."
       },
       "date": "2024-08-18",
@@ -194,23 +194,23 @@
         {
         "type": "pdf",
         "src": "https://drive.google.com/file/d/15pQ8JJ38eDMLtOWikxwHT0rbJHNKClfY/preview",
-        "srcLoad":"/./src/assets/blogs/enhance-data-analysis-vocabulary-expertise/The Ultimate Guide to DAX Formulas.pdf"
+        "srcLoad":"/src/assets/blogs/enhance-data-analysis-vocabulary-expertise/The Ultimate Guide to DAX Formulas.pdf"
         }
       
     ]
     },
     {
       "id": 4,
-      "firstimage": "/./src/assets/blogs/top-10-dax-formulas-power-bi/blog-Full-scheme.webp",
+      "firstimage": "/src/assets/blogs/top-10-dax-formulas-power-bi/blog-Full-scheme.webp",
       "excerpt": "Learn the fundamentals of data analysis and how to get started with basic tools and techniques. We'll cover data cleaning, visualization, and basic statistical analysis.",
-      "image": "/./src/assets/blogs/top-10-dax-formulas-power-bi/top-10-dax-formulas-power-bi.webp",
+      "image": "/src/assets/blogs/top-10-dax-formulas-power-bi/top-10-dax-formulas-power-bi.webp",
       "slug": "top-10-dax-formulas-power-bi",
       "title": "The Ultimate Guide to DAX Formulas: Top 10 DAX Formulas You Absolutely Need to Know",
       "readTime": "5 min read",
       "category": "Data Analysis",
       "author": {
         "name": "Belgareg Med Amine",
-        "avatar": "./src/assets/bg_one.png",
+        "avatar": "/src/assets/profile.png",
         "bio": "Med Amine excels in Business Intelligence and Web Development, delivering sophisticated data insights and cutting-edge digital solutions with a focus on excellence and innovation."
       },
       "date": "2024-08-14",
@@ -220,23 +220,23 @@
         {
         "type": "pdf",
         "src": "https://drive.google.com/file/d/1qZAwybgES7L3YTEDpT01CmIy8GAEXl9N/preview",
-        "srcLoad":"/./src/assets/blogs/top-10-dax-formulas-power-bi/The Ultimate Guide to DAX Formulas.pdf"
+        "srcLoad":"/src/assets/blogs/top-10-dax-formulas-power-bi/The Ultimate Guide to DAX Formulas.pdf"
         }
       
     ]
     },
     {
       "id": 5,
-      "firstimage": "/./src/assets/blogs/etl-load-types-guide-full-incremental-delta/blog-Full-scheme.webp",
+      "firstimage": "/src/assets/blogs/etl-load-types-guide-full-incremental-delta/blog-Full-scheme.webp",
       "excerpt": "Learn the fundamentals of data analysis and how to get started with basic tools and techniques. We'll cover data cleaning, visualization, and basic statistical analysis.",
-      "image": "/./src/assets/blogs/etl-load-types-guide-full-incremental-delta/etl-process-explained.webp",
+      "image": "/src/assets/blogs/etl-load-types-guide-full-incremental-delta/etl-process-explained.webp",
       "slug": "etl-load-types-guide-full-incremental-delta",
       "title": "Mastering Data Loading in ETL Processes: A Deep Dive into Full, Incremental, and Delta Loads",
       "readTime": "5 min read",
       "category": "Data Integration",
       "author": {
         "name": "Belgareg Med Amine",
-        "avatar": "./src/assets/bg_one.png",
+        "avatar": "/src/assets/profile.png",
         "bio": "Med Amine excels in Business Intelligence and Web Development, delivering sophisticated data insights and cutting-edge digital solutions with a focus on excellence and innovation."
       },
       "date": "2024-08-12",
@@ -460,16 +460,16 @@
     },
     {
       "id": 6,
-      "firstimage": "/./src/assets/blogs/choose_the_right_chart_for_your_data/blog-Full-scheme.png",
+      "firstimage": "/src/assets/blogs/choose_the_right_chart_for_your_data/blog-Full-scheme.png",
       "excerpt": "Learn the fundamentals of data analysis and how to get started with basic tools and techniques. We'll cover data cleaning, visualization, and basic statistical analysis.",
-      "image": "/./src/assets/blogs/choose_the_right_chart_for_your_data/Full-scheme.webp",
+      "image": "/src/assets/blogs/choose_the_right_chart_for_your_data/Full-scheme.webp",
       "slug": "choosing-right-chart-for-data",
       "title": "Choosing the Right Chart for Your Data: A Guide to Effective Visualization",
       "readTime": "5 min read",
       "category": "Data Visualization",
       "author": {
         "name": "Belgareg Med Amine",
-        "avatar": "./src/assets/bg_one.png",
+        "avatar": "/src/assets/profile.png",
         "bio": "Med Amine excels in Business Intelligence and Web Development, delivering sophisticated data insights and cutting-edge digital solutions with a focus on excellence and innovation."
       },
       "date": "August 5, 2024",
@@ -533,7 +533,7 @@
         {
           "order": 11,
           "type": "image",
-          "src": "/./src/assets/blogs/choose_the_right_chart_for_your_data/power-bi-line-chart.png",
+          "src": "/src/assets/blogs/choose_the_right_chart_for_your_data/power-bi-line-chart.png",
           "alt": "power bi line chart"
         },
         {
@@ -564,7 +564,7 @@
         {
           "order": 16,
           "type": "image",
-          "src": "/./src/assets/blogs/choose_the_right_chart_for_your_data/power-bi-Pie-Charts.png",
+          "src": "/src/assets/blogs/choose_the_right_chart_for_your_data/power-bi-Pie-Charts.png",
           "alt": "power bi Pie Charts"
         },
         {
@@ -594,7 +594,7 @@
         {
           "order": 21,
           "type": "image",
-          "src": "/./src/assets/blogs/choose_the_right_chart_for_your_data/Bar_and_Column_Charts_in_Power_BI.png",
+          "src": "/src/assets/blogs/choose_the_right_chart_for_your_data/Bar_and_Column_Charts_in_Power_BI.png",
           "alt": "Bar and Column Charts in Power BI"
         },
         {
@@ -629,7 +629,7 @@
         {
           "order": 27,
           "type": "image",
-          "src": "/./src/assets/blogs/choose_the_right_chart_for_your_data/treemaps_power_bi.png",
+          "src": "/src/assets/blogs/choose_the_right_chart_for_your_data/treemaps_power_bi.png",
           "alt": "Bar and Column Charts in Power BI"
         },
         {
@@ -659,7 +659,7 @@
         {
           "order": 32,
           "type": "image",
-          "src": "/./src/assets/blogs/choose_the_right_chart_for_your_data/daulaxischartpowerbi.png",
+          "src": "/src/assets/blogs/choose_the_right_chart_for_your_data/daulaxischartpowerbi.png",
           "alt": "Bar and Column Charts in Power BI"
         },
         {
@@ -688,7 +688,7 @@
         {
           "order": 37,
           "type": "image",
-          "src": "/./src/assets/blogs/choose_the_right_chart_for_your_data/Area-chart-secondary-y-axis.png",
+          "src": "/src/assets/blogs/choose_the_right_chart_for_your_data/Area-chart-secondary-y-axis.png",
           "alt": "Bar and Column Charts in Power BI"
         },
         {
@@ -718,7 +718,7 @@
         {
           "order": 42,
           "type": "image",
-          "src": "/./src/assets/blogs/choose_the_right_chart_for_your_data/Pyramid_Charts_power_bi.jpg",
+          "src": "/src/assets/blogs/choose_the_right_chart_for_your_data/Pyramid_Charts_power_bi.jpg",
           "alt": "Bar and Column Charts in Power BI"
         },
         {
@@ -748,7 +748,7 @@
         {
           "order": 47,
           "type": "image",
-          "src": "/./src/assets/blogs/choose_the_right_chart_for_your_data/word-cloud-in-power-bi.png",
+          "src": "/src/assets/blogs/choose_the_right_chart_for_your_data/word-cloud-in-power-bi.png",
           "alt": "Bar and Column Charts in Power BI"
         },
         {
@@ -783,7 +783,7 @@
         {
           "order": 48,
           "type": "image",
-          "src": "/./src/assets/blogs/choose_the_right_chart_for_your_data/power-bi-table.png",
+          "src": "/src/assets/blogs/choose_the_right_chart_for_your_data/power-bi-table.png",
           "alt": "Bar and Column Charts in Power BI"
         },
         {
@@ -804,16 +804,16 @@
     },
     {
       "id": 7,
-      "firstimage": "./src/assets/blogs/future-of-business-intelligence-trends-predictions-2025-beyond/The_Future_of_Business_Intelligence.png",
+      "firstimage": "/src/assets/blogs/future-of-business-intelligence-trends-predictions-2025-beyond/The_Future_of_Business_Intelligence.png",
       "excerpt": "Learn the fundamentals of data analysis and how to get started with basic tools and techniques. We'll cover data cleaning, visualization, and basic statistical analysis.",
-      "image": "./src/assets/blogs/future-of-business-intelligence-trends-predictions-2025-beyond/blog-Full-scheme.png",
+      "image": "/src/assets/blogs/future-of-business-intelligence-trends-predictions-2025-beyond/blog-Full-scheme.png",
       "slug": "future-of-business-intelligence-trends-predictions-2025-beyond",
       "title": "The Future of BI: Trends and Predictions for 2025 and Beyond",
       "readTime": "5 min read",
       "category": "Business Intelligence",
       "author": {
         "name": "Belgareg Med Amine",
-        "avatar": "./src/assets/bg_one.png",
+        "avatar": "/src/assets/profile.png",
         "bio": "Med Amine excels in Business Intelligence and Web Development, delivering sophisticated data insights and cutting-edge digital solutions with a focus on excellence and innovation."
       },
       "date": "November 10, 2023",
@@ -919,16 +919,16 @@
     },
     {
       "id": 8,
-      "firstimage": "./src/assets/blogs/essential-data-visualization-best-practices/Best-Practices-data-viz.png",
+      "firstimage": "/src/assets/blogs/essential-data-visualization-best-practices/Best-Practices-data-viz.png",
       "excerpt": "Learn the fundamentals of data analysis and how to get started with basic tools and techniques. We'll cover data cleaning, visualization, and basic statistical analysis.",
-      "image": "./src/assets/blogs/essential-data-visualization-best-practices/full-Best-Practices-data-viz.png",
+      "image": "/src/assets/blogs/essential-data-visualization-best-practices/full-Best-Practices-data-viz.png",
       "slug": "essential-data-visualization-best-practices",
       "title": "Top 10 Essential Data Visualization Best Practices",
       "readTime": "5 min read",
       "category": "Data Visualization",
       "author": {
         "name": "Belgareg Med Amine",
-        "avatar": "./src/assets/bg_one.png",
+        "avatar": "/src/assets/profile.png",
         "bio": "Med Amine excels in Business Intelligence and Web Development, delivering sophisticated data insights and cutting-edge digital solutions with a focus on excellence and innovation."
       },
       "date": "2023-11-11",
@@ -961,7 +961,7 @@
         {
           "order": 8,
           "type": "image",
-          "src": "./src/assets/blogs/essential-data-visualization-best-practices/Know-your-audience.png",
+          "src": "/src/assets/blogs/essential-data-visualization-best-practices/Know-your-audience.png",
           "alt": "Bar and Column Charts in Power BI"
         },
         {
@@ -999,7 +999,7 @@
         {
           "order": 8,
           "type": "image",
-          "src": "./src/assets/blogs/essential-data-visualization-best-practices/difference-simple-complicated.png",
+          "src": "/src/assets/blogs/essential-data-visualization-best-practices/difference-simple-complicated.png",
           "alt": "Bar and Column Charts in Power BI"
         },
         {
@@ -1031,7 +1031,7 @@
         {
           "order": 8,
           "type": "image",
-          "src": "./src/assets/blogs/essential-data-visualization-best-practices/five-best-graphie.png",
+          "src": "/src/assets/blogs/essential-data-visualization-best-practices/five-best-graphie.png",
           "alt": "Bar and Column Charts in Power BI"
         },
         {
@@ -1050,7 +1050,7 @@
         {
           "order": 8,
           "type": "image",
-          "src": "./src/assets/blogs/essential-data-visualization-best-practices/line-chart-pie-or-donut-chart.png",
+          "src": "/src/assets/blogs/essential-data-visualization-best-practices/line-chart-pie-or-donut-chart.png",
           "alt": "Bar and Column Charts in Power BI"
         }, 
         {
@@ -1084,7 +1084,7 @@
         {
           "order": 8,
           "type": "image",
-          "src": "./src/assets/blogs/essential-data-visualization-best-practices/filter-data-viz.png",
+          "src": "/src/assets/blogs/essential-data-visualization-best-practices/filter-data-viz.png",
           "alt": "Bar and Column Charts in Power BI"
         }, 
         {
@@ -1095,7 +1095,7 @@
         {
           "order": 8,
           "type": "image",
-          "src": "./src/assets/blogs/essential-data-visualization-best-practices/AI-powered-data-viz.gif",
+          "src": "/src/assets/blogs/essential-data-visualization-best-practices/AI-powered-data-viz.gif",
           "alt": "Bar and Column Charts in Power BI"
         },
         {
@@ -1127,7 +1127,7 @@
         {
           "order": 8,
           "type": "image",
-          "src": "./src/assets/blogs/essential-data-visualization-best-practices/Analyse_Nombre_de_Clients_en_Tunisie.png",
+          "src": "/src/assets/blogs/essential-data-visualization-best-practices/Analyse_Nombre_de_Clients_en_Tunisie.png",
           "alt": "Bar and Column Charts in Power BI"
         },
         {

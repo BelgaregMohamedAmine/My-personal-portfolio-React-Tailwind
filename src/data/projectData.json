@@ -1,0 +1,90 @@
+{
+    "projects": [
+      {
+        "id": 1,
+        "title": "Business Intelligence Dashboard",
+        "slug": "bi-dashboard-2024",
+        "category": "Business Intelligence",
+        "tags": ["Power BI", "DAX", "Data Modeling", "ETL"],
+        "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCEGVjOtSBUnGpiJuRr2YeNEYEtdtlijpeBA&s",
+        "images": [
+          {
+            "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCEGVjOtSBUnGpiJuRr2YeNEYEtdtlijpeBA&s",
+            "alt": "Sales Performance Dashboard"
+          },
+          {
+            "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCEGVjOtSBUnGpiJuRr2YeNEYEtdtlijpeBA&s",
+            "alt": "KPI Overview"
+          }
+        ],
+        "videoUrl": "https://youtube.com/embed/xxx",
+        "shortDescription": "Interactive dashboard for sales performance analysis with real-time KPI tracking",
+        "description": "Developed a comprehensive BI solution using Power BI for a retail client, featuring real-time sales tracking, inventory management, and predictive analytics.",
+        "challenges": [
+          "Complex data integration from multiple sources",
+          "Real-time performance optimization",
+          "Custom DAX measures for advanced analytics"
+        ],
+        "solutions": [
+          "Implemented incremental refresh patterns",
+          "Created optimized star schema",
+          "Developed custom visuals for specific KPIs"
+        ],
+        "technologies": [
+          {
+            "name": "Power BI",
+            "icon": "powerbi-icon.svg"
+          },
+          {
+            "name": "SQL Server",
+            "icon": "sql-server-icon.svg"
+          }
+        ],
+        "results": [
+          "50% reduction in reporting time",
+          "99.9% data accuracy",
+          "30% increase in user adoption"
+        ],
+        "liveUrl": "https://example.com/dashboard",
+        "githubUrl": "https://github.com/username/project",
+        "featured": true,
+        "date": "2024-01-15"
+      },
+      {
+        "id": 2,
+        "title": "ETL Data Pipeline",
+        "slug": "etl-pipeline-2024",
+        "category": "Data Engineering",
+        "tags": ["Python", "Apache Airflow", "AWS", "ETL"],
+        "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCEGVjOtSBUnGpiJuRr2YeNEYEtdtlijpeBA&s",
+        "images": [
+          {
+            "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCEGVjOtSBUnGpiJuRr2YeNEYEtdtlijpeBA&s",
+            "alt": "Pipeline Architecture"
+          }
+        ],
+        "shortDescription": "Automated ETL pipeline processing terabytes of data daily",
+        "description": "Built a scalable ETL pipeline using Apache Airflow and AWS services to process and transform large datasets for analytics.",
+        "technologies": [
+          {
+            "name": "Apache Airflow",
+            "icon": "airflow-icon.svg"
+          },
+          {
+            "name": "AWS",
+            "icon": "aws-icon.svg"
+          }
+        ],
+        "featured": false,
+        "date": "2024-02-01"
+      }
+    ],
+    "categories": [
+      "All",
+      "Business Intelligence",
+      "Data Engineering",
+      "Web Development",
+      "Data Science",
+      "Machine Learning"
+    ]
+  }

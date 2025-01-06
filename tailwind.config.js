@@ -16,8 +16,11 @@ export default {
       colors : {
         'primary': '#1A1D23',
         'secondary': '#F7F7F7',
-        'tertiary': '#19aad7',
+        'tertiary': '#FFC107',
         'quaternary': '#4CAF50',
+      },
+      fontSize: {
+        smm: '0.6rem',
       }
     },
    

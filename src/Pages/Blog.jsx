@@ -28,7 +28,7 @@ const DialogContent = ({ children, onClose }) => (
 const BlogPage = () => {
   // Add pagination state
   const [currentPage, setCurrentPage] = useState(1);
-  const ITEMS_PER_PAGE = 3;
+  const ITEMS_PER_PAGE = 6;
 
   // Existing states
   const [searchQuery, setSearchQuery] = useState('');
@@ -283,10 +283,9 @@ const BlogPage = () => {
                       day: 'numeric'
                     })}
                   </span>
-                  <button className="flex items-center gap-1 text-blue-600 dark:text-blue-400 hover:gap-2 transition-all">
+                  <Link to={`/blog/${blog.slug}`} className="flex items-center gap-1 text-blue-600 dark:text-blue-400 hover:gap-2 transition-all">
                     Read More <ChevronRight className="w-4 h-4" />
-                  </button>
-                  <Link to={`/blog/${blog.id}`}>{blog.title}</Link>
+                  </Link>
                 </div>
               </div>
             </article>
