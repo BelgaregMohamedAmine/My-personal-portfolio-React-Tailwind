@@ -11,7 +11,7 @@
       "category": "Business Intelligence",
       "author": {
         "name": "Belgareg Med Amine",
-        "avatar": "./src/assets/profile.png",
+        "avatar": "../assets/profile.png",
         "bio": "Med Amine excels in Business Intelligence and Web Development, delivering sophisticated data insights and cutting-edge digital solutions with a focus on excellence and innovation."
       },
       "date": "2024-09-03",
@@ -158,7 +158,7 @@
       "category": "Data Cleaning",
       "author": {
         "name": "Belgareg Med Amine",
-        "avatar": "/src/assets/profile.png",
+        "avatar": "../src/assets/profile.png",
         "bio": "Med Amine excels in Business Intelligence and Web Development, delivering sophisticated data insights and cutting-edge digital solutions with a focus on excellence and innovation."
       },
       "date": "2024-08-24",
@@ -177,7 +177,7 @@
       "id": 3,
       "firstimage": "/src/assets/blogs/enhance-data-analysis-vocabulary-expertise/blog-Full-scheme.webp",
       "excerpt": "Learn the fundamentals of data analysis and how to get started with basic tools and techniques. We'll cover data cleaning, visualization, and basic statistical analysis.",
-      "image": "/src/assets/blogs/enhance-data-analysis-vocabulary-expertise/enhance-data-analysis-vocabulary-expertise.webp",
+      "image": "./assets/blogs/enhance-data-analysis-vocabulary-expertise/enhance-data-analysis-vocabulary-expertise.webp",
       "slug": "enhance-data-analysis-vocabulary-expertise",
       "title": "Enhance Your Data Analysis Expertise: Essential Vocabulary for Success",
       "readTime": "5 min read",
