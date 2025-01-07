@@ -4,6 +4,7 @@ import { Mail } from 'lucide-react';
 import blogData from '../data/blogData.json';
 import { Link } from 'react-router-dom';
 
+
 // Custom Dialog Components remain the same
 const DialogOverlay = ({ children, onClose }) => (
   <div className="fixed inset-0 bg-black/50 z-50 flex items-center justify-center p-4">

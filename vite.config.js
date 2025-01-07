@@ -7,5 +7,7 @@ export default defineConfig({
   server: {
     host: true, // Cela permet d'accéder via l'IP
     open: true,// ouvre le navigateur par défaut automatiquement
-  }
+  },
+  base: "/", // Assurez-vous que la base est correctement configurée
 })
+
