@@ -11,7 +11,7 @@
       "category": "Business Intelligence",
       "author": {
         "name": "Belgareg Med Amine",
-        "avatar": "/src/assets/profile.png",
+        "avatar": "./src/assets/profile.png",
         "bio": "Med Amine excels in Business Intelligence and Web Development, delivering sophisticated data insights and cutting-edge digital solutions with a focus on excellence and innovation."
       },
       "date": "2024-09-03",
