@@ -27,7 +27,7 @@ const PortfolioPage = () => {
   return (
     <div className="min-h-screen bg-gray-100 dark:bg-gray-900">
       {/* Hero Section */}
-      <div className="bg-gradient-to-r from-blue-600 to-purple-600 dark:from-blue-900 dark:to-purple-900">
+      <div className="relative bg-gradient-to-r from-blue-600 to-purple-600 dark:from-blue-900 dark:to-purple-900">
         <div className="container mx-auto px-4 py-16">
           <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">
             My Portfolio
