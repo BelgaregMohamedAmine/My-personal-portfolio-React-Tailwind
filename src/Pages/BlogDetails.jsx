@@ -37,7 +37,7 @@ const BlogDetails = () => {
   return (
     <div className="min-h-screen bg-gray-100 dark:bg-gray-900">
       {/* Hero Section */}
-      <div className="relative h-[400px]">
+      <div className="relative h-[450px] ">
         <img
           src={blog.image}
           alt={blog.title}
@@ -66,7 +66,7 @@ const BlogDetails = () => {
               </div>
               <div className="relative group">
                 <div className="flex flex-wrap gap-2 max-w-full">
-                  {blog.tags.slice(0, 3).map((tag, index) => (
+                  {blog.tags.slice(0, 5).map((tag, index) => (
                     <span
                       key={index}
                       className="px-2 py-1 text-xs rounded-full bg-blue-600 bg-opacity-50 
@@ -75,28 +75,28 @@ const BlogDetails = () => {
                       <span className="truncate">#{tag}</span>
                     </span>
                   ))}
-                  {blog.tags.length > 3 && (
+                  {blog.tags.length > 5 && (
                     <button
                       className="px-2 py-1 text-xs rounded-full bg-gray-500 bg-opacity-50 
                             hover:bg-opacity-70 transition-colors"
                     >
-                      +{blog.tags.length - 3} more
+                      +{blog.tags.length - 5} more
                     </button>
                   )}
                 </div>
 
                 {/* Menu déroulant pour tous les tags */}
-                {blog.tags.length > 3 && (
+                {blog.tags.length > 5 && (
                   <div
                     className="hidden group-hover:block absolute top-full left-0 mt-2 
-                                bg-white text-gray-700 dark:bg-gray-800 shadow-lg rounded-lg p-2 z-10
+                                bg-white text-gray-700 dark:text-gray-200 dark:bg-gray-800 shadow-lg rounded-lg p-2 z-10
                                 max-h-48 overflow-y-auto"
                   >
                     <div className="flex flex-col gap-1">
                       {blog.tags.map((tag, index) => (
                         <span
                           key={index}
-                          className="px-2 py-1 text-xs hover:bg-gray-100 dark:hover:bg-gray-700 
+                          className="px-2 py-1 text-xs  
                                 rounded-full truncate"
                         >
                           #{tag}

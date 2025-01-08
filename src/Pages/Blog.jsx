@@ -1,9 +1,8 @@
-import React, { useState, useMemo } from 'react';
+import React, { useEffect, useRef, useState, useMemo } from 'react';
 import { Book, Clock, User, ChevronRight, Search, Filter, X, ChevronLeft, ChevronRight as ChevronRightIcon } from 'lucide-react';
 import { Mail } from 'lucide-react';
 import blogData from '../data/blogData.json';
 import { Link } from 'react-router-dom';
-
 
 // Custom Dialog Components remain the same
 const DialogOverlay = ({ children, onClose }) => (
@@ -125,22 +124,35 @@ const BlogPage = () => {
     searchQuery !== ''
   ].filter(Boolean).length;
 
+  const divRef = useRef(null);
+  const [negativeMargin, setNegativeMargin] = useState('-2rem'); // Default negative margin
+
+  useEffect(() => {
+    if (divRef.current) {
+      const divHeight = divRef.current.offsetHeight;
+      setNegativeMargin(`-${divHeight / 2}px`);
+    }
+  }, []);
+  
+
   return (
     <div className="bg-gray-200 dark:bg-gray-900 min-h-screen text-gray-900 dark:text-white">
       {/* Hero Section remains the same */}
       <div className="bg-[url('./assets/cover-blog.webp')] bg-center bg-cover bg-no-repeat">
-        <div className="container mx-auto px-4 py-16">
+        <div className="container mx-auto px-4 py-20">
           <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">
             Blog & Insights
           </h1>
-          <p className="text-xl text-blue-100 max-w-2xl">
+          <p className="text-xl text-white [text-shadow:_0_2px_4px_rgb(0_0_0_/_0.9)]">
             Discover articles about data analysis, business intelligence, and web development
           </p>
         </div>
-        
+        </div>
+
+      <div>  
       {/* Filters Section remains the same */}
-      <div className="container mx-auto px-4 py-8 -mt-14 ">
-        <div className="flex items-center gap-4 flex-wrap bg-orange-400 dark:bg-gray-100 p-4 rounded ">
+      <div className="relative container mx-auto px-4" ref={divRef} style={{ marginTop: negativeMargin }}>
+        <div className="flex items-center gap-4 flex-wrap bg-white dark:bg-gray-800 p-4 rounded-lg shadow-lg">
           <div className="relative flex-1 min-w-[200px]">
             <input
               type="text"
@@ -165,7 +177,7 @@ const BlogPage = () => {
             )}
           </button>
 
-          <div className="text-sm text-dark-900 dark:text-gray-900">
+          <div className="text-sm text-dark-900 dark:text-gray-200">
             {sortedBlogs.length} {sortedBlogs.length === 1 ? 'result' : 'results'}
           </div>
         </div>
