@@ -73,9 +73,9 @@ const ProjectDetails = () => {
   }
 
   return (
-    <div className="min-h-screen bg-gray-50 dark:bg-gray-900">
+    <div className="min-h-screen bg-gray-50 dark:bg-gray-900 ">
       {/* Simplified Header */}
-      <header className="relative bg-gradient-to-br from-gray-700 via-blue-500 to-gray-700 text-white py-16">
+      <header className="relative bg-gradient-to-br from-gray-700 via-blue-500 to-gray-700 text-white py-16" >
         <div className="absolute inset-0 bg-[url('https://media.licdn.com/dms/image/v2/C5112AQFmuJnMTOejkg/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1578194008893?e=2147483647&v=beta&t=1Devyy9xZpoUfIDHJERTJgK89LqDoJ7g8yeshDNHkM8')] opacity-30" />
         <div className="container mx-auto px-4 relative">
           <button
@@ -104,7 +104,7 @@ const ProjectDetails = () => {
       </header>
 
       {/* Project Quick Info Bar */}
-      <div className="bg-white dark:bg-gray-800 border-b dark:border-gray-700 sticky top-0 z-10 shadow-lg">
+      <div className="bg-white dark:bg-gray-800 border-b dark:border-gray-700 sticky top-16 z-10 shadow-lg">
         <div className="container mx-auto px-4">
           <div className="flex flex-wrap items-center justify-between py-4 gap-4">
             <div className="flex flex-col sm:flex-row sm:items-center gap-4 sm:gap-6">
@@ -270,7 +270,10 @@ const ProjectDetails = () => {
             </div>
           </div>
         </div>
-      
+        <RecommendedProjects 
+          currentProject={project}
+          allProjects={projectData.projects}
+        />
       </main>
 
       {/* Enhanced Lightbox */}
