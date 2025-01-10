@@ -5,44 +5,67 @@
       "title": "Number One: Online Meal Explorer",
       "slug": "number-one-online-meal-explorer",
       "category": "Web Development",
-      "tags": ["HTML","CSS","JavaScript","Photoshop","UX/UI","Bootstrap"],
-      "thumbnail": "/projects/numberone/numberone.webp",
+      "tags": [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "Photoshop",
+        "UX/UI",
+        "Bootstrap"
+      ],
+      "thumbnail": "https://res.cloudinary.com/medaminebelgareg/image/upload/v1736501100/portfolio/number-one-online-meal-explorer/numberone_po7aau.webp",
       "images": [
-       
-           { 
-            "url": "/projects/numberone/numberonep1.webp", 
-            "alt": "full screen project"
-           },
-           {  
-            "url": "/projects/numberone/numberonep2.webp", 
-            "alt": "NumberOne page 1"
-          },
-           {  
-            "url": "/projects/numberone/numberonep3.webp", 
-            "alt": "NumberOne page 2"
-          },
-           {  
-            "url": "/projects/numberone/numberonep4.webp", 
-            "alt": "NumberOne page 3"
-          },
-           {  
-            "url": "/projects/numberone/numberonep5.webp", 
-            "alt": "NumberOne page 4"
-          },
-           {   
-            "url": "/projects/numberone/numberonep6.webp", 
-            "alt": "NumberOne page 5"
-          }
+        {
+          "url": "https://res.cloudinary.com/medaminebelgareg/image/upload/v1736501100/portfolio/number-one-online-meal-explorer/numberonep1_pmvoqk.webp",
+          "alt": "full screen project"
+        },
+        {
+          "url": "https://res.cloudinary.com/medaminebelgareg/image/upload/v1736501101/portfolio/number-one-online-meal-explorer/numberonep2_e5g2wd.webp",
+          "alt": "NumberOne page 1"
+        },
+        {
+          "url": "https://res.cloudinary.com/medaminebelgareg/image/upload/v1736501102/portfolio/number-one-online-meal-explorer/numberonep3_sfncja.webp",
+          "alt": "NumberOne page 2"
+        },
+        {
+          "url": "https://res.cloudinary.com/medaminebelgareg/image/upload/v1736501103/portfolio/number-one-online-meal-explorer/numberonep4_indun8.webp",
+          "alt": "NumberOne page 3"
+        },
+        {
+          "url": "https://res.cloudinary.com/medaminebelgareg/image/upload/v1736501104/portfolio/number-one-online-meal-explorer/numberonep5_cighia.webp",
+          "alt": "NumberOne page 4"
+        },
+        {
+          "url": "https://res.cloudinary.com/medaminebelgareg/image/upload/v1736501105/portfolio/number-one-online-meal-explorer/numberonep6_ungtuu.webp",
+          "alt": "NumberOne page 5"
+        }
       ],
       "description": "The \"Number One\" project is a static web platform showcasing meal options with their images, names, and prices. It offers a simple and intuitive way for customers to browse available products online.",
       "technologies": [
-        { "name": "HTML", "icon": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBd2rMcfI56SZEenhvautbZl_xUsPSHaktNw&s" },
-        { "name": "CSS", "icon": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJDwBd9LoQzBAZigXXxzQ0kKn6TwyrE0Y7Rg&s" },
-        { "name": "JavaScript", "icon": "https://c0.klipartz.com/pngpicture/87/538/sticker-png-javascript-scalable-graphics-logo-encapsulated-postscript-javascript-icon-text-logo-number-sign-web-application-thumbnail.png" },
-        { "name": "Bootstrap", "icon": "https://cdn-icons-png.flaticon.com/512/5968/5968672.png"},
-        { "name": "Photoshop", "icon": "https://w7.pngwing.com/pngs/548/34/png-transparent-adobe-photoshop-macos-bigsur-icon-thumbnail.png" },
-        { "name": "UX/UI", "icon": "https://cdn-icons-png.flaticon.com/256/7858/7858975.png"}
-       
+        {
+          "name": "HTML",
+          "icon": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBd2rMcfI56SZEenhvautbZl_xUsPSHaktNw&s"
+        },
+        {
+          "name": "CSS",
+          "icon": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJDwBd9LoQzBAZigXXxzQ0kKn6TwyrE0Y7Rg&s"
+        },
+        {
+          "name": "JavaScript",
+          "icon": "https://c0.klipartz.com/pngpicture/87/538/sticker-png-javascript-scalable-graphics-logo-encapsulated-postscript-javascript-icon-text-logo-number-sign-web-application-thumbnail.png"
+        },
+        {
+          "name": "Bootstrap",
+          "icon": "https://cdn-icons-png.flaticon.com/512/5968/5968672.png"
+        },
+        {
+          "name": "Photoshop",
+          "icon": "https://res.cloudinary.com/medaminebelgareg/image/upload/v1736509073/portfolio/tech-logos/images_doljvv.png"
+        },
+        {
+          "name": "UX/UI",
+          "icon": "https://cdn-icons-png.flaticon.com/256/7858/7858975.png"
+        }
       ],
       "githubUrl": "https://github.com/BelgaregMohamedAmine/Number-One",
       "liveUrl": "https://number-one-cyan.vercel.app/",
@@ -72,34 +95,55 @@
         "MDBReact",
         "Stripe Payment"
       ],
-      "thumbnail": "/projects/shopit/shopit-twopng.webp",
+      "thumbnail": "https://res.cloudinary.com/medaminebelgareg/image/upload/v1736501105/portfolio/shopit-ecommerce/shopit-twopng_khoerb.webp",
       "images": [
         {
-          "url": "/projects/shopit/shopit-order.webp",
+          "url": "https://res.cloudinary.com/medaminebelgareg/image/upload/v1736501106/portfolio/shopit-ecommerce/shopit-order_swibxc.webp",
           "alt": "Shopit order page"
         },
         {
-          "url": "/projects/shopit/shopit-payment.webp",
+          "url": "https://res.cloudinary.com/medaminebelgareg/image/upload/v1736501107/portfolio/shopit-ecommerce/shopit-payment_gnhgpa.webp",
           "alt": "Shopit payment page"
         },
         {
-          "url": "/projects/shopit/shopit-registration.webp",
+          "url": "https://res.cloudinary.com/medaminebelgareg/image/upload/v1736501108/portfolio/shopit-ecommerce/shopit-registration_vop5ol.webp",
           "alt": "Shopit registration page"
         },
         {
-          "url": "/projects/shopit/shopit-twopng.webp",
+          "url": "https://res.cloudinary.com/medaminebelgareg/image/upload/v1736501108/portfolio/shopit-ecommerce/shopit-twopng_m4x7qx.webp",
           "alt": "Shopit two-page view"
         }
       ],
       "description": "Shopit is an e-commerce website offering a wide selection of products across various categories, featuring advanced search functionality and an intuitive admin interface. Customers can enjoy an optimal shopping experience through a user-friendly client area. Shopit uses the Stripe API for secure and convenient online payments, ensuring the privacy and security of customer payment information.",
       "technologies": [
-        { "name": "Full Stack JS (MERN)", "icon": "https://example.com/mern-icon.png" },
-        { "name": "Postman", "icon": "https://example.com/postman-icon.png" },
-        { "name": "Bootstrap", "icon": "https://example.com/bootstrap-icon.png" },
-        { "name": "CSS", "icon": "https://example.com/css-icon.png" },
-        { "name": "ECMAScript", "icon": "https://example.com/ecmascript-icon.png" },
-        { "name": "Cloudinary", "icon": "https://example.com/cloudinary-icon.png" },
-        { "name": "Stripe Payment", "icon": "https://example.com/stripe-icon.png" }
+        {
+          "name": "Full Stack JS (MERN)",
+          "icon": "https://example.com/mern-icon.png"
+        },
+        {
+          "name": "Postman",
+          "icon": "https://example.com/postman-icon.png"
+        },
+        {
+          "name": "Bootstrap",
+          "icon": "https://example.com/bootstrap-icon.png"
+        },
+        {
+          "name": "CSS",
+          "icon": "https://example.com/css-icon.png"
+        },
+        {
+          "name": "ECMAScript",
+          "icon": "https://example.com/ecmascript-icon.png"
+        },
+        {
+          "name": "Cloudinary",
+          "icon": "https://example.com/cloudinary-icon.png"
+        },
+        {
+          "name": "Stripe Payment",
+          "icon": "https://example.com/stripe-icon.png"
+        }
       ],
       "githubUrl": "https://github.com/BelgaregMohamedAmine/shopit-ecommerce",
       "liveUrl": "https://shopit-ecommerce.vercel.app/",
@@ -109,7 +153,7 @@
         "empty",
         "empty"
       ]
-    },    
+    },
     {
       "id": 3,
       "title": "Web Development & BI Project (Private Project)",
@@ -126,51 +170,75 @@
         "Dashboards",
         "Graphic Design"
       ],
-      "thumbnail": "/projects/mec_art_toyota/photo1.png",
+      "thumbnail": "https://res.cloudinary.com/medaminebelgareg/image/upload/v1736501114/portfolio/web-development-bi-project/photo1_ojg69m.png",
       "images": [
         {
-          "url": "/projects/mec_art_toyota/photo1.png",
+          "url": "https://res.cloudinary.com/medaminebelgareg/image/upload/v1736501118/portfolio/web-development-bi-project/photo1_w0zos3.png",
           "alt": "Mec Art Toyota e-commerce web page 1"
         },
         {
-          "url": "/projects/mec_art_toyota/photo2.png",
+          "url": "https://res.cloudinary.com/medaminebelgareg/image/upload/v1736501121/portfolio/web-development-bi-project/photo2_hpakld.png",
           "alt": "Mec Art Toyota e-commerce web page 2"
         },
         {
-          "url": "/projects/mec_art_toyota/photo3.png",
+          "url": "https://res.cloudinary.com/medaminebelgareg/image/upload/v1736501126/portfolio/web-development-bi-project/photo3_unyjcz.png",
           "alt": "Mec Art Toyota e-commerce web page 3"
         },
         {
-          "url": "/projects/mec_art_toyota/photo4.png",
+          "url": "https://res.cloudinary.com/medaminebelgareg/image/upload/v1736501131/portfolio/web-development-bi-project/photo4_apfuc7.png",
           "alt": "Mec Art Toyota e-commerce web page 4"
         },
         {
-          "url": "/projects/mec_art_toyota/photo5.png",
+          "url": "https://res.cloudinary.com/medaminebelgareg/image/upload/v1736501133/portfolio/web-development-bi-project/photo5_s3hous.png",
           "alt": "Mec Art Toyota e-commerce web page 5"
         },
         {
-          "url": "/projects/mec_art_toyota/photo6.png",
+          "url": "https://res.cloudinary.com/medaminebelgareg/image/upload/v1736501135/portfolio/web-development-bi-project/photo6_eqzm5n.png",
           "alt": "Mec Art Toyota e-commerce web page 6"
         },
         {
-          "url": "/projects/mec_art_toyota/photo7.png",
+          "url": "https://res.cloudinary.com/medaminebelgareg/image/upload/v1736501137/portfolio/web-development-bi-project/photo7_rtfulv.png",
           "alt": "Mec Art Toyota e-commerce web page 7"
         },
         {
-          "url": "/projects/mec_art_toyota/photo8.png",
+          "url": "https://res.cloudinary.com/medaminebelgareg/image/upload/v1736501140/portfolio/web-development-bi-project/photo8_jssabn.png",
           "alt": "Mec Art Toyota e-commerce web page 8"
         }
       ],
       "description": "Designed and developed a responsive e-commerce web application for Mec Art Toyota to facilitate interaction between customers and the company, as well as to improve organization within the business.",
       "technologies": [
-        { "name": "Full Stack JS (MERN)", "icon": "https://example.com/mern-icon.png" },
-        { "name": "Postman", "icon": "https://example.com/postman-icon.png" },
-        { "name": "Bootstrap", "icon": "https://example.com/bootstrap-icon.png" },
-        { "name": "CSS", "icon": "https://example.com/css-icon.png" },
-        { "name": "ECMAScript", "icon": "https://example.com/ecmascript-icon.png" },
-        { "name": "Cloudinary", "icon": "https://example.com/cloudinary-icon.png" },
-        { "name": "Dashboards", "icon": "https://example.com/dashboard-icon.png" },
-        { "name": "Graphic Design", "icon": "https://example.com/graphic-design-icon.png" }
+        {
+          "name": "Full Stack JS (MERN)",
+          "icon": "https://example.com/mern-icon.png"
+        },
+        {
+          "name": "Postman",
+          "icon": "https://example.com/postman-icon.png"
+        },
+        {
+          "name": "Bootstrap",
+          "icon": "https://example.com/bootstrap-icon.png"
+        },
+        {
+          "name": "CSS",
+          "icon": "https://example.com/css-icon.png"
+        },
+        {
+          "name": "ECMAScript",
+          "icon": "https://example.com/ecmascript-icon.png"
+        },
+        {
+          "name": "Cloudinary",
+          "icon": "https://example.com/cloudinary-icon.png"
+        },
+        {
+          "name": "Dashboards",
+          "icon": "https://example.com/dashboard-icon.png"
+        },
+        {
+          "name": "Graphic Design",
+          "icon": "https://example.com/graphic-design-icon.png"
+        }
       ],
       "githubUrl": "https://github.com/BelgaregMohamedAmine/mec-art-toyota-ecommerce",
       "liveUrl": "https://mec-art-toyota-ecommerce.vercel.app/",
@@ -193,43 +261,55 @@
         "Data Warehousing",
         "DAX"
       ],
-      "thumbnail": "/projects/toyota_ssis/cube_desgin.png",
+      "thumbnail": "https://res.cloudinary.com/medaminebelgareg/image/upload/v1736501141/portfolio/toyota-ssis-ssas/cube_desgin_lpkn2q.png",
       "images": [
         {
-          "url": "/projects/toyota_ssis/cube_desgin.png",
+          "url": "https://res.cloudinary.com/medaminebelgareg/image/upload/v1736501143/portfolio/toyota-ssis-ssas/cube_desgin_hxa0ue.png",
           "alt": "Toyota SSIS-SSAS Cube Design"
         },
         {
-          "url": "/projects/toyota_ssis/data_warhouse.png",
+          "url": "https://res.cloudinary.com/medaminebelgareg/image/upload/v1736501144/portfolio/toyota-ssis-ssas/data_warhouse_x2rzba.png",
           "alt": "Toyota SSIS-SSAS Data Warehouse"
         },
         {
-          "url": "/projects/toyota_ssis/hirarchie.png",
+          "url": "https://res.cloudinary.com/medaminebelgareg/image/upload/v1736501152/portfolio/toyota-ssis-ssas/hirarchie_pyy2o8.png",
           "alt": "Toyota SSIS-SSAS Hierarchy"
         },
         {
-          "url": "/projects/toyota_ssis/kpi.png",
+          "url": "https://res.cloudinary.com/medaminebelgareg/image/upload/v1736501155/portfolio/toyota-ssis-ssas/kpi_hhpib2.png",
           "alt": "Toyota SSIS-SSAS KPI"
         },
         {
-          "url": "/projects/toyota_ssis/mdx.png",
+          "url": "https://res.cloudinary.com/medaminebelgareg/image/upload/v1736501162/portfolio/toyota-ssis-ssas/mdx_upmzha.png",
           "alt": "Toyota SSIS-SSAS MDX Query"
         },
         {
-          "url": "/projects/toyota_ssis/mdx3.png",
+          "url": "https://res.cloudinary.com/medaminebelgareg/image/upload/v1736501171/portfolio/toyota-ssis-ssas/mdx3_jhyg3f.png",
           "alt": "Toyota SSIS-SSAS MDX Query Result"
         },
         {
-          "url": "/projects/toyota_ssis/test_in_excel.png",
+          "url": "https://res.cloudinary.com/medaminebelgareg/image/upload/v1736501173/portfolio/toyota-ssis-ssas/test_in_excel_f3vzdn.png",
           "alt": "Toyota SSIS-SSAS Test Data in Excel"
         }
       ],
       "description": "The project aims to implement SQL Server Analysis Services (SSAS) and SQL Server Integration Services (SSIS) technologies to create a complete Business Intelligence (BI) solution for Toyota Tunisia using test data. This project involved the design and development of a data warehouse, data analysis, and the application of DAX for insightful business reporting.",
       "technologies": [
-        { "name": "SQL Server Analysis Services (SSAS)", "icon": "https://example.com/ssas-icon.png" },
-        { "name": "SQL Server Integration Services (SSIS)", "icon": "https://example.com/ssis-icon.png" },
-        { "name": "Data Warehousing", "icon": "https://example.com/data-warehousing-icon.png" },
-        { "name": "DAX", "icon": "https://example.com/dax-icon.png" }
+        {
+          "name": "SQL Server Analysis Services (SSAS)",
+          "icon": "https://example.com/ssas-icon.png"
+        },
+        {
+          "name": "SQL Server Integration Services (SSIS)",
+          "icon": "https://res.cloudinary.com/medaminebelgareg/image/upload/v1736506912/portfolio/tech-logos/png-transparent-microsoft-sql-server-sql-server-management-studio-sql-server-integration-services-database-server-microsoft-angle-text-logo-thumbnail.png"
+        },
+        {
+          "name": "Data Warehousing",
+          "icon": "https://example.com/data-warehousing-icon.png"
+        },
+        {
+          "name": "DAX",
+          "icon": "https://res.cloudinary.com/medaminebelgareg/image/upload/v1736507415/portfolio/tech-logos/images_r7lmnp.jpg"
+        }
       ],
       "githubUrl": "https://github.com/BelgaregMohamedAmine/Analyse-data-Toyota-with-SSIS-SSAS",
       "liveUrl": "empty",
@@ -251,31 +331,43 @@
         "Data Visualization",
         "Business Intelligence"
       ],
-      "thumbnail": "/projects/adventureWorks/adventureWorks-portable-dashbord-1.PNG",
+      "thumbnail": "https://res.cloudinary.com/medaminebelgareg/image/upload/v1736501175/portfolio/power-bi-dax-adventure-works/adventureWorks-portable-dashbord-1_ppcstx.png",
       "images": [
         {
-          "url": "/projects/adventureWorks/adventureWorks-portable-dashbord-1.PNG",
+          "url": "https://res.cloudinary.com/medaminebelgareg/image/upload/v1736501177/portfolio/power-bi-dax-adventure-works/adventureWorks-portable-dashbord-1_untnmx.png",
           "alt": "Adventure Works Power BI Dashboard 1"
         },
         {
-          "url": "/projects/adventureWorks/adventureWorks-mobile-dashbord-1.png",
+          "url": "https://res.cloudinary.com/medaminebelgareg/image/upload/v1736501184/portfolio/power-bi-dax-adventure-works/adventureWorks-mobile-dashbord-1_bmfkar.png",
           "alt": "Adventure Works Mobile Dashboard 1"
         },
         {
-          "url": "/projects/adventureWorks/adventureWorks-portable-dashbord-2.PNG",
+          "url": "https://res.cloudinary.com/medaminebelgareg/image/upload/v1736501189/portfolio/power-bi-dax-adventure-works/adventureWorks-portable-dashbord-2_hjss5r.png",
           "alt": "Adventure Works Power BI Dashboard 2"
         },
         {
-          "url": "/projects/adventureWorks/adventureWorks-mobile-dashbord-2.png",
+          "url": "https://res.cloudinary.com/medaminebelgareg/image/upload/v1736501195/portfolio/power-bi-dax-adventure-works/adventureWorks-mobile-dashbord-2_pbho5e.png",
           "alt": "Adventure Works Mobile Dashboard 2"
         }
       ],
       "description": "In this project, I delved into the foundational aspects of Power BI and DAX, focusing on visualizing sales data from the Adventure Works database. The project highlights the process of connecting to data sources, establishing relationships, and using DAX to create meaningful visual reports. This educational endeavor provided a solid introduction to Business Intelligence, offering practical insights and hands-on experience for beginners.",
       "technologies": [
-        { "name": "Power BI", "icon": "https://example.com/powerbi-icon.png" },
-        { "name": "DAX", "icon": "https://example.com/dax-icon.png" },
-        { "name": "Data Visualization", "icon": "https://example.com/data-visualization-icon.png" },
-        { "name": "Business Intelligence", "icon": "https://example.com/bi-icon.png" }
+        {
+          "name": "Power BI",
+          "icon": "https://res.cloudinary.com/medaminebelgareg/image/upload/v1736506911/portfolio/tech-logos/png-clipart-power-bi-business-intelligence-microsoft-azure-microsoft-dynamics-cloud-computing-cloud-computing-angle-text-thumbnail.png"
+        },
+        {
+          "name": "DAX",
+          "icon": "https://res.cloudinary.com/medaminebelgareg/image/upload/v1736507415/portfolio/tech-logos/images_r7lmnp.jpg"
+        },
+        {
+          "name": "Data Visualization",
+          "icon": "https://example.com/data-visualization-icon.png"
+        },
+        {
+          "name": "Business Intelligence",
+          "icon": "https://example.com/bi-icon.png"
+        }
       ],
       "githubUrl": "https://github.com/BelgaregMohamedAmine/AdventureWorksDashboard",
       "liveUrl": "empty",
@@ -298,43 +390,55 @@
         "DAX",
         "Data Warehousing"
       ],
-      "thumbnail": "/projects/donations/p1.png",
+      "thumbnail": "https://res.cloudinary.com/medaminebelgareg/image/upload/v1736501199/portfolio/analyse-humanitaire-besoins-refugies/p1_z9fakm.png",
       "images": [
         {
-          "url": "/projects/donations/p1.png",
+          "url": "https://res.cloudinary.com/medaminebelgareg/image/upload/v1736501203/portfolio/analyse-humanitaire-besoins-refugies/p1_so8vpp.png",
           "alt": "Project overview image 1"
         },
         {
-          "url": "/projects/donations/p2.png",
+          "url": "https://res.cloudinary.com/medaminebelgareg/image/upload/v1736501213/portfolio/analyse-humanitaire-besoins-refugies/p2_cebut9.png",
           "alt": "Project overview image 2"
         },
         {
-          "url": "/projects/donations/p3.png",
+          "url": "https://res.cloudinary.com/medaminebelgareg/image/upload/v1736501221/portfolio/analyse-humanitaire-besoins-refugies/p3_sqrri7.png",
           "alt": "Data visualization screenshot 1"
         },
         {
-          "url": "/projects/donations/p4.png",
+          "url": "https://res.cloudinary.com/medaminebelgareg/image/upload/v1736501228/portfolio/analyse-humanitaire-besoins-refugies/p4_dac3zh.png",
           "alt": "Data visualization screenshot 2"
         },
         {
-          "url": "/projects/donations/p5.png",
+          "url": "https://res.cloudinary.com/medaminebelgareg/image/upload/v1736501236/portfolio/analyse-humanitaire-besoins-refugies/p5_bjxkpw.png",
           "alt": "Donation distribution analysis"
         },
         {
-          "url": "/projects/donations/tabledata.png",
+          "url": "https://res.cloudinary.com/medaminebelgareg/image/upload/v1736501237/portfolio/analyse-humanitaire-besoins-refugies/tabledata_xqe1ch.png",
           "alt": "Data table"
         },
         {
-          "url": "/projects/donations/datawarehouse.png",
+          "url": "https://res.cloudinary.com/medaminebelgareg/image/upload/v1736501239/portfolio/analyse-humanitaire-besoins-refugies/datawarehouse_fhtzyr.png",
           "alt": "Data warehouse structure"
         }
       ],
       "description": "A deep dive into the needs of refugees in Syria, Iraq, Libya, and Yemen. This meticulous analysis of donation distribution between 2016 and 2018, powered by authentic data, offers enlightening insights into global humanitarian issues.",
       "technologies": [
-        { "name": "Power BI", "icon": "https://example.com/powerbi-icon.png" },
-        { "name": "DAX", "icon": "https://example.com/dax-icon.png" },
-        { "name": "Data Warehousing", "icon": "https://example.com/data-warehousing-icon.png" },
-        { "name": "Data Analysis", "icon": "https://example.com/data-analysis-icon.png" }
+        {
+          "name": "Power BI",
+          "icon": "https://res.cloudinary.com/medaminebelgareg/image/upload/v1736506911/portfolio/tech-logos/png-clipart-power-bi-business-intelligence-microsoft-azure-microsoft-dynamics-cloud-computing-cloud-computing-angle-text-thumbnail.png"
+        },
+        {
+          "name": "DAX",
+          "icon": "https://res.cloudinary.com/medaminebelgareg/image/upload/v1736507415/portfolio/tech-logos/images_r7lmnp.jpg"
+        },
+        {
+          "name": "Data Warehousing",
+          "icon": "https://example.com/data-warehousing-icon.png"
+        },
+        {
+          "name": "Data Analysis",
+          "icon": "https://example.com/data-analysis-icon.png"
+        }
       ],
       "githubUrl": "https://github.com/BelgaregMohamedAmine/Donations",
       "liveUrl": "empty",
@@ -358,88 +462,115 @@
         "Data Warehousing",
         "SQL Server"
       ],
-      "thumbnail": "/projects/el_mazraa/model_bim.png",
+      "thumbnail": "https://res.cloudinary.com/medaminebelgareg/image/upload/v1736501240/portfolio/business-intelligence-solutions-el-mazraa-sales-production-data-analysis/model_bim_hfd7lb.png",
       "images": [
         {
-          "url": "/el_mazraa/jiratable.png",
+          "url": "https://res.cloudinary.com/medaminebelgareg/image/upload/v1736501242/portfolio/business-intelligence-solutions-el-mazraa-sales-production-data-analysis/jiratable_ubskbj.png",
           "alt": "Sales and production data table"
         },
         {
-          "url": "/el_mazraa/model_bim.png",
+          "url": "https://res.cloudinary.com/medaminebelgareg/image/upload/v1736501244/portfolio/business-intelligence-solutions-el-mazraa-sales-production-data-analysis/model_bim_mi5yfe.png",
           "alt": "BI model for data analysis"
         },
         {
-          "url": "/el_mazraa/Acueil.png",
+          "url": "https://res.cloudinary.com/medaminebelgareg/image/upload/v1736501257/portfolio/business-intelligence-solutions-el-mazraa-sales-production-data-analysis/Acueil_eszsu7.png",
           "alt": "Dashboard overview"
         },
         {
-          "url": "/el_mazraa/all_mesures.png",
+          "url": "https://res.cloudinary.com/medaminebelgareg/image/upload/v1736501285/portfolio/business-intelligence-solutions-el-mazraa-sales-production-data-analysis/all_mesures_fn8r5k.png",
           "alt": "All measures data visualization"
         },
         {
-          "url": "/el_mazraa/analyse_comparée_objectif.png",
+          "url": "https://res.cloudinary.com/medaminebelgareg/image/upload/v1736501296/portfolio/business-intelligence-solutions-el-mazraa-sales-production-data-analysis/analyse_compar%C3%A9e_objectif_cemmlv.png",
           "alt": "Comparative analysis of sales objectives"
         },
         {
-          "url": "/el_mazraa/Analyse_Nombre_de_Clients_en_Tunisie.png",
+          "url": "https://res.cloudinary.com/medaminebelgareg/image/upload/v1736501305/portfolio/business-intelligence-solutions-el-mazraa-sales-production-data-analysis/Analyse_Nombre_de_Clients_en_Tunisie_gncpv2.png",
           "alt": "Analysis of customer numbers in Tunisia"
         },
         {
-          "url": "/el_mazraa/Analyse_RFM_Client.png",
+          "url": "https://res.cloudinary.com/medaminebelgareg/image/upload/v1736501315/portfolio/business-intelligence-solutions-el-mazraa-sales-production-data-analysis/Analyse_RFM_Client_vyo6tv.png",
           "alt": "RFM analysis for customer segmentation"
         },
         {
-          "url": "/el_mazraa/chargmentclient.png",
+          "url": "https://res.cloudinary.com/medaminebelgareg/image/upload/v1736501317/portfolio/business-intelligence-solutions-el-mazraa-sales-production-data-analysis/chargmentclient_uskeh8.png",
           "alt": "Customer loading interface"
         },
         {
-          "url": "/el_mazraa/Classement_des_N_Meilleurs_Clients.png",
+          "url": "https://res.cloudinary.com/medaminebelgareg/image/upload/v1736501326/portfolio/business-intelligence-solutions-el-mazraa-sales-production-data-analysis/Classement_des_N_Meilleurs_Clients_ivyudv.png",
           "alt": "Ranking of top clients"
         },
         {
-          "url": "/el_mazraa/control flow.png",
+          "url": "https://res.cloudinary.com/medaminebelgareg/image/upload/v1736501329/portfolio/business-intelligence-solutions-el-mazraa-sales-production-data-analysis/control_flow_yav1pm.png",
           "alt": "Control flow diagram for BI process"
         },
         {
-          "url": "/el_mazraa/data flow2.png",
+          "url": "https://res.cloudinary.com/medaminebelgareg/image/upload/v1736501331/portfolio/business-intelligence-solutions-el-mazraa-sales-production-data-analysis/data_flow2_xhqoay.png",
           "alt": "Data flow diagram for data processing"
         },
         {
-          "url": "/el_mazraa/controle flow.png",
+          "url": "https://res.cloudinary.com/medaminebelgareg/image/upload/v1736501333/portfolio/business-intelligence-solutions-el-mazraa-sales-production-data-analysis/controle_flow_rjxdlg.png",
           "alt": "Control flow with SSIS"
         },
         {
-          "url": "/el_mazraa/data flow.png",
+          "url": "https://res.cloudinary.com/medaminebelgareg/image/upload/v1736501336/portfolio/business-intelligence-solutions-el-mazraa-sales-production-data-analysis/data_flow_kyf9ha.png",
           "alt": "Data flow for ETL process"
         },
         {
-          "url": "/el_mazraa/KPI_example.png",
+          "url": "https://res.cloudinary.com/medaminebelgareg/image/upload/v1736501338/portfolio/business-intelligence-solutions-el-mazraa-sales-production-data-analysis/KPI_example_lqjp1k.png",
           "alt": "KPI metrics for sales and production"
         },
         {
-          "url": "/el_mazraa/Performance_Poduction_2023.png",
+          "url": "https://res.cloudinary.com/medaminebelgareg/image/upload/v1736501348/portfolio/business-intelligence-solutions-el-mazraa-sales-production-data-analysis/Performance_Poduction_2023_rrafal.png",
           "alt": "Production performance analysis for 2023"
         },
         {
-          "url": "/el_mazraa/Performance_vente_tn_2023.png",
+          "url": "https://res.cloudinary.com/medaminebelgareg/image/upload/v1736501359/portfolio/business-intelligence-solutions-el-mazraa-sales-production-data-analysis/Performance_vente_tn_2023_fg4rlh.png",
           "alt": "Sales performance analysis for Tunisia in 2023"
         },
         {
-          "url": "/el_mazraa/taux_de_croissance.png",
+          "url": "https://res.cloudinary.com/medaminebelgareg/image/upload/v1736501370/portfolio/business-intelligence-solutions-el-mazraa-sales-production-data-analysis/taux_de_croissance_cokbzv.png",
           "alt": "Growth rate of sales and production"
         },
         {
-          "url": "/el_mazraa/Vue_Ensemble_Ventes.png",
+          "url": "https://res.cloudinary.com/medaminebelgareg/image/upload/v1736501383/portfolio/business-intelligence-solutions-el-mazraa-sales-production-data-analysis/Vue_Ensemble_Ventes_c9zagt.png",
           "alt": "Overview of sales data"
         }
       ],
       "description": "Implementation of BI Solutions for Sales and Production Data Analysis and Visualization for El Mazraa Company from 2017 to 2023.",
       "technologies": [
-        { "name": "Power BI", "icon": "https://example.com/powerbi-icon.png" },
-        { "name": "DAX", "icon": "https://example.com/dax-icon.png" },
-        { "name": "SQL Server", "icon": "https://example.com/sql-server-icon.png" },
-        { "name": "Data Warehousing", "icon": "https://example.com/data-warehousing-icon.png" },
-        { "name": "Data Analysis", "icon": "https://example.com/data-analysis-icon.png" }
+        {
+          "name": "Power BI",
+          "icon": "https://res.cloudinary.com/medaminebelgareg/image/upload/v1736506911/portfolio/tech-logos/png-clipart-power-bi-business-intelligence-microsoft-azure-microsoft-dynamics-cloud-computing-cloud-computing-angle-text-thumbnail.png"
+        },
+        {
+          "name": "DAX",
+          "icon": "https://res.cloudinary.com/medaminebelgareg/image/upload/v1736507415/portfolio/tech-logos/images_r7lmnp.jpg"
+        },
+        {
+          "name": "SQL Server - SSIS - SSAS",
+          "icon": "https://res.cloudinary.com/medaminebelgareg/image/upload/v1736506912/portfolio/tech-logos/png-transparent-microsoft-sql-server-sql-server-management-studio-sql-server-integration-services-database-server-microsoft-angle-text-logo-thumbnail.png"
+        },
+        {
+          "name": "SSMS",
+          "icon": "https://res.cloudinary.com/medaminebelgareg/image/upload/v1736508444/portfolio/tech-logos/9812d89705787310adf08f0edf758921b8d551e8329c8d8c5eeabf4d06b08378_200_nzayfo.webp"
+        },
+        {
+          "name": "Microsoft Excel",
+          "icon": "https://res.cloudinary.com/medaminebelgareg/image/upload/v1736507516/portfolio/tech-logos/microsoft-excel-icon-logo-symbol-free-png_qpewvi.webp"
+        },
+        {
+          "name": "Power Query",
+          "icon": "https://res.cloudinary.com/medaminebelgareg/image/upload/v1736507613/portfolio/tech-logos/Icon-power-query-2048x2048_pkgxxc.png"
+        },
+        {
+          "name": "Power BI Service",
+          "icon": "https://res.cloudinary.com/medaminebelgareg/image/upload/v1736507880/portfolio/tech-logos/Fabric_256_acp3ve.svg"
+        },
+        {
+          "name": "Photoshop",
+          "icon": "https://res.cloudinary.com/medaminebelgareg/image/upload/v1736509073/portfolio/tech-logos/images_doljvv.png"
+        }
       ],
       "githubUrl": "https://github.com/BelgaregMohamedAmine/Analyse-data-Toyota-with-SSIS-SSAS",
       "liveUrl": "empty",
@@ -461,30 +592,43 @@
         "Dashboard",
         "Data Visualization"
       ],
-      "thumbnail": "/projects/BlinkIT/Dashbord 1.png",
+      "thumbnail": "https://res.cloudinary.com/medaminebelgareg/image/upload/v1736501386/portfolio/blinkit-grocery-sales-analysis-dashboard/Dashbord_1_hgv7b1.png",
       "images": [
         {
-          "url": "/projects/BlinkIT/Dashbord 1.png",
+          "url": "https://res.cloudinary.com/medaminebelgareg/image/upload/v1736501388/portfolio/blinkit-grocery-sales-analysis-dashboard/Dashbord_1_uo96gb.png",
           "alt": "Dashboard overview 1"
         },
         {
-          "url": "/projects/BlinkIT/Dashbord 2.png",
+          "url": "https://res.cloudinary.com/medaminebelgareg/image/upload/v1736501389/portfolio/blinkit-grocery-sales-analysis-dashboard/Dashbord_2_dy8ypf.png",
           "alt": "Dashboard overview 2"
         },
         {
-          "url": "/projects/BlinkIT/Dashbord 3.png",
+          "url": "https://res.cloudinary.com/medaminebelgareg/image/upload/v1736501391/portfolio/blinkit-grocery-sales-analysis-dashboard/Dashbord_3_sanuiw.png",
           "alt": "Dashboard overview 3"
         },
         {
-          "url": "/projects/BlinkIT/Dashbord 4.png",
+          "url": "https://res.cloudinary.com/medaminebelgareg/image/upload/v1736501393/portfolio/blinkit-grocery-sales-analysis-dashboard/Dashbord_4_ldonnr.png",
           "alt": "Dashboard overview 4"
         }
       ],
       "description": "This educational project focuses on the creation of a sales analysis dashboard using a fictional dataset, 'BlinkIT Grocery Data.xlsx.' Although the data is not real, the project demonstrates key data analysis and visualization techniques. The dashboard integrates various visual elements, including Donut, Bar, Stacked Column, Line, and Funnel charts, to provide a comprehensive overview of sales performance, customer ratings, and product categories. Designed for educational purposes, this dashboard illustrates how to effectively analyze and visualize data to uncover insights and trends. The project serves as a practical example of using Power BI for data analysis, showcasing the ability to create interactive and informative reports based on structured data.",
       "technologies": [
-        { "name": "Power BI", "icon": "https://example.com/powerbi-icon.png" },
-        { "name": "Data Analysis", "icon": "https://example.com/data-analysis-icon.png" },
-        { "name": "Data Visualization", "icon": "https://example.com/data-visualization-icon.png" }
+        {
+          "name": "Power BI",
+          "icon": "https://res.cloudinary.com/medaminebelgareg/image/upload/v1736506911/portfolio/tech-logos/png-clipart-power-bi-business-intelligence-microsoft-azure-microsoft-dynamics-cloud-computing-cloud-computing-angle-text-thumbnail.png"
+        },
+        {
+          "name": "DAX",
+          "icon": "https://res.cloudinary.com/medaminebelgareg/image/upload/v1736507415/portfolio/tech-logos/images_r7lmnp.jpg"
+        },
+        {
+          "name": "Power Query",
+          "icon": "https://res.cloudinary.com/medaminebelgareg/image/upload/v1736507613/portfolio/tech-logos/Icon-power-query-2048x2048_pkgxxc.png"
+        },
+        {
+          "name": "powerbi service",
+          "icon": "https://res.cloudinary.com/medaminebelgareg/image/upload/v1736507880/portfolio/tech-logos/Fabric_256_acp3ve.svg"
+        }
       ],
       "githubUrl": "https://github.com/BelgaregMohamedAmine/BlinkIT-Grocery-Sales-Analysis-Dashboard",
       "liveUrl": "empty",
@@ -496,7 +640,7 @@
       ]
     },
     {
-      "id":9,
+      "id": 9,
       "title": "Amazon Sales Analysis Power BI Project",
       "slug": "amazon-sales-analysis-power-bi-project",
       "category": "Business Intelligence",
@@ -508,32 +652,43 @@
         "Dashboard",
         "Visualization"
       ],
-      "thumbnail": "/projects/amazon_sales/overview_dashboard.png",
+      "thumbnail": "https://res.cloudinary.com/medaminebelgareg/image/upload/v1736501396/portfolio/amazon-sales-analysis-power-bi-project/overview_dashboard_fbdkuw.png",
       "images": [
         {
-          "url": "/projects/amazon_sales/overview_dashboard.png",
+          "url": "https://res.cloudinary.com/medaminebelgareg/image/upload/v1736501401/portfolio/amazon-sales-analysis-power-bi-project/overview_dashboard_be4lzt.png",
           "alt": "Overview Dashboard"
         },
         {
-          "url": "/projects/amazon_sales/product_view_dashboard.png",
+          "url": "https://res.cloudinary.com/medaminebelgareg/image/upload/v1736501406/portfolio/amazon-sales-analysis-power-bi-project/product_view_dashboard_iyqxes.png",
           "alt": "Products Dashboard"
         },
         {
-          "url": "/projects/amazon_sales/products_dashboard_tooltips.png",
+          "url": "https://res.cloudinary.com/medaminebelgareg/image/upload/v1736501412/portfolio/amazon-sales-analysis-power-bi-project/products_dashboard_tooltips_l7g2hu.png",
           "alt": "Product View Dashboard"
         },
         {
-          "url": "/projects/amazon_sales/products_dashboard.png",
+          "url": "https://res.cloudinary.com/medaminebelgareg/image/upload/v1736501421/portfolio/amazon-sales-analysis-power-bi-project/products_dashboard_oi3r3t.png",
           "alt": "Products Dashboard"
         }
-          
       ],
       "description": "I analyzed Amazon sales data using Power BI, creating interactive dashboards that provide actionable insights. The project focuses on global sales performance, product analysis, and trends based on categories, regions, and time. It also showcases my skills in data transformation, DAX measures, and advanced visualizations.",
       "technologies": [
-        { "name": "Power BI", "icon": "https://example.com/powerbi-icon.png" },
-        { "name": "DAX", "icon": "https://example.com/dax-icon.png" },
-        { "name": "Data Transformation", "icon": "https://example.com/data-transformation-icon.png" },
-        { "name": "powerbi service", "icon": "https://example.com/dashboard-icon.png"}
+        {
+          "name": "Power BI",
+          "icon": "https://res.cloudinary.com/medaminebelgareg/image/upload/v1736506911/portfolio/tech-logos/png-clipart-power-bi-business-intelligence-microsoft-azure-microsoft-dynamics-cloud-computing-cloud-computing-angle-text-thumbnail.png"
+        },
+        {
+          "name": "DAX",
+          "icon": "https://res.cloudinary.com/medaminebelgareg/image/upload/v1736507415/portfolio/tech-logos/images_r7lmnp.jpg"
+        },
+        {
+          "name": "Power Query",
+          "icon": "https://res.cloudinary.com/medaminebelgareg/image/upload/v1736507613/portfolio/tech-logos/Icon-power-query-2048x2048_pkgxxc.png"
+        },
+        {
+          "name": "powerbi service",
+          "icon": "https://res.cloudinary.com/medaminebelgareg/image/upload/v1736507880/portfolio/tech-logos/Fabric_256_acp3ve.svg"
+        }
       ],
       "githubUrl": "https://github.com/BelgaregMohamedAmine/Amazon-Sales-Analysis",
       "liveUrl": "https://app.powerbi.com/view?r=eyJrIjoiYTAxY2EzNWQtYWNlNC00NWUyLTkwZTYtOGFkZDk3NTdkZTRkIiwidCI6ImRiZDY2NjRkLTRlYjktNDZlYi05OWQ4LTVjNDNiYTE1M2M2MSIsImMiOjl9&pageName=8cea4b6e7ec8a305885b",
@@ -546,7 +701,7 @@
       ]
     },
     {
-      "id":11,
+      "id": 10,
       "title": "Call Centre Trends - PwC Switzerland's Job Simulation",
       "slug": "pwc-customer-agent-behavior-analysis",
       "category": "Data Analysis",
@@ -558,23 +713,35 @@
         "Power Query",
         "Data Visualization"
       ],
-      "thumbnail": "/public/projects/Call-Centre-Trends/dashbord2.png",
+      "thumbnail": "https://res.cloudinary.com/medaminebelgareg/image/upload/v1736501423/portfolio/pwc-customer-agent-behavior-analysis/dashbord2_umya8f.png",
       "images": [
         {
-          "url": "/public/projects/Call-Centre-Trends/dashbord2.png",
+          "url": "https://res.cloudinary.com/medaminebelgareg/image/upload/v1736501425/portfolio/pwc-customer-agent-behavior-analysis/dashbord2_crqalx.png",
           "alt": "Calls Analysis Dashboard"
         },
         {
-          "url": "/public/projects/Call-Centre-Trends/dashbord1.png",
+          "url": "https://res.cloudinary.com/medaminebelgareg/image/upload/v1736501427/portfolio/pwc-customer-agent-behavior-analysis/dashbord1_gd9la6.png",
           "alt": "Calls Analysis Dashboard"
         }
       ],
       "description": "During my PwC Virtual Case Experience at The Forge, I successfully completed Task 2, where I analyzed customer and agent behavior to uncover trends impacting overall customer satisfaction. By visualizing data on calls answered/abandoned and examining peak call times, I provided actionable insights that drive operational efficiency.",
       "technologies": [
-        { "name": "Power BI", "icon": "https://example.com/powerbi-icon.png" },
-        { "name": "Microsoft Excel", "icon": "https://example.com/excel-icon.png" },
-        { "name": "Power Query", "icon": "https://example.com/power-query-icon.png" },
-        { "name": "Power BI Service", "icon": "https://example.com/powerbi-service-icon.png" }
+        {
+          "name": "Power BI",
+          "icon": "https://res.cloudinary.com/medaminebelgareg/image/upload/v1736506911/portfolio/tech-logos/png-clipart-power-bi-business-intelligence-microsoft-azure-microsoft-dynamics-cloud-computing-cloud-computing-angle-text-thumbnail.png"
+        },
+        {
+          "name": "Microsoft Excel",
+          "icon": "https://res.cloudinary.com/medaminebelgareg/image/upload/v1736507516/portfolio/tech-logos/microsoft-excel-icon-logo-symbol-free-png_qpewvi.webp"
+        },
+        {
+          "name": "Power Query",
+          "icon": "https://res.cloudinary.com/medaminebelgareg/image/upload/v1736507613/portfolio/tech-logos/Icon-power-query-2048x2048_pkgxxc.png"
+        },
+        {
+          "name": "Power BI Service",
+          "icon": "https://res.cloudinary.com/medaminebelgareg/image/upload/v1736507880/portfolio/tech-logos/Fabric_256_acp3ve.svg"
+        }
       ],
       "githubUrl": "https://github.com/BelgaregMohamedAmine/PwC-Job-Simulation-Projects",
       "liveUrl": "https://app.powerbi.com/view?r=eyJrIjoiNzFkZmExYWQtODhhYy00ZWNkLWI5NGMtYWZlODhhNDNkMWVmIiwidCI6ImRiZDY2NjRkLTRlYjktNDZlYi05OWQ4LTVjNDNiYTE1M2M2MSIsImMiOjl9",
@@ -586,8 +753,8 @@
         "Provided actionable insights on agent performance"
       ]
     },
-    { 
-      "id":12,
+    {
+      "id": 11,
       "title": "Customer Retention Analysis - PwC Switzerland's Job Simulation",
       "slug": "customer-retention-analysis",
       "category": "Data Analysis",
@@ -599,39 +766,51 @@
         "Excel",
         "Power Query"
       ],
-      "thumbnail": "/public/projects/Customer-Retention/accueil.webp",
+      "thumbnail": "https://res.cloudinary.com/medaminebelgareg/image/upload/v1736501429/portfolio/customer-retention-analysis/accueil_e5uqxg.webp",
       "images": [
         {
-          "url":"/public/projects/Customer-Retention/accueil.webp",
+          "url": "https://res.cloudinary.com/medaminebelgareg/image/upload/v1736501430/portfolio/customer-retention-analysis/accueil_ug1nv4.webp",
           "alt": "Accuel Dashboard"
         },
         {
-          "url": "/public/projects/Customer-Retention/Customer-Retention-Overview.webp",
+          "url": "https://res.cloudinary.com/medaminebelgareg/image/upload/v1736501432/portfolio/customer-retention-analysis/Customer-Retention-Overview_immm9a.webp",
           "alt": "Customer Retention Overview"
         },
         {
-          "url": "/public/projects/Customer-Retention/Customer-Demographics.webp",
+          "url": "https://res.cloudinary.com/medaminebelgareg/image/upload/v1736501433/portfolio/customer-retention-analysis/Customer-Demographics_m0vvvf.webp",
           "alt": "Customer Demographics Analysis"
         },
         {
-          "url": "/public/projects/Customer-Retention/Services-Overview.webp",
+          "url": "https://res.cloudinary.com/medaminebelgareg/image/upload/v1736501435/portfolio/customer-retention-analysis/Services-Overview_gcj3xf.webp",
           "alt": "Services Overview"
         },
         {
-          "url": "/public/projects/Customer-Retention/Customer-Account-Information.webp",
+          "url": "https://res.cloudinary.com/medaminebelgareg/image/upload/v1736501436/portfolio/customer-retention-analysis/Customer-Account-Information_dmms8t.webp",
           "alt": "Customer Account Information"
         },
         {
-          "url": "/public/projects/Customer-Retention/Customer-Risk-Analysis.webp",
+          "url": "https://res.cloudinary.com/medaminebelgareg/image/upload/v1736501438/portfolio/customer-retention-analysis/Customer-Risk-Analysis_r3da3t.webp",
           "alt": "Customer Risk Analysis"
         }
       ],
       "description": "This project involved extracting customer demographics and insights for the retention manager, reflecting key performance indicators (KPIs). The analysis provided actionable insights to improve customer retention strategies and enhance overall satisfaction.",
       "technologies": [
-        { "name": "Power BI", "icon": "https://example.com/powerbi-icon.png" },
-        { "name": "Microsoft Excel", "icon": "https://example.com/excel-icon.png" },
-        { "name": "Power Query", "icon": "https://example.com/power-query-icon.png" },
-        { "name": "Power BI Service", "icon": "https://example.com/powerbi-service-icon.png" }
+        {
+          "name": "Power BI",
+          "icon": "https://res.cloudinary.com/medaminebelgareg/image/upload/v1736506911/portfolio/tech-logos/png-clipart-power-bi-business-intelligence-microsoft-azure-microsoft-dynamics-cloud-computing-cloud-computing-angle-text-thumbnail.png"
+        },
+        {
+          "name": "Microsoft Excel",
+          "icon": "https://res.cloudinary.com/medaminebelgareg/image/upload/v1736507516/portfolio/tech-logos/microsoft-excel-icon-logo-symbol-free-png_qpewvi.webp"
+        },
+        {
+          "name": "Power Query",
+          "icon": "https://res.cloudinary.com/medaminebelgareg/image/upload/v1736507613/portfolio/tech-logos/Icon-power-query-2048x2048_pkgxxc.png"
+        },
+        {
+          "name": "Power BI Service",
+          "icon": "https://res.cloudinary.com/medaminebelgareg/image/upload/v1736507880/portfolio/tech-logos/Fabric_256_acp3ve.svg"
+        }
       ],
       "githubUrl": "https://github.com/BelgaregMohamedAmine/PwC-Job-Simulation-Projects",
       "liveUrl": "https://app.powerbi.com/view?r=eyJrIjoiMTljODUyYmMtNTQxNC00N2ExLWJmNzUtNTE4Y2U1Yzg0NWU3IiwidCI6ImRiZDY2NjRkLTRlYjktNDZlYi05OWQ4LTVjNDNiYTE1M2M2MSIsImMiOjl9",
@@ -644,7 +823,7 @@
       ]
     },
     {
-      "id":13,
+      "id": 12,
       "title": "Diversity & Inclusion Analysis - PwC Switzerland's Job Simulation",
       "slug": "diversity-inclusion-analysis",
       "category": "Data Analysis",
@@ -657,27 +836,39 @@
         "Excel",
         "Power Query"
       ],
-      "thumbnail": "/public/projects/Diversity-Inclusion/DiversityInclusion1.webp",
+      "thumbnail": "https://res.cloudinary.com/medaminebelgareg/image/upload/v1736501439/portfolio/diversity-inclusion-analysis/DiversityInclusion1_slylna.webp",
       "images": [
         {
-          "url": "/public/projects/Diversity-Inclusion/DiversityInclusion1.webp",
+          "url": "https://res.cloudinary.com/medaminebelgareg/image/upload/v1736501440/portfolio/diversity-inclusion-analysis/DiversityInclusion1_f7rliy.webp",
           "alt": "Diversity and Inclusion Overview"
         },
         {
-          "url": "/public/projects/Diversity-Inclusion/DiversityInclusion2.webp",
+          "url": "https://res.cloudinary.com/medaminebelgareg/image/upload/v1736501441/portfolio/diversity-inclusion-analysis/DiversityInclusion2_g3anrn.webp",
           "alt": "Diversity and Inclusion Analysis"
         },
         {
-          "url": "/public/projects/Diversity-Inclusion/Diversity-Inclusion-Insights-Report.webp",
+          "url": "https://res.cloudinary.com/medaminebelgareg/image/upload/v1736501443/portfolio/diversity-inclusion-analysis/Diversity-Inclusion-Insights-Report_x0wx3u.webp",
           "alt": "Diversity and Inclusion Insights Report"
         }
       ],
       "description": "This project focused on analyzing the value of gender balance in the executive suite. By performing calculations and generating actionable insights, the project highlights the importance of diversity and inclusion in organizational success.",
       "technologies": [
-        { "name": "Power BI", "icon": "https://example.com/powerbi-icon.png" },
-        { "name": "Microsoft Excel", "icon": "https://example.com/excel-icon.png" },
-        { "name": "Power Query", "icon": "https://example.com/power-query-icon.png" },
-        { "name": "Power BI Service", "icon": "https://example.com/powerbi-service-icon.png" }
+        {
+          "name": "Power BI",
+          "icon": "https://res.cloudinary.com/medaminebelgareg/image/upload/v1736506911/portfolio/tech-logos/png-clipart-power-bi-business-intelligence-microsoft-azure-microsoft-dynamics-cloud-computing-cloud-computing-angle-text-thumbnail.png"
+        },
+        {
+          "name": "Microsoft Excel",
+          "icon": "https://res.cloudinary.com/medaminebelgareg/image/upload/v1736507516/portfolio/tech-logos/microsoft-excel-icon-logo-symbol-free-png_qpewvi.webp"
+        },
+        {
+          "name": "Power Query",
+          "icon": "https://res.cloudinary.com/medaminebelgareg/image/upload/v1736507613/portfolio/tech-logos/Icon-power-query-2048x2048_pkgxxc.png"
+        },
+        {
+          "name": "Power BI Service",
+          "icon": "https://res.cloudinary.com/medaminebelgareg/image/upload/v1736507880/portfolio/tech-logos/Fabric_256_acp3ve.svg"
+        }
       ],
       "githubUrl": "empty",
       "liveUrl": "empty",
@@ -689,7 +880,6 @@
         "Enhanced understanding of gender representation in the executive suite."
       ]
     }
-    
   ],
   "categories": [
     "All",
