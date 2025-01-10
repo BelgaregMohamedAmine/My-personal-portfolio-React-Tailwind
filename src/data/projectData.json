@@ -69,6 +69,8 @@
       ],
       "githubUrl": "https://github.com/BelgaregMohamedAmine/Number-One",
       "liveUrl": "https://number-one-cyan.vercel.app/",
+      "startDate": "2023-05-15",
+      "endDate": "2023-05-20",
       "date": "2023-05-20",
       "client": "Number One Fast Food",
       "results": [
@@ -147,6 +149,8 @@
       ],
       "githubUrl": "https://github.com/BelgaregMohamedAmine/shopit-ecommerce",
       "liveUrl": "https://shopit-ecommerce.vercel.app/",
+       "startDate": "2023-05-15",
+      "endDate": "2023-05-20",
       "date": "2022-04-01",
       "client": "MERN Stack Training Project at Udemy",
       "results": [
@@ -242,6 +246,8 @@
       ],
       "githubUrl": "https://github.com/BelgaregMohamedAmine/mec-art-toyota-ecommerce",
       "liveUrl": "https://mec-art-toyota-ecommerce.vercel.app/",
+       "startDate": "2023-05-15",
+      "endDate": "2023-05-20",
       "date": "2022-07-01",
       "client": "Mec Art Toyota Teboulba",
       "results": [
@@ -313,6 +319,8 @@
       ],
       "githubUrl": "https://github.com/BelgaregMohamedAmine/Analyse-data-Toyota-with-SSIS-SSAS",
       "liveUrl": "empty",
+       "startDate": "2023-05-15",
+      "endDate": "2023-05-20",
       "date": "2023-03-01",
       "client": "N/A",
       "results": [
@@ -371,6 +379,8 @@
       ],
       "githubUrl": "https://github.com/BelgaregMohamedAmine/AdventureWorksDashboard",
       "liveUrl": "empty",
+       "startDate": "2023-05-15",
+      "endDate": "2023-05-20",
       "date": "2023-12-01",
       "client": "N/A",
       "results": [
@@ -442,6 +452,8 @@
       ],
       "githubUrl": "https://github.com/BelgaregMohamedAmine/Donations",
       "liveUrl": "empty",
+       "startDate": "2023-05-15",
+      "endDate": "2023-05-20",
       "date": "2024-01-01",
       "client": "Humanitarian Educational Project",
       "results": [
@@ -574,6 +586,8 @@
       ],
       "githubUrl": "https://github.com/BelgaregMohamedAmine/Analyse-data-Toyota-with-SSIS-SSAS",
       "liveUrl": "empty",
+       "startDate": "2023-05-15",
+      "endDate": "2023-05-20",
       "date": "2024-07-01",
       "client": "El Mazraa Company",
       "results": [
@@ -632,6 +646,8 @@
       ],
       "githubUrl": "https://github.com/BelgaregMohamedAmine/BlinkIT-Grocery-Sales-Analysis-Dashboard",
       "liveUrl": "empty",
+       "startDate": "2023-05-15",
+      "endDate": "2023-05-20",
       "date": "2024-09-09",
       "client": "N/A",
       "results": [
@@ -692,6 +708,8 @@
       ],
       "githubUrl": "https://github.com/BelgaregMohamedAmine/Amazon-Sales-Analysis",
       "liveUrl": "https://app.powerbi.com/view?r=eyJrIjoiYTAxY2EzNWQtYWNlNC00NWUyLTkwZTYtOGFkZDk3NTdkZTRkIiwidCI6ImRiZDY2NjRkLTRlYjktNDZlYi05OWQ4LTVjNDNiYTE1M2M2MSIsImMiOjl9&pageName=8cea4b6e7ec8a305885b",
+       "startDate": "2023-05-15",
+      "endDate": "2023-05-20",
       "date": "2024-12-09",
       "client": "N/A",
       "results": [
@@ -745,8 +763,10 @@
       ],
       "githubUrl": "https://github.com/BelgaregMohamedAmine/PwC-Job-Simulation-Projects",
       "liveUrl": "https://app.powerbi.com/view?r=eyJrIjoiNzFkZmExYWQtODhhYy00ZWNkLWI5NGMtYWZlODhhNDNkMWVmIiwidCI6ImRiZDY2NjRkLTRlYjktNDZlYi05OWQ4LTVjNDNiYTE1M2M2MSIsImMiOjl9",
+       "startDate": "2023-05-15",
+      "endDate": "2023-05-20",
       "date": "2024-09-30",
-      "client": "PwC Virtual Case Experience",
+      "client": "Virtual Case Experience | PwC Switzerland",
       "results": [
         "Identified peak call times to improve resource allocation",
         "Analyzed abandoned call trends for improved customer satisfaction",
@@ -814,8 +834,10 @@
       ],
       "githubUrl": "https://github.com/BelgaregMohamedAmine/PwC-Job-Simulation-Projects",
       "liveUrl": "https://app.powerbi.com/view?r=eyJrIjoiMTljODUyYmMtNTQxNC00N2ExLWJmNzUtNTE4Y2U1Yzg0NWU3IiwidCI6ImRiZDY2NjRkLTRlYjktNDZlYi05OWQ4LTVjNDNiYTE1M2M2MSIsImMiOjl9",
+       "startDate": "2023-05-15",
+      "endDate": "2023-05-20",
       "date": "2024-10-05",
-      "client": "Retention Manager",
+      "client": "Virtual Case Experience | PwC Switzerland",
       "results": [
         "Extracted key customer demographics to identify retention trends.",
         "Provided actionable insights to improve customer loyalty.",
@@ -872,8 +894,10 @@
       ],
       "githubUrl": "empty",
       "liveUrl": "empty",
+       "startDate": "2023-05-15",
+      "endDate": "2023-05-20",
       "date": "2024-10-15",
-      "client": "Executive Team",
+      "client": "Virtual Case Experience | PwC Switzerland",
       "results": [
         "Calculated and highlighted the impact of gender balance on organizational performance.",
         "Generated actionable insights to improve diversity and inclusion strategies.",
