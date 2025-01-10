@@ -2,9 +2,9 @@
   "blogs": [
     {
       "id": 1,
-      "firstimage": "/blogs/understanding-etl-elt-etlt-data-integration-approaches/blog-Full-scheme.webp",
+      "firstimage": "https://res.cloudinary.com/medaminebelgareg/image/upload/v1736504682/portfolioMe/blogs/understanding-etl-elt-etlt-data-integration-approaches/understanding-etl-elt-etlt-data-integration-approaches_ykyvul.webp",
       "excerpt": "Learn the fundamentals of data analysis and how to get started with basic tools and techniques. We'll cover data cleaning, visualization, and basic statistical analysis.",
-      "image": "/blogs/understanding-etl-elt-etlt-data-integration-approaches/understanding-etl-elt-etlt-data-integration-approaches.webp",
+      "image": "https://res.cloudinary.com/medaminebelgareg/image/upload/v1736504682/portfolioMe/blogs/understanding-etl-elt-etlt-data-integration-approaches/understanding-etl-elt-etlt-data-integration-approaches_ykyvul.webp",
       "slug": "understanding-etl-elt-etlt-data-integration-approaches",
       "title": "Understanding ETL, ELT, and ETLT: Navigating Data Integration Approaches",
       "readTime": "5 min read",

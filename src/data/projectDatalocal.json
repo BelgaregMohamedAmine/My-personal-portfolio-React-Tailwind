@@ -1,0 +1,700 @@
+{
+  "projects": [
+    {
+      "id": 1,
+      "title": "Number One: Online Meal Explorer",
+      "slug": "number-one-online-meal-explorer",
+      "category": "Web Development",
+      "tags": ["HTML","CSS","JavaScript","Photoshop","UX/UI","Bootstrap"],
+      "thumbnail": "/projects/numberone/numberone.webp",
+      "images": [
+       
+           { 
+            "url": "/projects/numberone/numberonep1.webp", 
+            "alt": "full screen project"
+           },
+           {  
+            "url": "/projects/numberone/numberonep2.webp", 
+            "alt": "NumberOne page 1"
+          },
+           {  
+            "url": "/projects/numberone/numberonep3.webp", 
+            "alt": "NumberOne page 2"
+          },
+           {  
+            "url": "/projects/numberone/numberonep4.webp", 
+            "alt": "NumberOne page 3"
+          },
+           {  
+            "url": "/projects/numberone/numberonep5.webp", 
+            "alt": "NumberOne page 4"
+          },
+           {   
+            "url": "/projects/numberone/numberonep6.webp", 
+            "alt": "NumberOne page 5"
+          }
+      ],
+      "description": "The \"Number One\" project is a static web platform showcasing meal options with their images, names, and prices. It offers a simple and intuitive way for customers to browse available products online.",
+      "technologies": [
+        { "name": "HTML", "icon": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBd2rMcfI56SZEenhvautbZl_xUsPSHaktNw&s" },
+        { "name": "CSS", "icon": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJDwBd9LoQzBAZigXXxzQ0kKn6TwyrE0Y7Rg&s" },
+        { "name": "JavaScript", "icon": "https://c0.klipartz.com/pngpicture/87/538/sticker-png-javascript-scalable-graphics-logo-encapsulated-postscript-javascript-icon-text-logo-number-sign-web-application-thumbnail.png" },
+        { "name": "Bootstrap", "icon": "https://cdn-icons-png.flaticon.com/512/5968/5968672.png"},
+        { "name": "Photoshop", "icon": "https://w7.pngwing.com/pngs/548/34/png-transparent-adobe-photoshop-macos-bigsur-icon-thumbnail.png" },
+        { "name": "UX/UI", "icon": "https://cdn-icons-png.flaticon.com/256/7858/7858975.png"}
+       
+      ],
+      "githubUrl": "https://github.com/BelgaregMohamedAmine/Number-One",
+      "liveUrl": "https://number-one-cyan.vercel.app/",
+      "date": "2023-05-20",
+      "client": "Number One Fast Food",
+      "results": [
+        "--------------------------------",
+        "--------------------------------"
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Shopit: E-commerce Website",
+      "slug": "shopit-ecommerce",
+      "category": "Web Development",
+      "tags": [
+        "Full Stack JS (MERN)",
+        "Postman",
+        "Bootstrap",
+        "CSS",
+        "ECMAScript",
+        "Cloudinary",
+        "Software Development Life Cycle (SDLC)",
+        "Dashboards",
+        "Graphic Design",
+        "Mailtrap",
+        "MDBReact",
+        "Stripe Payment"
+      ],
+      "thumbnail": "/projects/shopit/shopit-twopng.webp",
+      "images": [
+        {
+          "url": "/projects/shopit/shopit-order.webp",
+          "alt": "Shopit order page"
+        },
+        {
+          "url": "/projects/shopit/shopit-payment.webp",
+          "alt": "Shopit payment page"
+        },
+        {
+          "url": "/projects/shopit/shopit-registration.webp",
+          "alt": "Shopit registration page"
+        },
+        {
+          "url": "/projects/shopit/shopit-twopng.webp",
+          "alt": "Shopit two-page view"
+        }
+      ],
+      "description": "Shopit is an e-commerce website offering a wide selection of products across various categories, featuring advanced search functionality and an intuitive admin interface. Customers can enjoy an optimal shopping experience through a user-friendly client area. Shopit uses the Stripe API for secure and convenient online payments, ensuring the privacy and security of customer payment information.",
+      "technologies": [
+        { "name": "Full Stack JS (MERN)", "icon": "https://example.com/mern-icon.png" },
+        { "name": "Postman", "icon": "https://example.com/postman-icon.png" },
+        { "name": "Bootstrap", "icon": "https://example.com/bootstrap-icon.png" },
+        { "name": "CSS", "icon": "https://example.com/css-icon.png" },
+        { "name": "ECMAScript", "icon": "https://example.com/ecmascript-icon.png" },
+        { "name": "Cloudinary", "icon": "https://example.com/cloudinary-icon.png" },
+        { "name": "Stripe Payment", "icon": "https://example.com/stripe-icon.png" }
+      ],
+      "githubUrl": "https://github.com/BelgaregMohamedAmine/shopit-ecommerce",
+      "liveUrl": "https://shopit-ecommerce.vercel.app/",
+      "date": "2022-04-01",
+      "client": "MERN Stack Training Project at Udemy",
+      "results": [
+        "empty",
+        "empty"
+      ]
+    },    
+    {
+      "id": 3,
+      "title": "Web Development & BI Project (Private Project)",
+      "slug": "web-development-bi-project",
+      "category": "Web Development",
+      "tags": [
+        "Full Stack JS (MERN)",
+        "Postman",
+        "Bootstrap",
+        "CSS",
+        "ECMAScript",
+        "Cloudinary",
+        "Software Development Life Cycle (SDLC)",
+        "Dashboards",
+        "Graphic Design"
+      ],
+      "thumbnail": "/projects/mec_art_toyota/photo1.png",
+      "images": [
+        {
+          "url": "/projects/mec_art_toyota/photo1.png",
+          "alt": "Mec Art Toyota e-commerce web page 1"
+        },
+        {
+          "url": "/projects/mec_art_toyota/photo2.png",
+          "alt": "Mec Art Toyota e-commerce web page 2"
+        },
+        {
+          "url": "/projects/mec_art_toyota/photo3.png",
+          "alt": "Mec Art Toyota e-commerce web page 3"
+        },
+        {
+          "url": "/projects/mec_art_toyota/photo4.png",
+          "alt": "Mec Art Toyota e-commerce web page 4"
+        },
+        {
+          "url": "/projects/mec_art_toyota/photo5.png",
+          "alt": "Mec Art Toyota e-commerce web page 5"
+        },
+        {
+          "url": "/projects/mec_art_toyota/photo6.png",
+          "alt": "Mec Art Toyota e-commerce web page 6"
+        },
+        {
+          "url": "/projects/mec_art_toyota/photo7.png",
+          "alt": "Mec Art Toyota e-commerce web page 7"
+        },
+        {
+          "url": "/projects/mec_art_toyota/photo8.png",
+          "alt": "Mec Art Toyota e-commerce web page 8"
+        }
+      ],
+      "description": "Designed and developed a responsive e-commerce web application for Mec Art Toyota to facilitate interaction between customers and the company, as well as to improve organization within the business.",
+      "technologies": [
+        { "name": "Full Stack JS (MERN)", "icon": "https://example.com/mern-icon.png" },
+        { "name": "Postman", "icon": "https://example.com/postman-icon.png" },
+        { "name": "Bootstrap", "icon": "https://example.com/bootstrap-icon.png" },
+        { "name": "CSS", "icon": "https://example.com/css-icon.png" },
+        { "name": "ECMAScript", "icon": "https://example.com/ecmascript-icon.png" },
+        { "name": "Cloudinary", "icon": "https://example.com/cloudinary-icon.png" },
+        { "name": "Dashboards", "icon": "https://example.com/dashboard-icon.png" },
+        { "name": "Graphic Design", "icon": "https://example.com/graphic-design-icon.png" }
+      ],
+      "githubUrl": "https://github.com/BelgaregMohamedAmine/mec-art-toyota-ecommerce",
+      "liveUrl": "https://mec-art-toyota-ecommerce.vercel.app/",
+      "date": "2022-07-01",
+      "client": "Mec Art Toyota Teboulba",
+      "results": [
+        "empty",
+        "empty"
+      ]
+    },
+    {
+      "id": 4,
+      "title": "Toyota (SSIS-SSAS)",
+      "slug": "toyota-ssis-ssas",
+      "category": "Business Intelligence",
+      "tags": [
+        "SQL Server Analysis Services (SSAS)",
+        "SQL Server Integration Services (SSIS)",
+        "Data Analysis",
+        "Data Warehousing",
+        "DAX"
+      ],
+      "thumbnail": "/projects/toyota_ssis/cube_desgin.png",
+      "images": [
+        {
+          "url": "/projects/toyota_ssis/cube_desgin.png",
+          "alt": "Toyota SSIS-SSAS Cube Design"
+        },
+        {
+          "url": "/projects/toyota_ssis/data_warhouse.png",
+          "alt": "Toyota SSIS-SSAS Data Warehouse"
+        },
+        {
+          "url": "/projects/toyota_ssis/hirarchie.png",
+          "alt": "Toyota SSIS-SSAS Hierarchy"
+        },
+        {
+          "url": "/projects/toyota_ssis/kpi.png",
+          "alt": "Toyota SSIS-SSAS KPI"
+        },
+        {
+          "url": "/projects/toyota_ssis/mdx.png",
+          "alt": "Toyota SSIS-SSAS MDX Query"
+        },
+        {
+          "url": "/projects/toyota_ssis/mdx3.png",
+          "alt": "Toyota SSIS-SSAS MDX Query Result"
+        },
+        {
+          "url": "/projects/toyota_ssis/test_in_excel.png",
+          "alt": "Toyota SSIS-SSAS Test Data in Excel"
+        }
+      ],
+      "description": "The project aims to implement SQL Server Analysis Services (SSAS) and SQL Server Integration Services (SSIS) technologies to create a complete Business Intelligence (BI) solution for Toyota Tunisia using test data. This project involved the design and development of a data warehouse, data analysis, and the application of DAX for insightful business reporting.",
+      "technologies": [
+        { "name": "SQL Server Analysis Services (SSAS)", "icon": "https://example.com/ssas-icon.png" },
+        { "name": "SQL Server Integration Services (SSIS)", "icon": "https://example.com/ssis-icon.png" },
+        { "name": "Data Warehousing", "icon": "https://example.com/data-warehousing-icon.png" },
+        { "name": "DAX", "icon": "https://example.com/dax-icon.png" }
+      ],
+      "githubUrl": "https://github.com/BelgaregMohamedAmine/Analyse-data-Toyota-with-SSIS-SSAS",
+      "liveUrl": "empty",
+      "date": "2023-03-01",
+      "client": "N/A",
+      "results": [
+        "empty",
+        "empty"
+      ]
+    },
+    {
+      "id": 5,
+      "title": "Exploring Power BI and DAX with Adventure Works Sales Data",
+      "slug": "power-bi-dax-adventure-works",
+      "category": "Business Intelligence",
+      "tags": [
+        "Power BI",
+        "DAX",
+        "Data Visualization",
+        "Business Intelligence"
+      ],
+      "thumbnail": "/projects/adventureWorks/adventureWorks-portable-dashbord-1.PNG",
+      "images": [
+        {
+          "url": "/projects/adventureWorks/adventureWorks-portable-dashbord-1.PNG",
+          "alt": "Adventure Works Power BI Dashboard 1"
+        },
+        {
+          "url": "/projects/adventureWorks/adventureWorks-mobile-dashbord-1.png",
+          "alt": "Adventure Works Mobile Dashboard 1"
+        },
+        {
+          "url": "/projects/adventureWorks/adventureWorks-portable-dashbord-2.PNG",
+          "alt": "Adventure Works Power BI Dashboard 2"
+        },
+        {
+          "url": "/projects/adventureWorks/adventureWorks-mobile-dashbord-2.png",
+          "alt": "Adventure Works Mobile Dashboard 2"
+        }
+      ],
+      "description": "In this project, I delved into the foundational aspects of Power BI and DAX, focusing on visualizing sales data from the Adventure Works database. The project highlights the process of connecting to data sources, establishing relationships, and using DAX to create meaningful visual reports. This educational endeavor provided a solid introduction to Business Intelligence, offering practical insights and hands-on experience for beginners.",
+      "technologies": [
+        { "name": "Power BI", "icon": "https://example.com/powerbi-icon.png" },
+        { "name": "DAX", "icon": "https://example.com/dax-icon.png" },
+        { "name": "Data Visualization", "icon": "https://example.com/data-visualization-icon.png" },
+        { "name": "Business Intelligence", "icon": "https://example.com/bi-icon.png" }
+      ],
+      "githubUrl": "https://github.com/BelgaregMohamedAmine/AdventureWorksDashboard",
+      "liveUrl": "empty",
+      "date": "2023-12-01",
+      "client": "N/A",
+      "results": [
+        "empty",
+        "empty"
+      ]
+    },
+    {
+      "id": 6,
+      "title": "Analyse Humanitaire des Besoins des Réfugiés",
+      "slug": "analyse-humanitaire-besoins-refugies",
+      "category": "Business Intelligence",
+      "tags": [
+        "Data Analysis",
+        "Humanitarian Aid",
+        "Power BI",
+        "DAX",
+        "Data Warehousing"
+      ],
+      "thumbnail": "/projects/donations/p1.png",
+      "images": [
+        {
+          "url": "/projects/donations/p1.png",
+          "alt": "Project overview image 1"
+        },
+        {
+          "url": "/projects/donations/p2.png",
+          "alt": "Project overview image 2"
+        },
+        {
+          "url": "/projects/donations/p3.png",
+          "alt": "Data visualization screenshot 1"
+        },
+        {
+          "url": "/projects/donations/p4.png",
+          "alt": "Data visualization screenshot 2"
+        },
+        {
+          "url": "/projects/donations/p5.png",
+          "alt": "Donation distribution analysis"
+        },
+        {
+          "url": "/projects/donations/tabledata.png",
+          "alt": "Data table"
+        },
+        {
+          "url": "/projects/donations/datawarehouse.png",
+          "alt": "Data warehouse structure"
+        }
+      ],
+      "description": "A deep dive into the needs of refugees in Syria, Iraq, Libya, and Yemen. This meticulous analysis of donation distribution between 2016 and 2018, powered by authentic data, offers enlightening insights into global humanitarian issues.",
+      "technologies": [
+        { "name": "Power BI", "icon": "https://example.com/powerbi-icon.png" },
+        { "name": "DAX", "icon": "https://example.com/dax-icon.png" },
+        { "name": "Data Warehousing", "icon": "https://example.com/data-warehousing-icon.png" },
+        { "name": "Data Analysis", "icon": "https://example.com/data-analysis-icon.png" }
+      ],
+      "githubUrl": "https://github.com/BelgaregMohamedAmine/Donations",
+      "liveUrl": "empty",
+      "date": "2024-01-01",
+      "client": "Humanitarian Educational Project",
+      "results": [
+        "empty",
+        "empty"
+      ]
+    },
+    {
+      "id": 7,
+      "title": "El Mazraa: Sales & Production Data Analysis (2017-2023)",
+      "slug": "business-intelligence-solutions-el-mazraa-sales-production-data-analysis",
+      "category": "Business Intelligence",
+      "tags": [
+        "Data Analysis",
+        "Data Visualization",
+        "Power BI",
+        "DAX",
+        "Data Warehousing",
+        "SQL Server"
+      ],
+      "thumbnail": "/projects/el_mazraa/model_bim.png",
+      "images": [
+        {
+          "url": "/el_mazraa/jiratable.png",
+          "alt": "Sales and production data table"
+        },
+        {
+          "url": "/el_mazraa/model_bim.png",
+          "alt": "BI model for data analysis"
+        },
+        {
+          "url": "/el_mazraa/Acueil.png",
+          "alt": "Dashboard overview"
+        },
+        {
+          "url": "/el_mazraa/all_mesures.png",
+          "alt": "All measures data visualization"
+        },
+        {
+          "url": "/el_mazraa/analyse_comparée_objectif.png",
+          "alt": "Comparative analysis of sales objectives"
+        },
+        {
+          "url": "/el_mazraa/Analyse_Nombre_de_Clients_en_Tunisie.png",
+          "alt": "Analysis of customer numbers in Tunisia"
+        },
+        {
+          "url": "/el_mazraa/Analyse_RFM_Client.png",
+          "alt": "RFM analysis for customer segmentation"
+        },
+        {
+          "url": "/el_mazraa/chargmentclient.png",
+          "alt": "Customer loading interface"
+        },
+        {
+          "url": "/el_mazraa/Classement_des_N_Meilleurs_Clients.png",
+          "alt": "Ranking of top clients"
+        },
+        {
+          "url": "/el_mazraa/control flow.png",
+          "alt": "Control flow diagram for BI process"
+        },
+        {
+          "url": "/el_mazraa/data flow2.png",
+          "alt": "Data flow diagram for data processing"
+        },
+        {
+          "url": "/el_mazraa/controle flow.png",
+          "alt": "Control flow with SSIS"
+        },
+        {
+          "url": "/el_mazraa/data flow.png",
+          "alt": "Data flow for ETL process"
+        },
+        {
+          "url": "/el_mazraa/KPI_example.png",
+          "alt": "KPI metrics for sales and production"
+        },
+        {
+          "url": "/el_mazraa/Performance_Poduction_2023.png",
+          "alt": "Production performance analysis for 2023"
+        },
+        {
+          "url": "/el_mazraa/Performance_vente_tn_2023.png",
+          "alt": "Sales performance analysis for Tunisia in 2023"
+        },
+        {
+          "url": "/el_mazraa/taux_de_croissance.png",
+          "alt": "Growth rate of sales and production"
+        },
+        {
+          "url": "/el_mazraa/Vue_Ensemble_Ventes.png",
+          "alt": "Overview of sales data"
+        }
+      ],
+      "description": "Implementation of BI Solutions for Sales and Production Data Analysis and Visualization for El Mazraa Company from 2017 to 2023.",
+      "technologies": [
+        { "name": "Power BI", "icon": "https://example.com/powerbi-icon.png" },
+        { "name": "DAX", "icon": "https://example.com/dax-icon.png" },
+        { "name": "SQL Server", "icon": "https://example.com/sql-server-icon.png" },
+        { "name": "Data Warehousing", "icon": "https://example.com/data-warehousing-icon.png" },
+        { "name": "Data Analysis", "icon": "https://example.com/data-analysis-icon.png" }
+      ],
+      "githubUrl": "https://github.com/BelgaregMohamedAmine/Analyse-data-Toyota-with-SSIS-SSAS",
+      "liveUrl": "empty",
+      "date": "2024-07-01",
+      "client": "El Mazraa Company",
+      "results": [
+        "empty",
+        "empty"
+      ]
+    },
+    {
+      "id": 8,
+      "title": "BlinkIT Grocery Sales Analysis Dashboard",
+      "slug": "blinkit-grocery-sales-analysis-dashboard",
+      "category": "Business Intelligence",
+      "tags": [
+        "Data Analysis",
+        "Power BI",
+        "Dashboard",
+        "Data Visualization"
+      ],
+      "thumbnail": "/projects/BlinkIT/Dashbord 1.png",
+      "images": [
+        {
+          "url": "/projects/BlinkIT/Dashbord 1.png",
+          "alt": "Dashboard overview 1"
+        },
+        {
+          "url": "/projects/BlinkIT/Dashbord 2.png",
+          "alt": "Dashboard overview 2"
+        },
+        {
+          "url": "/projects/BlinkIT/Dashbord 3.png",
+          "alt": "Dashboard overview 3"
+        },
+        {
+          "url": "/projects/BlinkIT/Dashbord 4.png",
+          "alt": "Dashboard overview 4"
+        }
+      ],
+      "description": "This educational project focuses on the creation of a sales analysis dashboard using a fictional dataset, 'BlinkIT Grocery Data.xlsx.' Although the data is not real, the project demonstrates key data analysis and visualization techniques. The dashboard integrates various visual elements, including Donut, Bar, Stacked Column, Line, and Funnel charts, to provide a comprehensive overview of sales performance, customer ratings, and product categories. Designed for educational purposes, this dashboard illustrates how to effectively analyze and visualize data to uncover insights and trends. The project serves as a practical example of using Power BI for data analysis, showcasing the ability to create interactive and informative reports based on structured data.",
+      "technologies": [
+        { "name": "Power BI", "icon": "https://example.com/powerbi-icon.png" },
+        { "name": "Data Analysis", "icon": "https://example.com/data-analysis-icon.png" },
+        { "name": "Data Visualization", "icon": "https://example.com/data-visualization-icon.png" }
+      ],
+      "githubUrl": "https://github.com/BelgaregMohamedAmine/BlinkIT-Grocery-Sales-Analysis-Dashboard",
+      "liveUrl": "empty",
+      "date": "2024-09-09",
+      "client": "N/A",
+      "results": [
+        "empty",
+        "empty"
+      ]
+    },
+    {
+      "id":9,
+      "title": "Amazon Sales Analysis Power BI Project",
+      "slug": "amazon-sales-analysis-power-bi-project",
+      "category": "Business Intelligence",
+      "tags": [
+        "Data Analysis",
+        "Power BI",
+        "DAX",
+        "Data Transformation",
+        "Dashboard",
+        "Visualization"
+      ],
+      "thumbnail": "/projects/amazon_sales/overview_dashboard.png",
+      "images": [
+        {
+          "url": "/projects/amazon_sales/overview_dashboard.png",
+          "alt": "Overview Dashboard"
+        },
+        {
+          "url": "/projects/amazon_sales/product_view_dashboard.png",
+          "alt": "Products Dashboard"
+        },
+        {
+          "url": "/projects/amazon_sales/products_dashboard_tooltips.png",
+          "alt": "Product View Dashboard"
+        },
+        {
+          "url": "/projects/amazon_sales/products_dashboard.png",
+          "alt": "Products Dashboard"
+        }
+          
+      ],
+      "description": "I analyzed Amazon sales data using Power BI, creating interactive dashboards that provide actionable insights. The project focuses on global sales performance, product analysis, and trends based on categories, regions, and time. It also showcases my skills in data transformation, DAX measures, and advanced visualizations.",
+      "technologies": [
+        { "name": "Power BI", "icon": "https://example.com/powerbi-icon.png" },
+        { "name": "DAX", "icon": "https://example.com/dax-icon.png" },
+        { "name": "Data Transformation", "icon": "https://example.com/data-transformation-icon.png" },
+        { "name": "powerbi service", "icon": "https://example.com/dashboard-icon.png"}
+      ],
+      "githubUrl": "https://github.com/BelgaregMohamedAmine/Amazon-Sales-Analysis",
+      "liveUrl": "https://app.powerbi.com/view?r=eyJrIjoiYTAxY2EzNWQtYWNlNC00NWUyLTkwZTYtOGFkZDk3NTdkZTRkIiwidCI6ImRiZDY2NjRkLTRlYjktNDZlYi05OWQ4LTVjNDNiYTE1M2M2MSIsImMiOjl9&pageName=8cea4b6e7ec8a305885b",
+      "date": "2024-12-09",
+      "client": "N/A",
+      "results": [
+        "Enhanced skills in data modeling and DAX",
+        "Created interactive and professional dashboards",
+        "Cleaned and structured data for better insights"
+      ]
+    },
+    {
+      "id":11,
+      "title": "Call Centre Trends - PwC Switzerland's Job Simulation",
+      "slug": "pwc-customer-agent-behavior-analysis",
+      "category": "Data Analysis",
+      "tags": [
+        "Customer Behavior",
+        "Agent Performance",
+        "Power BI",
+        "Excel",
+        "Power Query",
+        "Data Visualization"
+      ],
+      "thumbnail": "/public/projects/Call-Centre-Trends/dashbord2.png",
+      "images": [
+        {
+          "url": "/public/projects/Call-Centre-Trends/dashbord2.png",
+          "alt": "Calls Analysis Dashboard"
+        },
+        {
+          "url": "/public/projects/Call-Centre-Trends/dashbord1.png",
+          "alt": "Calls Analysis Dashboard"
+        }
+      ],
+      "description": "During my PwC Virtual Case Experience at The Forge, I successfully completed Task 2, where I analyzed customer and agent behavior to uncover trends impacting overall customer satisfaction. By visualizing data on calls answered/abandoned and examining peak call times, I provided actionable insights that drive operational efficiency.",
+      "technologies": [
+        { "name": "Power BI", "icon": "https://example.com/powerbi-icon.png" },
+        { "name": "Microsoft Excel", "icon": "https://example.com/excel-icon.png" },
+        { "name": "Power Query", "icon": "https://example.com/power-query-icon.png" },
+        { "name": "Power BI Service", "icon": "https://example.com/powerbi-service-icon.png" }
+      ],
+      "githubUrl": "https://github.com/BelgaregMohamedAmine/PwC-Job-Simulation-Projects",
+      "liveUrl": "https://app.powerbi.com/view?r=eyJrIjoiNzFkZmExYWQtODhhYy00ZWNkLWI5NGMtYWZlODhhNDNkMWVmIiwidCI6ImRiZDY2NjRkLTRlYjktNDZlYi05OWQ4LTVjNDNiYTE1M2M2MSIsImMiOjl9",
+      "date": "2024-09-30",
+      "client": "PwC Virtual Case Experience",
+      "results": [
+        "Identified peak call times to improve resource allocation",
+        "Analyzed abandoned call trends for improved customer satisfaction",
+        "Provided actionable insights on agent performance"
+      ]
+    },
+    { 
+      "id":12,
+      "title": "Customer Retention Analysis - PwC Switzerland's Job Simulation",
+      "slug": "customer-retention-analysis",
+      "category": "Data Analysis",
+      "tags": [
+        "Customer Retention",
+        "KPIs",
+        "Data Visualization",
+        "Power BI",
+        "Excel",
+        "Power Query"
+      ],
+      "thumbnail": "/public/projects/Customer-Retention/accueil.webp",
+      "images": [
+        {
+          "url":"/public/projects/Customer-Retention/accueil.webp",
+          "alt": "Accuel Dashboard"
+        },
+        {
+          "url": "/public/projects/Customer-Retention/Customer-Retention-Overview.webp",
+          "alt": "Customer Retention Overview"
+        },
+        {
+          "url": "/public/projects/Customer-Retention/Customer-Demographics.webp",
+          "alt": "Customer Demographics Analysis"
+        },
+        {
+          "url": "/public/projects/Customer-Retention/Services-Overview.webp",
+          "alt": "Services Overview"
+        },
+        {
+          "url": "/public/projects/Customer-Retention/Customer-Account-Information.webp",
+          "alt": "Customer Account Information"
+        },
+        {
+          "url": "/public/projects/Customer-Retention/Customer-Risk-Analysis.webp",
+          "alt": "Customer Risk Analysis"
+        }
+      ],
+      "description": "This project involved extracting customer demographics and insights for the retention manager, reflecting key performance indicators (KPIs). The analysis provided actionable insights to improve customer retention strategies and enhance overall satisfaction.",
+      "technologies": [
+        { "name": "Power BI", "icon": "https://example.com/powerbi-icon.png" },
+        { "name": "Microsoft Excel", "icon": "https://example.com/excel-icon.png" },
+        { "name": "Power Query", "icon": "https://example.com/power-query-icon.png" },
+        { "name": "Power BI Service", "icon": "https://example.com/powerbi-service-icon.png" }
+      ],
+      "githubUrl": "https://github.com/BelgaregMohamedAmine/PwC-Job-Simulation-Projects",
+      "liveUrl": "https://app.powerbi.com/view?r=eyJrIjoiMTljODUyYmMtNTQxNC00N2ExLWJmNzUtNTE4Y2U1Yzg0NWU3IiwidCI6ImRiZDY2NjRkLTRlYjktNDZlYi05OWQ4LTVjNDNiYTE1M2M2MSIsImMiOjl9",
+      "date": "2024-10-05",
+      "client": "Retention Manager",
+      "results": [
+        "Extracted key customer demographics to identify retention trends.",
+        "Provided actionable insights to improve customer loyalty.",
+        "Highlighted high-risk customers for targeted retention strategies."
+      ]
+    },
+    {
+      "id":13,
+      "title": "Diversity & Inclusion Analysis - PwC Switzerland's Job Simulation",
+      "slug": "diversity-inclusion-analysis",
+      "category": "Data Analysis",
+      "tags": [
+        "Diversity",
+        "Inclusion",
+        "Gender Balance",
+        "Data Visualization",
+        "Power BI",
+        "Excel",
+        "Power Query"
+      ],
+      "thumbnail": "/public/projects/Diversity-Inclusion/DiversityInclusion1.webp",
+      "images": [
+        {
+          "url": "/public/projects/Diversity-Inclusion/DiversityInclusion1.webp",
+          "alt": "Diversity and Inclusion Overview"
+        },
+        {
+          "url": "/public/projects/Diversity-Inclusion/DiversityInclusion2.webp",
+          "alt": "Diversity and Inclusion Analysis"
+        },
+        {
+          "url": "/public/projects/Diversity-Inclusion/Diversity-Inclusion-Insights-Report.webp",
+          "alt": "Diversity and Inclusion Insights Report"
+        }
+      ],
+      "description": "This project focused on analyzing the value of gender balance in the executive suite. By performing calculations and generating actionable insights, the project highlights the importance of diversity and inclusion in organizational success.",
+      "technologies": [
+        { "name": "Power BI", "icon": "https://example.com/powerbi-icon.png" },
+        { "name": "Microsoft Excel", "icon": "https://example.com/excel-icon.png" },
+        { "name": "Power Query", "icon": "https://example.com/power-query-icon.png" },
+        { "name": "Power BI Service", "icon": "https://example.com/powerbi-service-icon.png" }
+      ],
+      "githubUrl": "empty",
+      "liveUrl": "empty",
+      "date": "2024-10-15",
+      "client": "Executive Team",
+      "results": [
+        "Calculated and highlighted the impact of gender balance on organizational performance.",
+        "Generated actionable insights to improve diversity and inclusion strategies.",
+        "Enhanced understanding of gender representation in the executive suite."
+      ]
+    }
+    
+  ],
+  "categories": [
+    "All",
+    "Business Intelligence",
+    "Web Development",
+    "Data Analysis"
+  ]
+}

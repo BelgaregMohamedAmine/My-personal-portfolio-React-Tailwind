@@ -60,7 +60,7 @@
         },
         {
           "name": "Photoshop",
-          "icon": "https://res.cloudinary.com/medaminebelgareg/image/upload/v1736509073/portfolio/tech-logos/images_doljvv.png"
+          "icon": "https://w7.pngwing.com/pngs/548/34/png-transparent-adobe-photoshop-macos-bigsur-icon-thumbnail.png"
         },
         {
           "name": "UX/UI",
@@ -300,7 +300,7 @@
         },
         {
           "name": "SQL Server Integration Services (SSIS)",
-          "icon": "https://res.cloudinary.com/medaminebelgareg/image/upload/v1736506912/portfolio/tech-logos/png-transparent-microsoft-sql-server-sql-server-management-studio-sql-server-integration-services-database-server-microsoft-angle-text-logo-thumbnail.png"
+          "icon": "https://example.com/ssis-icon.png"
         },
         {
           "name": "Data Warehousing",
@@ -308,7 +308,7 @@
         },
         {
           "name": "DAX",
-          "icon": "https://res.cloudinary.com/medaminebelgareg/image/upload/v1736507415/portfolio/tech-logos/images_r7lmnp.jpg"
+          "icon": "https://example.com/dax-icon.png"
         }
       ],
       "githubUrl": "https://github.com/BelgaregMohamedAmine/Analyse-data-Toyota-with-SSIS-SSAS",
@@ -354,11 +354,11 @@
       "technologies": [
         {
           "name": "Power BI",
-          "icon": "https://res.cloudinary.com/medaminebelgareg/image/upload/v1736506911/portfolio/tech-logos/png-clipart-power-bi-business-intelligence-microsoft-azure-microsoft-dynamics-cloud-computing-cloud-computing-angle-text-thumbnail.png"
+          "icon": "https://example.com/powerbi-icon.png"
         },
         {
           "name": "DAX",
-          "icon": "https://res.cloudinary.com/medaminebelgareg/image/upload/v1736507415/portfolio/tech-logos/images_r7lmnp.jpg"
+          "icon": "https://example.com/dax-icon.png"
         },
         {
           "name": "Data Visualization",
@@ -425,11 +425,11 @@
       "technologies": [
         {
           "name": "Power BI",
-          "icon": "https://res.cloudinary.com/medaminebelgareg/image/upload/v1736506911/portfolio/tech-logos/png-clipart-power-bi-business-intelligence-microsoft-azure-microsoft-dynamics-cloud-computing-cloud-computing-angle-text-thumbnail.png"
+          "icon": "https://example.com/powerbi-icon.png"
         },
         {
           "name": "DAX",
-          "icon": "https://res.cloudinary.com/medaminebelgareg/image/upload/v1736507415/portfolio/tech-logos/images_r7lmnp.jpg"
+          "icon": "https://example.com/dax-icon.png"
         },
         {
           "name": "Data Warehousing",
@@ -541,35 +541,23 @@
       "technologies": [
         {
           "name": "Power BI",
-          "icon": "https://res.cloudinary.com/medaminebelgareg/image/upload/v1736506911/portfolio/tech-logos/png-clipart-power-bi-business-intelligence-microsoft-azure-microsoft-dynamics-cloud-computing-cloud-computing-angle-text-thumbnail.png"
+          "icon": "https://example.com/powerbi-icon.png"
         },
         {
           "name": "DAX",
-          "icon": "https://res.cloudinary.com/medaminebelgareg/image/upload/v1736507415/portfolio/tech-logos/images_r7lmnp.jpg"
+          "icon": "https://example.com/dax-icon.png"
         },
         {
-          "name": "SQL Server - SSIS - SSAS",
-          "icon": "https://res.cloudinary.com/medaminebelgareg/image/upload/v1736506912/portfolio/tech-logos/png-transparent-microsoft-sql-server-sql-server-management-studio-sql-server-integration-services-database-server-microsoft-angle-text-logo-thumbnail.png"
+          "name": "SQL Server",
+          "icon": "https://example.com/sql-server-icon.png"
         },
         {
-          "name": "SSMS",
-          "icon": "https://res.cloudinary.com/medaminebelgareg/image/upload/v1736508444/portfolio/tech-logos/9812d89705787310adf08f0edf758921b8d551e8329c8d8c5eeabf4d06b08378_200_nzayfo.webp"
+          "name": "Data Warehousing",
+          "icon": "https://example.com/data-warehousing-icon.png"
         },
         {
-          "name": "Microsoft Excel",
-          "icon": "https://res.cloudinary.com/medaminebelgareg/image/upload/v1736507516/portfolio/tech-logos/microsoft-excel-icon-logo-symbol-free-png_qpewvi.webp"
-        },
-        {
-          "name": "Power Query",
-          "icon": "https://res.cloudinary.com/medaminebelgareg/image/upload/v1736507613/portfolio/tech-logos/Icon-power-query-2048x2048_pkgxxc.png"
-        },
-        {
-          "name": "Power BI Service",
-          "icon": "https://res.cloudinary.com/medaminebelgareg/image/upload/v1736507880/portfolio/tech-logos/Fabric_256_acp3ve.svg"
-        },
-        {
-          "name": "Photoshop",
-          "icon": "https://res.cloudinary.com/medaminebelgareg/image/upload/v1736509073/portfolio/tech-logos/images_doljvv.png"
+          "name": "Data Analysis",
+          "icon": "https://example.com/data-analysis-icon.png"
         }
       ],
       "githubUrl": "https://github.com/BelgaregMohamedAmine/Analyse-data-Toyota-with-SSIS-SSAS",
@@ -615,19 +603,15 @@
       "technologies": [
         {
           "name": "Power BI",
-          "icon": "https://res.cloudinary.com/medaminebelgareg/image/upload/v1736506911/portfolio/tech-logos/png-clipart-power-bi-business-intelligence-microsoft-azure-microsoft-dynamics-cloud-computing-cloud-computing-angle-text-thumbnail.png"
+          "icon": "https://example.com/powerbi-icon.png"
         },
         {
-          "name": "DAX",
-          "icon": "https://res.cloudinary.com/medaminebelgareg/image/upload/v1736507415/portfolio/tech-logos/images_r7lmnp.jpg"
+          "name": "Data Analysis",
+          "icon": "https://example.com/data-analysis-icon.png"
         },
         {
-          "name": "Power Query",
-          "icon": "https://res.cloudinary.com/medaminebelgareg/image/upload/v1736507613/portfolio/tech-logos/Icon-power-query-2048x2048_pkgxxc.png"
-        },
-        {
-          "name": "powerbi service",
-          "icon": "https://res.cloudinary.com/medaminebelgareg/image/upload/v1736507880/portfolio/tech-logos/Fabric_256_acp3ve.svg"
+          "name": "Data Visualization",
+          "icon": "https://example.com/data-visualization-icon.png"
         }
       ],
       "githubUrl": "https://github.com/BelgaregMohamedAmine/BlinkIT-Grocery-Sales-Analysis-Dashboard",
@@ -675,19 +659,19 @@
       "technologies": [
         {
           "name": "Power BI",
-          "icon": "https://res.cloudinary.com/medaminebelgareg/image/upload/v1736506911/portfolio/tech-logos/png-clipart-power-bi-business-intelligence-microsoft-azure-microsoft-dynamics-cloud-computing-cloud-computing-angle-text-thumbnail.png"
+          "icon": "https://example.com/powerbi-icon.png"
         },
         {
           "name": "DAX",
-          "icon": "https://res.cloudinary.com/medaminebelgareg/image/upload/v1736507415/portfolio/tech-logos/images_r7lmnp.jpg"
+          "icon": "https://example.com/dax-icon.png"
         },
         {
-          "name": "Power Query",
-          "icon": "https://res.cloudinary.com/medaminebelgareg/image/upload/v1736507613/portfolio/tech-logos/Icon-power-query-2048x2048_pkgxxc.png"
+          "name": "Data Transformation",
+          "icon": "https://example.com/data-transformation-icon.png"
         },
         {
           "name": "powerbi service",
-          "icon": "https://res.cloudinary.com/medaminebelgareg/image/upload/v1736507880/portfolio/tech-logos/Fabric_256_acp3ve.svg"
+          "icon": "https://example.com/dashboard-icon.png"
         }
       ],
       "githubUrl": "https://github.com/BelgaregMohamedAmine/Amazon-Sales-Analysis",
@@ -728,19 +712,19 @@
       "technologies": [
         {
           "name": "Power BI",
-          "icon": "https://res.cloudinary.com/medaminebelgareg/image/upload/v1736506911/portfolio/tech-logos/png-clipart-power-bi-business-intelligence-microsoft-azure-microsoft-dynamics-cloud-computing-cloud-computing-angle-text-thumbnail.png"
+          "icon": "https://example.com/powerbi-icon.png"
         },
         {
           "name": "Microsoft Excel",
-          "icon": "https://res.cloudinary.com/medaminebelgareg/image/upload/v1736507516/portfolio/tech-logos/microsoft-excel-icon-logo-symbol-free-png_qpewvi.webp"
+          "icon": "https://example.com/excel-icon.png"
         },
         {
           "name": "Power Query",
-          "icon": "https://res.cloudinary.com/medaminebelgareg/image/upload/v1736507613/portfolio/tech-logos/Icon-power-query-2048x2048_pkgxxc.png"
+          "icon": "https://example.com/power-query-icon.png"
         },
         {
           "name": "Power BI Service",
-          "icon": "https://res.cloudinary.com/medaminebelgareg/image/upload/v1736507880/portfolio/tech-logos/Fabric_256_acp3ve.svg"
+          "icon": "https://example.com/powerbi-service-icon.png"
         }
       ],
       "githubUrl": "https://github.com/BelgaregMohamedAmine/PwC-Job-Simulation-Projects",
@@ -797,19 +781,19 @@
       "technologies": [
         {
           "name": "Power BI",
-          "icon": "https://res.cloudinary.com/medaminebelgareg/image/upload/v1736506911/portfolio/tech-logos/png-clipart-power-bi-business-intelligence-microsoft-azure-microsoft-dynamics-cloud-computing-cloud-computing-angle-text-thumbnail.png"
+          "icon": "https://example.com/powerbi-icon.png"
         },
         {
           "name": "Microsoft Excel",
-          "icon": "https://res.cloudinary.com/medaminebelgareg/image/upload/v1736507516/portfolio/tech-logos/microsoft-excel-icon-logo-symbol-free-png_qpewvi.webp"
+          "icon": "https://example.com/excel-icon.png"
         },
         {
           "name": "Power Query",
-          "icon": "https://res.cloudinary.com/medaminebelgareg/image/upload/v1736507613/portfolio/tech-logos/Icon-power-query-2048x2048_pkgxxc.png"
+          "icon": "https://example.com/power-query-icon.png"
         },
         {
           "name": "Power BI Service",
-          "icon": "https://res.cloudinary.com/medaminebelgareg/image/upload/v1736507880/portfolio/tech-logos/Fabric_256_acp3ve.svg"
+          "icon": "https://example.com/powerbi-service-icon.png"
         }
       ],
       "githubUrl": "https://github.com/BelgaregMohamedAmine/PwC-Job-Simulation-Projects",
@@ -855,19 +839,19 @@
       "technologies": [
         {
           "name": "Power BI",
-          "icon": "https://res.cloudinary.com/medaminebelgareg/image/upload/v1736506911/portfolio/tech-logos/png-clipart-power-bi-business-intelligence-microsoft-azure-microsoft-dynamics-cloud-computing-cloud-computing-angle-text-thumbnail.png"
+          "icon": "https://example.com/powerbi-icon.png"
         },
         {
           "name": "Microsoft Excel",
-          "icon": "https://res.cloudinary.com/medaminebelgareg/image/upload/v1736507516/portfolio/tech-logos/microsoft-excel-icon-logo-symbol-free-png_qpewvi.webp"
+          "icon": "https://example.com/excel-icon.png"
         },
         {
           "name": "Power Query",
-          "icon": "https://res.cloudinary.com/medaminebelgareg/image/upload/v1736507613/portfolio/tech-logos/Icon-power-query-2048x2048_pkgxxc.png"
+          "icon": "https://example.com/power-query-icon.png"
         },
         {
           "name": "Power BI Service",
-          "icon": "https://res.cloudinary.com/medaminebelgareg/image/upload/v1736507880/portfolio/tech-logos/Fabric_256_acp3ve.svg"
+          "icon": "https://example.com/powerbi-service-icon.png"
         }
       ],
       "githubUrl": "empty",

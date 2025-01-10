@@ -1,0 +1,203 @@
+{
+    "projects": [
+      {
+        "id": 8,
+        "title": "BlinkIT Grocery Sales Analysis Dashboard",
+        "slug": "BlinkIT-Grocery-Sales-Analysis-Dashboard",
+        "category": "Business Intelligence",
+        "tags": ["Power BI", "DAX", "Data Modeling", "ETL"],
+        "thumbnail": "/img/BlinkIT/Dashbord 1.png",
+
+        "description": "This educational project focuses on the creation of a sales analysis dashboard using a fictional dataset, \"BlinkIT Grocery Data.xlsx.\" Although the data is not real, the project demonstrates key data analysis and visualization techniques. The dashboard integrates various visual elements, including Donut, Bar, Stacked Column, Line, and Funnel charts, to provide a comprehensive overview of sales performance, customer ratings, and product categories. Designed for educational purposes, this dashboard illustrates how to effectively analyze and visualize data to uncover insights and trends. The project serves as a practical example of using Power BI for data analysis, showcasing the ability to create interactive and informative reports based on structured data.",
+        "period": "september 9, 2024 - September 10, 2024",
+        "client": "N/A",
+        "link":"https://github.com/BelgaregMohamedAmine/BlinkIT-Grocery-Sales-Analysis-Dashboard",
+        "images": [
+            "/img/BlinkIT/Dashbord 1.png",
+            "/img/BlinkIT/Dashbord 2.png",
+            "/img/BlinkIT/Dashbord 3.png",
+            "/img/BlinkIT/Dashbord 4.png"
+
+
+        ]
+
+      },
+      {
+      "id": 7,
+        "title": "Business Intelligence Development",
+        "description": "Implementation of BI Solutions for Sales and Production Data Analysis and Visualization for El Mazraa Company from 2017 to 2023.",
+        "period": "2017 - 2023",
+        "client": "El Mazraa Company",
+        "link":"https://github.com/BelgaregMohamedAmine/Analyse-data-Toyota-with-SSIS-SSAS",
+        "images": [
+            "/img/el_mazraa/jiratable.png",
+            "/img/el_mazraa/model_bim.png",
+            "/img/el_mazraa/Acueil.png",
+            "/img/el_mazraa/all_mesures.png",
+            "/img/el_mazraa/analyse_comparée_objectif.png",
+            "/img/el_mazraa/Analyse_Nombre_de_Clients_en_Tunisie.png",
+            "/img/el_mazraa/Analyse_RFM_Client.png",
+            "/img/el_mazraa/chargmentclient.png",
+            "/img/el_mazraa/Classement_des_N_Meilleurs_Clients.png",
+            "/img/el_mazraa/control flow.png",
+            "/img/el_mazraa/data flow2.png",
+            "/img/el_mazraa/controle flow.png",
+            "/img/el_mazraa/data flow.png", 
+            "/img/el_mazraa/KPI_example.png",
+            "/img/el_mazraa/Performance_Poduction_2023.png",
+            "/img/el_mazraa/Performance_vente_tn_2023.png",
+            "/img/el_mazraa/taux_de_croissance.png",
+            "/img/el_mazraa/Vue_Ensemble_Ventes.png"
+
+
+        ]
+
+      },
+      {
+        "id": 6,
+        "title": "Projet Éducatif d'Analyse Humanitaire des Besoins des Réfugiés",
+        "description": "A deep dive into the needs of refugees in Syria, Iraq, Libya, and Yemen. This meticulous analysis of donation distribution between 2016 and 2018, powered by authentic data, offers enlightening insights into global humanitarian issues.",
+        "period": "Jan 2024",
+        "client": "Humanitarian Educational Project",
+        "link":"https://github.com/BelgaregMohamedAmine/Donations",
+        "images": [
+            "img/donations/p1.png",
+            "img/donations/p2.png",
+            "img/donations/p3.png",
+            "img/donations/p4.png",
+            "img/donations/p5.png",
+            "img/donations/tabledata.png",
+            "img/donations/datawarehouse.png"
+        ]
+      },
+      {
+      "id": 5,
+        "title": "Educational Project: Exploring Power BI and DAX with Adventure Works Sales Data",
+        "period": "Dec 2023",
+        "client": "N/A",
+        "description": "In this project, I delved into the foundational aspects of Power BI and DAX, focusing on visualizing sales data from the Adventure Works database. The project highlights the process of connecting to data sources, establishing relationships, and using DAX to create meaningful visual reports. This educational endeavor provided a solid introduction to Business Intelligence, offering practical insights and hands-on experience for beginners.",
+        "skills": ["Power BI","DAX","Data Visualization", "Business Intelligence" ],
+        "link":"https://github.com/BelgaregMohamedAmine/AdventureWorksDashboard",
+        "images": [
+            "img/adventureWorks/adventureWorks-portable-dashbord-1.PNG",
+            "img/adventureWorks/adventureWorks-mobile-dashbord-1.png",
+            "img/adventureWorks/adventureWorks-portable-dashbord-2.PNG",
+            "img/adventureWorks/adventureWorks-mobile-dashbord-2.png"
+        ]
+      },
+      {
+        "id": 4,
+        "title": "Toyota (SSIS-SSAS)",
+        "period": "Mar 2023 - Jun 2023",
+        "client": "N/A",
+        "description": "The project aims to implement SQL Server Analysis Services (SSAS) and SQL Server Integration Services (SSIS) technologies to create a complete Business Intelligence (BI) solution for Toyota Tunisia using test data. This project involved the design and development of a data warehouse, data analysis, and the application of DAX for insightful business reporting.",
+        "link":"https://github.com/BelgaregMohamedAmine/Analyse-data-Toyota-with-SSIS-SSAS",
+        "skills": [
+          "SQL Server Analysis Services (SSAS)",
+          "SQL Server Integration Services (SSIS)",
+          "Data Analysis",
+          "Data Warehousing",
+          "DAX"
+        ],
+        "images": [
+            "img/toyota_ssis/cube_desgin.png",
+            "img/toyota_ssis/data_warhouse.png",
+            "img/toyota_ssis/hirarchie.png",
+            "img/toyota_ssis/kpi.png",
+            "img/toyota_ssis/mdx.png",
+            "img/toyota_ssis/mdx3.png",
+            "img/toyota_ssis/test_in_excel.png"
+        ]
+      },
+      {
+        "id": 3,
+        "title": "Web Development & BI Project (Private Project)",
+        "period": "Feb 2022 - Jun 2022",
+        "client": "N/A",
+        "description": "Designed and developed a responsive e-commerce web application for Mec Art Toyota to facilitate interaction between customers and the company, as well as to improve organization within the business.",
+        "skills": [
+          "Full Stack JS (MERN)",
+          "Postman",
+          "Bootstrap (Framework)",
+          "CSS",
+          "ECMAScript",
+          "Cloudinary",
+          "Software Development Life Cycle (SDLC)",
+          "Dashboards",
+          "Graphic Design"
+        ],
+        "images": [
+            "img/mec_art_toyota/photo1.png",
+            "img/mec_art_toyota/photo2.png",
+            "img/mec_art_toyota/photo3.png",
+            "img/mec_art_toyota/photo4.png",
+            "img/mec_art_toyota/photo5.png",
+            "img/mec_art_toyota/photo6.png",
+            "img/mec_art_toyota/photo7.png",
+            "img/mec_art_toyota/photo8.png"
+        ]
+        
+      },
+      {
+        "id": 2,
+        "title": "Web Development",
+        "period": "Feb 2022 - Mar 2022",
+        "client": "MERN Stack Training Project at Udemy",
+        "link":"https://github.com/BelgaregMohamedAmine/shopit-ecommerce",
+        "description": "Shopit is an e-commerce website offering a wide selection of products across various categories, featuring advanced search functionality and an intuitive admin interface. Customers can enjoy an optimal shopping experience through a user-friendly client area. Shopit uses the Stripe API for secure and convenient online payments, ensuring the privacy and security of customer payment information.",
+        "skills": [
+          "Full Stack JS (MERN)",
+          "Postman",
+          "Bootstrap (Framework)",
+          "CSS",
+          "ECMAScript",
+          "Cloudinary",
+          "Software Development Life Cycle (SDLC)",
+          "Dashboards",
+          "Graphic Design",
+          "Mailtrap", "MDBReact", "stripe Payment"
+        ],
+        "images": [
+            "img/shopit/shopit-order.webp",
+            "img/shopit/shopit-pyment.webp",
+            "img/shopit/shopit-resgestration.webp",
+            "img/shopit/shopit-twopng.webp"
+        ]
+        
+      },
+      {
+          "id": 1,
+          "title": "Web Development",
+          "description": "The 'Number One' web project is a static platform that provides customers with an easy and convenient way to discover our meals and information online.",
+          "period": "June 2022",
+          "link":"https://github.com/BelgaregMohamedAmine/Number-One",
+          "client": "Number One Fast Food",
+          "skills": [
+            "HTML",
+            "CSS",
+            "JavaScript",
+            "Photoshop",
+            "UX/UI",
+            "Bootstrap"
+          ],
+          "images": [
+              "img/numberone/numberonep1.webp",
+              "img/numberone/numberonep2.webp",
+              "img/numberone/numberonep3.webp",
+              "img/numberone/numberonep4.webp",
+              "img/numberone/numberonep5.webp",
+              "img/numberone/numberonep6.webp"
+              
+          ]
+        
+      }
+    ],
+    "categories": [
+      "All",
+      "Business Intelligence",
+      "Data Engineering",
+      "Web Development",
+      "Data Science",
+      "Machine Learning"
+    ]
+  }
