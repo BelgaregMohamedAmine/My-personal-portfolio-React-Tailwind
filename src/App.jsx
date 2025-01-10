@@ -14,6 +14,7 @@ import Blog from './Pages/Blog';
 import Portfolio from './Pages/Portfolio';
 import ContactForm from './Pages/ContactForm';
 import BlogDetails from './Pages/BlogDetails';
+import ProjectDetails from './Pages/ProjectDetails';
 
 const App = () => {
   const [isSidebarOpen, setSidebarOpen] = useState(true);
@@ -58,9 +59,13 @@ const App = () => {
         >
           <Routes>
             <Route path="/" element={<Home />} />
+
             <Route path="/blog" element={<Blog />} />
             <Route path="/blog/:slug" element={<BlogDetails />} />
+
             <Route path="/portfolio" element={<Portfolio />} />
+            <Route path="/portfolio/:slug" element={<ProjectDetails />} />
+            
             <Route path="/contact" element={<ContactForm />} />
           </Routes>
         </main>
