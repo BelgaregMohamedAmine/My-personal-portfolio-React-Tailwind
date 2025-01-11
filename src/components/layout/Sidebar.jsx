@@ -1,6 +1,6 @@
 // src/components/layout/Sidebar.jsx
 import React from 'react';
-import { X, Home, Newspaper, Briefcase, Mail, Github, Linkedin, Twitter, Facebook,Instagram } from 'lucide-react';
+import { X, Home, Contact , Newspaper, Briefcase, Mail, Github, Linkedin, Twitter, Facebook,Instagram } from 'lucide-react';
 import { NavItem } from './NavItem';
 import profile from '../../assets/profile.png';
 
@@ -40,6 +40,7 @@ export const Sidebar = ({ isSidebarOpen, isLargeScreen, setSidebarOpen }) => {
         {/* Navigation */}
         <nav className="flex-1 p-4 space-y-2">
           <NavItem href="/" text="Home" icon={<Home size={20} />} />
+          <NavItem href="/about" text="About" icon={<Contact size={20} />} />
           <NavItem href="/blog" text="Blog" icon={<Newspaper size={20} />} />
           <NavItem href="/portfolio" text="Portfolio" icon={<Briefcase size={20} />} />
           <NavItem href="/contact" text="Contact" icon={<Mail size={20} />} />

@@ -10,6 +10,7 @@ import Footer from './components/layout/Footer';
 
 /** pages */
 import Home from './Pages/Home';
+import About from './Pages/About';
 import Blog from './Pages/Blog';
 import Portfolio from './Pages/Portfolio';
 import ContactForm from './Pages/ContactForm';
@@ -59,6 +60,8 @@ const App = () => {
         >
           <Routes>
             <Route path="/" element={<Home />} />
+            
+            <Route path="/about" element={<About />} />
 
             <Route path="/blog" element={<Blog />} />
             <Route path="/blog/:slug" element={<BlogDetails />} />

@@ -76,7 +76,7 @@ const ProjectDetails = () => {
     <div className="min-h-screen bg-gray-50 dark:bg-gray-900 ">
       {/* Simplified Header */}
       <header className="relative bg-gradient-to-br from-gray-700 via-blue-500 to-gray-700 text-white py-16" >
-        <div className="absolute inset-0 bg-[url('https://media.licdn.com/dms/image/v2/C5112AQFmuJnMTOejkg/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1578194008893?e=2147483647&v=beta&t=1Devyy9xZpoUfIDHJERTJgK89LqDoJ7g8yeshDNHkM8')] opacity-30" />
+        <div className="absolute inset-0 bg-[url('https://img.freepik.com/free-photo/happy-young-asia-businessmen-businesswomen-meeting-brainstorming-ideas-about-new-paperwork-project-colleagues-working-together-planning-success-strategy-enjoy-teamwork-small-modern-office_7861-2537.jpg?t=st=1736576626~exp=1736580226~hmac=6dc6d0a1bf60bc52c90222047d40cf99ff40cafd985673753f4896bd35a7645c&w=1380')] opacity-30" />
         <div className="container mx-auto px-4 relative">
           <button
             onClick={() => window.history.back()}
