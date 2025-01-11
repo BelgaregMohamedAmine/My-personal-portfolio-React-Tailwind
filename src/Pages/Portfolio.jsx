@@ -313,6 +313,7 @@ const PortfolioPage = () => {
                     </span>
                     <Link
                       to={`/portfolio/${project.slug}`}
+                      onClick={() => window.scrollTo(0, 0)}
                       className="flex items-center gap-1 text-blue-600 dark:text-blue-400
                                hover:gap-2 transition-all"
                     >
