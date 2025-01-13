@@ -1,0 +1,103 @@
+{
+  "personalInfo": {
+    "name": "Belgareg Mohamed Amine",
+    "title": "Data Analyst || Business Intelligence Developer || web developer",
+    "bio": "Passionate about transforming data into actionable insights and creating impactful web solutions. With expertise in business intelligence, web development, and graphic design, I bring a unique blend of analytical and creative skills to every project.",
+    "location": "Beja, Tunisia",
+    "email": "belgaregmohamedamine@outlook.fr"
+  },
+  "education": [
+    {
+      "degree": "Professional Master's in Business Intelligence",
+      "institution": "Higher Institute of Technological Studies of Rades",
+      "period": "9/2022 - 6/2024",
+      "description": "During this program, I developed a solid expertise in Business Intelligence and data analysis, becoming proficient with key tools such as Power BI, MS BI, SQL Server, SSPS, Python, R  and Excel. I also acquired skills in project management, data warehousing, and database management. This experience allowed me to enhance my teamwork skills and refine my abilities in management, economics, and personal development."
+    },
+    {
+      "degree": "Bachelor's in Computer Science",
+      "institution": "University of Manchester",
+      "period": "2016 - 2020",
+      "description": "Focus on software engineering and database management. Graduated with First Class Honours."
+    },
+    {
+      "degree": "High School Diploma",
+      "institution": "Westminster Academy",
+      "period": "2014 - 2016",
+      "description": "Mathematics and Computer Science focus. Graduated with distinction."
+    }
+  ],
+  "experience": [
+    {
+      "role": "Data Analyst",
+      "company": "Tech Solutions Ltd",
+      "period": "2022 - Present",
+      "description": "Lead data analyst for client projects, specializing in business intelligence and predictive analytics.",
+      "highlights": [
+        "Developed automated reporting systems",
+        "Increased efficiency by 40%",
+        "Managed team of 3 junior analysts"
+      ]
+    },
+    {
+      "role": "Web Development Intern",
+      "company": "Digital Creatives",
+      "period": "2021 - 2022",
+      "description": "Full-stack development intern working on client websites and internal tools.",
+      "highlights": [
+        "Built 5+ client websites",
+        "Implemented responsive designs",
+        "Optimized database queries"
+      ]
+    }
+  ],
+  "volunteer": [
+    {
+      "role": "Tech Mentor",
+      "organization": "Code First Girls",
+      "period": "2021 - Present",
+      "description": "Mentoring young women in programming and data science",
+      "image": "/images/volunteer/code-first-girls.jpg"
+    },
+    {
+      "role": "Data Analysis Workshop Leader",
+      "organization": "Local Tech Community",
+      "period": "2020 - Present",
+      "description": "Leading monthly workshops on data analysis and visualization",
+      "image": "/images/volunteer/tech-community.jpg"
+    }
+  ],
+  "skills": {
+    "dataAnalysis": {
+      "title": "BI & Data Analysis",
+      "skills": ["Python", "R", "SQL", "Tableau", "Power BI", "Excel", "Statistical Analysis"]
+    },
+    "webDevelopment": {
+      "title": "Web Development",
+      "skills": ["React", "Node.js", "JavaScript", "HTML5", "CSS3", "MongoDB", "Git"]
+    },
+    "design": {
+      "title": "Graphic Design",
+      "skills": ["Adobe Photoshop", "Illustrator", "Figma", "UI/UX Design", "Typography"]
+    }
+  },
+  "certificates": [
+    {
+      "title": "Google Data Analytics Professional Certificate",
+      "issuer": "Google",
+      "date": "2023",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCzZofKR8u-t0DE99jEL0wMaClQnHUrRaZfA&s"
+    },
+    {
+      "title": "AWS Certified Data Analytics",
+      "issuer": "Amazon Web Services",
+      "date": "2022",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCzZofKR8u-t0DE99jEL0wMaClQnHUrRaZfA&s"
+    },
+    {
+      "title": "Meta Front-End Developer Certificate",
+      "issuer": "Meta",
+      "date": "2022",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCzZofKR8u-t0DE99jEL0wMaClQnHUrRaZfA&s"
+    }
+  ]
+}

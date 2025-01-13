@@ -1,8 +1,9 @@
 import React, { useEffect, useRef, useState, useMemo } from 'react';
 import { Book, Clock, User, ChevronRight, Search, Filter, X, ChevronLeft, ChevronRight as ChevronRightIcon } from 'lucide-react';
 import { Mail } from 'lucide-react';
-import blogData from '../data/blogData.json';
 import { Link } from 'react-router-dom';
+
+import blogData from '../data/blogData.json';
 
 // Custom Dialog Components remain the same
 const DialogOverlay = ({ children, onClose }) => (
