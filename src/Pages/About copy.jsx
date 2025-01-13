@@ -7,6 +7,19 @@ import aboutData from '../data/aboutData.json';
 import  videoHeader from '../../public/videoHeder.mp4'
 
 const AboutPage = () => {
+
+  const keywords = [
+    { text: "Business Intelligence", size: "text-4xl", color: "text-blue-400" },
+    { text: "Data Analysis", size: "text-3xl", color: "text-green-400" },
+    { text: "Power BI", size: "text-2xl", color: "text-purple-400" },
+    { text: "Dashboard", size: "text-xl", color: "text-yellow-400" },
+    { text: "Data Visualization", size: "text-3xl", color: "text-pink-400" },
+    { text: "Analytics", size: "text-2xl", color: "text-cyan-400" },
+    { text: "KPI", size: "text-xl", color: "text-red-400" },
+    { text: "Reporting", size: "text-2xl", color: "text-orange-400" },
+    { text: "SQL", size: "text-xl", color: "text-teal-400" },
+    { text: "ETL", size: "text-2xl", color: "text-indigo-400" },
+  ];
   const [activeSection, setActiveSection] = useState('about');
 
   // Handle scroll and highlight active section
@@ -54,47 +67,47 @@ const AboutPage = () => {
       {/* Hero Section with Bottom Nav */}
   
        {/* Hero Section with Video Background */}
-<div className="relative h-[60vh]">
-  {/* Video Background with blur effect */}
-  <div className="absolute inset-0 overflow-hidden">
-    <video 
-      autoPlay 
-      muted 
-      loop 
-      playsInline
-      className="absolute top-0 left-0 w-full h-full object-cover scale-110 blur-[2px]"
-    >
-      <source src={videoHeader} type="video/mp4" />
-      {/* Fallback image */}
-      <img 
-        src="./assets/cover-about.webp" 
-        alt="Background" 
-        className="w-full h-full object-cover"
-      />
-    </video>
-  </div>
+    <div className="relative h-[60vh]">
+      {/* Video Background with blur effect */}
+      <div className="absolute inset-0 overflow-hidden">
+        <video 
+          autoPlay 
+          muted 
+          loop 
+          playsInline
+          className="absolute top-0 left-0 w-full h-full object-cover scale-110 blur-[2px]"
+        >
+          <source src={videoHeader} type="video/mp4" />
+          {/* Fallback image */}
+          <img 
+            src="./assets/cover-about.webp" 
+            alt="Background" 
+            className="w-full h-full object-cover"
+          />
+        </video>
+      </div>
 
-  {/* Enhanced overlay for better text visibility */}
-  <div className="absolute inset-0 bg-gradient-to-b from-black/80 via-black/60 to-black/80 backdrop-blur-sm"></div>
+      {/* Enhanced overlay for better text visibility */}
+      <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-black/20 to-black/50 backdrop-blur-sm"></div>
 
-  {/* Content */}
-  <div className="relative container mx-auto px-4 h-full flex flex-col justify-center">
-    <motion.h1 
-      className="text-4xl md:text-5xl font-bold text-white mb-4 drop-shadow-lg"
-      {...fadeIn}
-    >
-      About Me
-    </motion.h1>
-    <motion.p
-      className="text-xl text-white/90 max-w-2xl drop-shadow-lg"
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      transition={{ delay: 0.2 }}
-    >
-      {aboutData.personalInfo.title}
-    </motion.p>
-  </div>
-</div>
+      {/* Content */}
+      <div className="relative container mx-auto px-4 h-full flex flex-col justify-center">
+        <motion.h1 
+          className="text-4xl md:text-5xl font-bold text-white mb-4 drop-shadow-lg"
+          {...fadeIn}
+        >
+          About Me
+        </motion.h1>
+        <motion.p
+          className="text-xl text-white/90 max-w-2xl drop-shadow-lg"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 0.2 }}
+        >
+          {aboutData.personalInfo.title}
+        </motion.p>
+      </div>
+    </div>
 
         {/* Bottom Navigation Bar */}
         <div className="sticky top-0 bg-white dark:bg-gray-800 shadow-lg top-16 z-10 ">
