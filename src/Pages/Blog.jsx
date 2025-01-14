@@ -172,7 +172,7 @@ const BlogPage = () => {
             <Filter className="w-4 h-4" />
             Filters
             {activeFiltersCount > 0 && (
-              <span className="bg-blue-600 text-white text-xs rounded-full w-5 h-5 flex items-center justify-center">
+              <span className="bg-orange-600 text-white text-xs rounded-full w-5 h-5 flex items-center justify-center">
                 {activeFiltersCount}
               </span>
             )}
@@ -202,7 +202,7 @@ const BlogPage = () => {
                         onClick={() => setSelectedCategory(category)}
                         className={`px-3 py-2 rounded-lg text-sm transition-colors
                           ${selectedCategory === category 
-                            ? 'bg-blue-600 text-white' 
+                            ? 'bg-orange-600 text-white' 
                             : 'bg-gray-100 dark:bg-gray-700 hover:bg-gray-200 dark:hover:bg-gray-600'}`}
                       >
                         {category}
@@ -220,7 +220,7 @@ const BlogPage = () => {
                         onClick={() => setSelectedPeriod(period.value)}
                         className={`px-3 py-2 rounded-lg text-sm transition-colors
                           ${selectedPeriod === period.value
-                            ? 'bg-blue-600 text-white'
+                            ? 'bg-orange-600 text-white'
                             : 'bg-gray-100 dark:bg-gray-700 hover:bg-gray-200 dark:hover:bg-gray-600'}`}
                       >
                         {period.label}
@@ -258,7 +258,7 @@ const BlogPage = () => {
               />
               <div className="p-6">
                 <div className="flex items-center mb-2">
-                  <div className="flex items-center gap-2 text-sm text-blue-600 dark:text-blue-400">
+                  <div className="flex items-center gap-2 text-sm text-orange-600 dark:text-orange-400">
                     <Book className="w-4 h-4" />
                     <span>{blog.category}</span>
                   </div>
@@ -297,7 +297,7 @@ const BlogPage = () => {
                       day: 'numeric'
                     })}
                   </span>
-                  <Link to={`/blog/${blog.slug}`} className="flex items-center gap-1 text-blue-600 dark:text-blue-400 hover:gap-2 transition-all">
+                  <Link to={`/blog/${blog.slug}`} className="flex items-center gap-1 text-orange-600 dark:text-orange-400 hover:gap-2 transition-all">
                     Read More <ChevronRight className="w-4 h-4" />
                   </Link>
                 </div>
@@ -322,7 +322,7 @@ const BlogPage = () => {
                 onClick={() => handlePageChange(page)}
                 className={`w-10 h-10 rounded-lg ${
                   currentPage === page
-                    ? 'bg-blue-600 text-white'
+                    ? 'bg-orange-600 text-white'
                     : 'bg-white dark:bg-gray-800 hover:bg-gray-100 dark:hover:bg-gray-700'
                 }`}
               >
@@ -348,7 +348,7 @@ const BlogPage = () => {
             </p>
             <button
               onClick={handleResetFilters}
-              className="mt-4 px-6 py-2 bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-lg transition-colors"
+              className="mt-4 px-6 py-2 bg-orange-600 hover:bg-orange-700 text-white font-medium rounded-lg transition-colors"
             >
               Clear all filters
             </button>
@@ -362,13 +362,13 @@ const BlogPage = () => {
         <div className="bg-white dark:bg-gray-800 rounded-lg p-8 text-center relative overflow-hidden">
           {/* Background pattern */}
           <div className="absolute inset-0 opacity-5">
-            <div className="absolute inset-0 bg-gradient-to-r from-blue-600 to-purple-600"></div>
+            <div className="absolute inset-0 bg-gradient-to-r from-orange-600 to-purple-600"></div>
             <div className="absolute inset-0 bg-grid-pattern"></div>
           </div>
           
           {/* Content */}
           <div className="relative z-10">
-            <Mail className="w-12 h-12 mx-auto mb-4 text-blue-600 dark:text-blue-400" />
+            <Mail className="w-12 h-12 mx-auto mb-4 text-orange-600 dark:text-orange-400" />
             <h2 className="text-2xl font-bold mb-4">Subscribe to Our Newsletter</h2>
             <p className="text-gray-600 dark:text-gray-300 mb-6 max-w-2xl mx-auto">
               Stay updated with the latest insights in data analysis, business intelligence, and web development.
@@ -386,12 +386,12 @@ const BlogPage = () => {
                   placeholder="Enter your email"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
-                  className="flex-1 px-4 py-2 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-colors"
+                  className="flex-1 px-4 py-2 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 focus:ring-2 focus:ring-orange-500 focus:border-transparent transition-colors"
                   required
                 />
                 <button
                   type="submit"
-                  className="px-6 py-2 bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-lg transition-colors"
+                  className="px-6 py-2 bg-orange-600 hover:bg-orange-700 text-white font-medium rounded-lg transition-colors"
                 >
                   Subscribe
                 </button>

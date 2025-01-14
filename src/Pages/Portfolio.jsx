@@ -148,7 +148,7 @@ const PortfolioPage = () => {
               placeholder="Search projects..."
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
-              className="w-full px-4 py-2 pl-10 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 focus:ring-2 focus:ring-blue-500"
+              className="w-full px-4 py-2 pl-10 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 focus:ring-2 focus:ring-orange-500"
             />
             <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 w-4 h-4" />
           </div>
@@ -160,7 +160,7 @@ const PortfolioPage = () => {
             <Filter className="w-4 h-4" />
             Filters
             {activeFiltersCount > 0 && (
-              <span className="bg-blue-600 text-white text-xs rounded-full w-5 h-5 flex items-center justify-center">
+              <span className="bg-orange-600 text-white text-xs rounded-full w-5 h-5 flex items-center justify-center">
                 {activeFiltersCount}
               </span>
             )}
@@ -188,7 +188,7 @@ const PortfolioPage = () => {
                         onClick={() => setSelectedCategory(category)}
                         className={`px-3 py-2 rounded-lg text-sm transition-colors
                           ${selectedCategory === category 
-                            ? 'bg-blue-600 text-white' 
+                            ? 'bg-orange-600 text-white' 
                             : 'bg-gray-100 dark:bg-gray-700 hover:bg-gray-200 dark:hover:bg-gray-600'}`}
                       >
                         {category}
@@ -206,7 +206,7 @@ const PortfolioPage = () => {
                         onClick={() => setSelectedPeriod(period.value)}
                         className={`px-3 py-2 rounded-lg text-sm transition-colors
                           ${selectedPeriod === period.value
-                            ? 'bg-blue-600 text-white'
+                            ? 'bg-orange-600 text-white'
                             : 'bg-gray-100 dark:bg-gray-700 hover:bg-gray-200 dark:hover:bg-gray-600'}`}
                       >
                         {period.label}
@@ -262,7 +262,7 @@ const PortfolioPage = () => {
                           href={project.liveUrl}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="flex items-center gap-2 text-white hover:text-blue-400"
+                          className="flex items-center gap-2 text-white hover:text-orange-400"
                         >
                           <ExternalLink className="w-4 h-4" />
                           <span>Live Demo</span>
@@ -273,7 +273,7 @@ const PortfolioPage = () => {
                           href={project.githubUrl}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="flex items-center gap-2 text-white hover:text-blue-400"
+                          className="flex items-center gap-2 text-white hover:text-orange-400"
                         >
                           <Github className="w-4 h-4" />
                           <span>Code</span>
@@ -288,8 +288,8 @@ const PortfolioPage = () => {
                     {project.tags.slice(0, 3).map((tag, index) => (
                       <span
                         key={index}
-                        className="px-2 py-1 text-xs rounded-full bg-blue-100 dark:bg-blue-900
-                                 text-blue-600 dark:text-blue-300"
+                        className="px-2 py-1 text-xs rounded-full bg-orange-100 dark:bg-orange-900
+                                 text-orange-600 dark:text-orange-300"
                       >
                         {tag}
                       </span>
@@ -314,7 +314,7 @@ const PortfolioPage = () => {
                     <Link
                       to={`/portfolio/${project.slug}`}
                       onClick={() => window.scrollTo(0, 0)}
-                      className="flex items-center gap-1 text-blue-600 dark:text-blue-400
+                      className="flex items-center gap-1 text-orange-600 dark:text-orange-400
                                hover:gap-2 transition-all"
                     >
                       View Details <ChevronRight className="w-4 h-4" />
@@ -342,7 +342,7 @@ const PortfolioPage = () => {
                 onClick={() => handlePageChange(page)}
                 className={`w-10 h-10 rounded-lg ${
                   currentPage === page
-                    ? 'bg-blue-600 text-white'
+                    ? 'bg-orange-600 text-white'
                     : 'bg-white dark:bg-gray-800 hover:bg-gray-100 dark:hover:bg-gray-700'
                 }`}
               >
@@ -373,7 +373,7 @@ const PortfolioPage = () => {
                 setSelectedCategory('All');
                 setSearchQuery('');
               }}
-              className="mt-4 px-6 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700
+              className="mt-4 px-6 py-2 bg-orange-600 text-white rounded-lg hover:bg-orange-700
                        transition-colors"
             >
               Clear filters

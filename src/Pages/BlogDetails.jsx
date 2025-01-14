@@ -24,7 +24,7 @@ const BlogDetails = () => {
           </h1>
           <a
             href="/blog"
-            className="text-blue-600 dark:text-blue-400 hover:underline flex items-center justify-center gap-2"
+            className="text-orange-600 dark:text-orange-400 hover:underline flex items-center justify-center gap-2"
           >
             <ChevronLeft className="w-4 h-4" />
             Back to blogs
@@ -47,7 +47,7 @@ const BlogDetails = () => {
           <div className="container mx-auto px-4 py-16">
             <a
               href="/blog"
-              className="text-white mb-4 hover:text-blue-400 flex items-center gap-2 w-fit"
+              className="text-white mb-4 hover:text-orange-400 flex items-center gap-2 w-fit"
             >
               <ChevronLeft className="w-4 h-4" />
               Back to blogs
@@ -69,7 +69,7 @@ const BlogDetails = () => {
                   {blog.tags.slice(0, 5).map((tag, index) => (
                     <span
                       key={index}
-                      className="px-2 py-1 text-xs rounded-full bg-blue-600 bg-opacity-50 
+                      className="px-2 py-1 text-xs rounded-full bg-orange-600 bg-opacity-50 
                             inline-flex items-center whitespace-nowrap"
                     >
                       <span className="truncate">#{tag}</span>
@@ -128,15 +128,15 @@ const BlogDetails = () => {
 
               {/* Action buttons */}
               <div className="flex gap-4 mt-8 pt-8 border-t border-gray-200 dark:border-gray-700">
-                <button className="flex items-center gap-2 text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400">
+                <button className="flex items-center gap-2 text-gray-600 dark:text-gray-400 hover:text-orange-600 dark:hover:text-orange-400">
                   <ThumbsUp className="w-5 h-5" />
                   Like
                 </button>
-                <button className="flex items-center gap-2 text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400">
+                <button className="flex items-center gap-2 text-gray-600 dark:text-gray-400 hover:text-orange-600 dark:hover:text-orange-400">
                   <Share2 className="w-5 h-5" />
                   Share
                 </button>
-                <button className="flex items-center gap-2 text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400">
+                <button className="flex items-center gap-2 text-gray-600 dark:text-gray-400 hover:text-orange-600 dark:hover:text-orange-400">
                   <Bookmark className="w-5 h-5" />
                   Save
                 </button>
@@ -173,7 +173,7 @@ const BlogDetails = () => {
                   <a
                     key={index}
                     href={post.url}
-                    className="block hover:text-blue-600 dark:hover:text-blue-400"
+                    className="block hover:text-orange-600 dark:hover:text-orange-400"
                   >
                     <p className="text-gray-700 dark:text-gray-300">
                       {post.title}
@@ -193,7 +193,7 @@ const BlogDetails = () => {
                   <a
                     key={index}
                     href={post.url}
-                    className="block hover:text-blue-600 dark:hover:text-blue-400"
+                    className="block hover:text-orange-600 dark:hover:text-orange-400"
                   >
                     <p className="text-gray-700 dark:text-gray-300">
                       {post.title}

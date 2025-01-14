@@ -8,13 +8,13 @@ const BioSection = ({ aboutData }) => {
 
   // Configuration des icônes pour chaque section
   const bioSections = [
-    { icon: BookOpen, color: 'from-blue-400 to-blue-600' },
-    { icon: Database, color: 'from-indigo-400 to-indigo-600' },
-    { icon: Share2, color: 'from-purple-400 to-purple-600' }
+    { icon: BookOpen, color: 'from-orange-400 to-orange-600' },
+    { icon: Database, color: 'from-red-400 to-red-600' },
+    { icon: Share2, color: 'from-yellow-400 to-yellow-600' }
   ];
 
   return (
-    <section className="py-20 bg-gray-50 dark:bg-gray-900">
+    <section  id="about"className="py-20 bg-gray-60 dark:bg-gray-900">
       <div className="container mx-auto px-4">
         <motion.div 
           initial={{ opacity: 0, y: 20 }}
@@ -27,7 +27,7 @@ const BioSection = ({ aboutData }) => {
             <h2 className="text-2xl sm:text-3xl font-bold mb-4 dark:text-white">
               {aboutData.personalInfo.name}
             </h2>
-            <div className="w-32 h-1 bg-gradient-to-r from-blue-400 to-purple-600 mx-auto"></div>
+            <div className="w-32 h-1 bg-gradient-to-r from-orange-400 to-red-600 mx-auto"></div>
           </div>
 
           {/* Sections bio */}

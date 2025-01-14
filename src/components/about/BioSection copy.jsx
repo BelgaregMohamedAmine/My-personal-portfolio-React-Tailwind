@@ -44,7 +44,7 @@ const BioSection = ({ aboutData }) => {
               {...fadeIn}
             >
               À Propos de Moi
-              <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-24 h-1 bg-gradient-to-r from-blue-400 to-blue-600"></div>
+              <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-24 h-1 bg-gradient-to-r from-orange-400 to-orange-600"></div>
             </motion.h2>
           </div>
 
@@ -53,9 +53,9 @@ const BioSection = ({ aboutData }) => {
             className="relative text-xl text-gray-700 dark:text-gray-300 mb-16 text-center italic py-8"
             {...fadeIn}
           >
-            <span className="absolute top-0 left-0 text-6xl text-blue-400 opacity-20">"</span>
+            <span className="absolute top-0 left-0 text-6xl text-orange-400 opacity-20">"</span>
             Passionné par la transformation des données en insights actionnables
-            <span className="absolute bottom-0 right-0 text-6xl text-blue-400 opacity-20">"</span>
+            <span className="absolute bottom-0 right-0 text-6xl text-orange-400 opacity-20">"</span>
           </motion.div>
 
           {/* Points forts avec style de carte personnalisé */}
@@ -71,11 +71,11 @@ const BioSection = ({ aboutData }) => {
               >
                 <div className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 border border-gray-100 dark:border-gray-700">
                   <div className="flex items-start space-x-4">
-                    <div className="p-3 bg-blue-50 dark:bg-blue-900/30 rounded-lg group-hover:bg-blue-100 dark:group-hover:bg-blue-900/50 transition-colors duration-300">
-                      <highlight.icon className="w-8 h-8 text-blue-600 dark:text-blue-400" />
+                    <div className="p-3 bg-orange-50 dark:bg-orange-900/30 rounded-lg group-hover:bg-orange-100 dark:group-hover:bg-orange-900/50 transition-colors duration-300">
+                      <highlight.icon className="w-8 h-8 text-orange-600 dark:text-orange-400" />
                     </div>
                     <div>
-                      <h3 className="text-xl font-semibold mb-2 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors duration-300">
+                      <h3 className="text-xl font-semibold mb-2 dark:text-white group-hover:text-orange-600 dark:group-hover:text-orange-400 transition-colors duration-300">
                         {highlight.title}
                       </h3>
                       <p className="text-gray-600 dark:text-gray-300">
@@ -99,10 +99,10 @@ const BioSection = ({ aboutData }) => {
               processus ETL pour assurer la qualité et la fiabilité des données.
             </p>
             <div className="flex items-center justify-center space-x-4 group cursor-pointer">
-              <span className="text-blue-600 dark:text-blue-400 font-semibold group-hover:text-blue-700 dark:group-hover:text-blue-300 transition-colors duration-300">
+              <span className="text-orange-600 dark:text-orange-400 font-semibold group-hover:text-orange-700 dark:group-hover:text-orange-300 transition-colors duration-300">
                 Découvrez mes projets pour en savoir plus
               </span>
-              <ArrowRight className="w-6 h-6 text-blue-600 dark:text-blue-400 group-hover:transform group-hover:translate-x-1 transition-transform duration-300" />
+              <ArrowRight className="w-6 h-6 text-orange-600 dark:text-orange-400 group-hover:transform group-hover:translate-x-1 transition-transform duration-300" />
             </div>
           </motion.div>
         </motion.div>

@@ -10,60 +10,114 @@
     {
       "degree": "Professional Master's in Business Intelligence",
       "institution": "Higher Institute of Technological Studies of Rades",
-      "period": "9/2022 - 6/2024",
-      "description": "During this program, I developed a solid expertise in Business Intelligence and data analysis, becoming proficient with key tools such as Power BI, MS BI, SQL Server, SSPS, Python, R  and Excel. I also acquired skills in project management, data warehousing, and database management. This experience allowed me to enhance my teamwork skills and refine my abilities in management, economics, and personal development."
+      "period": "2022 - 2024",
+      "description": "Developed expertise in Business Intelligence and data analysis, mastering tools like Power BI, SSIS, SSAS, SSMS, SQL Server, SSPS, Python, R, and Excel. Gained skills in project management, data warehousing, and database management, while strengthening teamwork, management, and economic analysis abilities."
     },
     {
-      "degree": "Bachelor's in Computer Science",
-      "institution": "University of Manchester",
-      "period": "2016 - 2020",
-      "description": "Focus on software engineering and database management. Graduated with First Class Honours."
+      "degree": "Bachelor's Degree in Business Computing",
+      "institution": "Higher Institute of Computer Science Mahdia",
+      "period": "2019 - 2022",
+      "description": "Comprehensive education in web and mobile development with programming languages such as Java and C. Acquired solid knowledge in algorithms and UML design. Enhanced communication, teamwork, and leadership skills through active participation in university clubs."
     },
     {
-      "degree": "High School Diploma",
-      "institution": "Westminster Academy",
-      "period": "2014 - 2016",
-      "description": "Mathematics and Computer Science focus. Graduated with distinction."
+      "degree": "Bachelor's Degree in Economics and Management",
+      "institution": "Chedli Khaznadar High School, Teboursouk",
+      "period": "2016 - 2019",
+      "description": "Built a strong foundation in management and economic principles, covering economic analysis, business strategy, and financial management. Developed analytical and problem-solving skills through practical applications and real-world scenarios."
     }
   ],
   "experience": [
     {
-      "role": "Data Analyst",
-      "company": "Tech Solutions Ltd",
-      "period": "2022 - Present",
-      "description": "Lead data analyst for client projects, specializing in business intelligence and predictive analytics.",
+      "role": "Field Data Collector",
+      "company": "Institut National de la Statistique",
+      "period": "Nov 2024 - Dec 2024",
+      "location": "Tunisia · On-site",
+      "description": "Actively contributed to the General Census of Population and Housing 2024, organized by the Ministry of Economy and Planning. Collected and validated demographic and social data, ensuring high accuracy in recording household composition, education levels, and economic activities.",
       "highlights": [
-        "Developed automated reporting systems",
-        "Increased efficiency by 40%",
-        "Managed team of 3 junior analysts"
+        "Strengthened communication skills by engaging with diverse communities.",
+        "Quickly developed solutions to overcome challenges during fieldwork.",
+        "Gained hands-on experience in the data lifecycle, from collection to visualization."
       ]
     },
     {
-      "role": "Web Development Intern",
-      "company": "Digital Creatives",
-      "period": "2021 - 2022",
-      "description": "Full-stack development intern working on client websites and internal tools.",
+      "role": "Data Analyst Intern",
+      "company": "Société El Mazraa",
+      "period": "Feb 2024 - Jun 2024",
+      "location": "Grombalia, Nabeul, Tunisia · Hybrid",
+      "description": "Led data collection and transformation processes to support business intelligence solutions for sales and production data analysis (2017–2023).",
       "highlights": [
-        "Built 5+ client websites",
-        "Implemented responsive designs",
-        "Optimized database queries"
+        "Collected and normalized data from ERP (MFG Pro), SQL Server, Excel, and CSV files.",
+        "Developed and automated ETL pipelines using SSIS for seamless data integration.",
+        "Created a tabular cube in Analysis Services with KPIs, hierarchies, and calculated measures.",
+        "Designed and deployed interactive Power BI dashboards to improve decision-making."
+      ]
+    },
+    {
+      "role": "Web Developer & BI Analyst Intern",
+      "company": "Mec Art TOYOTA",
+      "period": "Feb 2022 - Jun 2022",
+      "location": "Teboulba, Monastir, Tunisia · On-site",
+      "description": "Designed and developed web solutions to improve the customer experience and optimize business operations.",
+      "highlights": [
+        "Conducted UX/UI analysis of Toyota websites to identify and resolve user experience issues.",
+        "Developed a custom e-commerce application to enhance client interactions and simplify order management.",
+        "Created an analytical dashboard to monitor sales and services, providing actionable business insights."
       ]
     }
   ],
-  "volunteer": [
+ "volunteer": [
     {
-      "role": "Tech Mentor",
-      "organization": "Code First Girls",
-      "period": "2021 - Present",
-      "description": "Mentoring young women in programming and data science",
-      "image": "/images/volunteer/code-first-girls.jpg"
+      "role": "Treasurer",
+      "organization": "Tunisian Red Crescent - Local Committee of Téboursouk",
+      "period": "April 2021 - Present",
+      "description": "Oversee financial reporting, manage donation evaluation and collection, ensure proper distribution of funds, and contribute to organizing social, health, and emergency activities.",
+      "images": [
+        "https://picsum.photos/200/300",
+        "https://picsum.photos/200/300"
+      ]
     },
     {
-      "role": "Data Analysis Workshop Leader",
-      "organization": "Local Tech Community",
-      "period": "2020 - Present",
-      "description": "Leading monthly workshops on data analysis and visualization",
-      "image": "/images/volunteer/tech-community.jpg"
+      "role": "Volunteer",
+      "organization": "Tunisian Red Crescent - Local Committee of Rades",
+      "period": "February 2021 - Present",
+      "description": "Actively participated in social activities, first aid, and various sanitary and community initiatives. Contributed to awareness campaigns, provided support during health crises, and engaged in social projects, enhancing skills in crisis management and humanitarian assistance.",
+      "images": [
+        "https://picsum.photos/200/300",
+        "https://picsum.photos/id/237/200/300"
+      ]
+    },
+    {
+      "role": "Organization Manager",
+      "organization": "IEEE ISIMA Student Branch",
+      "period": "October 2020 - June 2022",
+      "description": "Developed event briefs, organized events, and coordinated with trainers. Managed event logistics to ensure smooth execution. Fostered strong relationships with trainers and participants to enhance event quality.",
+      "images": [
+        "https://picsum.photos/200/300",
+        "https://picsum.photos/id/237/200/300",
+        "https://picsum.photos/200/300"
+      ]
+    },
+    {
+      "role": "Volunteer",
+      "organization": "Tunisian Red Crescent - Local Committee of Mahdia",
+      "period": "October 2021 - June 2022",
+      "description": "Actively participated in social activities, first aid, and various sanitary and community initiatives. Contributed to awareness campaigns, provided support during health crises, and engaged in social projects, enhancing skills in crisis management and humanitarian assistance.",
+      "images": [
+        "https://picsum.photos/200/300",
+        "https://picsum.photos/id/237/200/300",
+        "https://picsum.photos/200/300"
+      ]
+    },
+    {
+      "role": "Active Member",
+      "organization": "Microsoft ISIMA Club",
+      "period": "October 2019 - October 2020",
+      "description": "Active Member of the Microsoft ISIMA Club, where I developed soft skills including effective communication and teamwork.",
+      "images": [
+        "https://picsum.photos/200/300",
+        "https://picsum.photos/id/237/200/300",
+        "https://picsum.photos/200/300"
+      ]
     }
   ],
   "skills": {

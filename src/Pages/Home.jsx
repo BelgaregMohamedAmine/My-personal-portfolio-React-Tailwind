@@ -15,7 +15,7 @@ const HomePage = () => {
             Je suis Mohamed Amine Belgareg, Data Analyst & BI Developer passionné par la transformation des données complexes en insights actionnables.
           </p>
           <div className="flex justify-center gap-4">
-            <Link to="/projects" className="inline-flex items-center px-6 py-3 rounded-lg bg-blue-600 text-white hover:bg-blue-700 dark:bg-blue-500 dark:hover:bg-blue-600 transition-colors">
+            <Link to="/projects" className="inline-flex items-center px-6 py-3 rounded-lg bg-orange-600 text-white hover:bg-orange-700 dark:bg-orange-500 dark:hover:bg-orange-600 transition-colors">
               Découvrir mes projets
               <ArrowRight className="ml-2 h-5 w-5" />
             </Link>
@@ -34,7 +34,7 @@ const HomePage = () => {
           </h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             <div className="p-6 rounded-lg border border-gray-200 dark:border-gray-700">
-              <Database className="h-12 w-12 text-blue-600 dark:text-blue-400 mb-4" />
+              <Database className="h-12 w-12 text-orange-600 dark:text-orange-400 mb-4" />
               <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">
                 Data Warehousing
               </h3>
@@ -43,7 +43,7 @@ const HomePage = () => {
               </p>
             </div>
             <div className="p-6 rounded-lg border border-gray-200 dark:border-gray-700">
-              <BarChart2 className="h-12 w-12 text-blue-600 dark:text-blue-400 mb-4" />
+              <BarChart2 className="h-12 w-12 text-orange-600 dark:text-orange-400 mb-4" />
               <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">
                 Visualisation Power BI
               </h3>
@@ -52,7 +52,7 @@ const HomePage = () => {
               </p>
             </div>
             <div className="p-6 rounded-lg border border-gray-200 dark:border-gray-700">
-              <GitBranch className="h-12 w-12 text-blue-600 dark:text-blue-400 mb-4" />
+              <GitBranch className="h-12 w-12 text-orange-600 dark:text-orange-400 mb-4" />
               <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">
                 ETL Development
               </h3>
@@ -90,12 +90,12 @@ const HomePage = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-blue-600 dark:bg-blue-700">
+      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-orange-600 dark:bg-orange-700">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl font-bold text-white mb-6">
             Prêt à transformer vos données en valeur ajoutée ?
           </h2>
-          <Link to="/contact" className="inline-flex items-center px-8 py-4 rounded-lg bg-white text-blue-600 hover:bg-gray-100 transition-colors">
+          <Link to="/contact" className="inline-flex items-center px-8 py-4 rounded-lg bg-white text-orange-600 hover:bg-gray-100 transition-colors">
             Démarrons votre projet
             <ArrowRight className="ml-2 h-5 w-5" />
           </Link>

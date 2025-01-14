@@ -57,7 +57,7 @@ const RecommendedProjects = ({ currentProject, allProjects }) => {
                 onClick={() => setCurrentSlide(index)}
                 className={`h-2 rounded-full transition-all duration-300 ${
                   currentSlide === index 
-                    ? 'w-8 bg-blue-500' 
+                    ? 'w-8 bg-orange-500' 
                     : 'w-2 bg-gray-300 dark:bg-gray-600 hover:bg-gray-400 dark:hover:bg-gray-500'
                 }`}
                 aria-label={`Go to slide ${index + 1}`}
@@ -118,7 +118,7 @@ const RecommendedProjects = ({ currentProject, allProjects }) => {
                       </div>
                       
                       <div className="p-6">
-                        <h3 className="text-xl font-bold mb-3 text-gray-800 dark:text-white group-hover:text-blue-500 transition-colors">
+                        <h3 className="text-xl font-bold mb-3 text-gray-800 dark:text-white group-hover:text-orange-500 transition-colors">
                           {project.title}
                         </h3>
                         

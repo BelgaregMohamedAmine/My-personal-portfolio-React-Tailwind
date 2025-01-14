@@ -9,7 +9,7 @@ import  videoHeader from '../../public/videoHeder.mp4'
 const AboutPage = () => {
 
   const keywords = [
-    { text: "Business Intelligence", size: "text-4xl", color: "text-blue-400" },
+    { text: "Business Intelligence", size: "text-4xl", color: "text-orange-400" },
     { text: "Data Analysis", size: "text-3xl", color: "text-green-400" },
     { text: "Power BI", size: "text-2xl", color: "text-purple-400" },
     { text: "Dashboard", size: "text-xl", color: "text-yellow-400" },
@@ -119,8 +119,8 @@ const AboutPage = () => {
                   to={`#${item.id}`}
                   className={`px-6 py-4 text-sm font-medium whitespace-nowrap border-b-2 transition-colors duration-200 ${
                     activeSection === item.id
-                      ? 'border-blue-600 text-blue-600 dark:text-blue-400'
-                      : 'border-transparent text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400'
+                      ? 'border-orange-600 text-orange-600 dark:text-orange-400'
+                      : 'border-transparent text-gray-600 dark:text-gray-300 hover:text-orange-600 dark:hover:text-orange-400'
                   }`}
                   onClick={(e) => {
                     e.preventDefault();
@@ -161,14 +161,14 @@ const AboutPage = () => {
             {...fadeIn}
           >
             <div className="flex items-center gap-4 mb-12">
-              <GraduationCap className="w-8 h-8 text-blue-600" />
+              <GraduationCap className="w-8 h-8 text-orange-600" />
               <h2 className="text-3xl font-bold dark:text-white">Education</h2>
             </div>
             <div className="space-y-8">
               {aboutData.education.map((edu, index) => (
                 <motion.div 
                   key={index}
-                  className="relative pl-8 border-l-2 border-blue-600"
+                  className="relative pl-8 border-l-2 border-orange-600"
                   initial={{ opacity: 0, x: -20 }}
                   whileInView={{ opacity: 1, x: 0 }}
                   transition={{ delay: index * 0.2 }}
@@ -192,7 +192,7 @@ const AboutPage = () => {
             {...fadeIn}
           >
             <div className="flex items-center gap-4 mb-12">
-              <Briefcase className="w-8 h-8 text-blue-600" />
+              <Briefcase className="w-8 h-8 text-orange-600" />
               <h2 className="text-3xl font-bold dark:text-white">Experience</h2>
             </div>
             <div className="space-y-8">
@@ -211,7 +211,7 @@ const AboutPage = () => {
                   <ul className="mt-4 space-y-2">
                     {exp.highlights.map((highlight, i) => (
                       <li key={i} className="flex items-center gap-2 text-gray-600 dark:text-gray-300">
-                        <ChevronRight className="w-4 h-4 text-blue-600" />
+                        <ChevronRight className="w-4 h-4 text-orange-600" />
                         {highlight}
                       </li>
                     ))}
@@ -231,7 +231,7 @@ const AboutPage = () => {
             {...fadeIn}
           >
             <div className="flex items-center gap-4 mb-12">
-              <Heart className="w-8 h-8 text-blue-600" />
+              <Heart className="w-8 h-8 text-orange-600" />
               <h2 className="text-3xl font-bold dark:text-white">Volunteer Work</h2>
             </div>
             <div className="grid md:grid-cols-2 gap-8">
@@ -283,7 +283,7 @@ const AboutPage = () => {
                     {category.skills.map((skill, i) => (
                       <span 
                         key={i}
-                        className="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-600 dark:text-blue-300 rounded-full text-sm"
+                        className="px-3 py-1 bg-orange-100 dark:bg-orange-900 text-orange-600 dark:text-orange-300 rounded-full text-sm"
                       >
                         {skill}
                       </span>
@@ -304,7 +304,7 @@ const AboutPage = () => {
             {...fadeIn}
           >
             <div className="flex items-center gap-4 mb-12">
-              <Award className="w-8 h-8 text-blue-600" />
+              <Award className="w-8 h-8 text-orange-600" />
               <h2 className="text-3xl font-bold dark:text-white">Certificates</h2>
             </div>
             <div className="grid md:grid-cols-3 gap-8">

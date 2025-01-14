@@ -52,7 +52,7 @@ const ProjectDetails = () => {
   if (isLoading) {
     return (
       <div className="flex items-center justify-center min-h-screen dark:bg-gray-900">
-        <div className="animate-spin w-16 h-16 border-4 border-blue-500 border-t-transparent rounded-full" />
+        <div className="animate-spin w-16 h-16 border-4 border-orange-500 border-t-transparent rounded-full" />
       </div>
     );
   }
@@ -63,7 +63,7 @@ const ProjectDetails = () => {
         <h1 className="text-2xl font-bold mb-4">Project Not Found</h1>
         <button 
           onClick={() => window.history.back()} 
-          className="flex items-center text-blue-500 hover:text-blue-700"
+          className="flex items-center text-orange-500 hover:text-orange-700"
         >
           <ArrowLeft className="w-5 h-5 mr-2" />
           Back to Projects
@@ -75,7 +75,7 @@ const ProjectDetails = () => {
   return (
     <div className="min-h-screen bg-gray-50 dark:bg-gray-900 ">
       {/* Simplified Header */}
-      <header className="relative bg-gradient-to-br from-gray-700 via-blue-500 to-gray-700 text-white py-16" >
+      <header className="relative bg-gradient-to-br from-gray-700 via-orange-500 to-gray-700 text-white py-16" >
         <div className="absolute inset-0 bg-[url('https://img.freepik.com/free-photo/happy-young-asia-businessmen-businesswomen-meeting-brainstorming-ideas-about-new-paperwork-project-colleagues-working-together-planning-success-strategy-enjoy-teamwork-small-modern-office_7861-2537.jpg?t=st=1736576626~exp=1736580226~hmac=6dc6d0a1bf60bc52c90222047d40cf99ff40cafd985673753f4896bd35a7645c&w=1380')] opacity-30" />
         <div className="container mx-auto px-4 relative">
           <button
@@ -138,7 +138,7 @@ const ProjectDetails = () => {
                   href={project.liveUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center gap-2 px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition-colors"
+                  className="flex items-center gap-2 px-4 py-2 bg-orange-500 text-white rounded-lg hover:bg-orange-600 transition-colors"
                 >
                   <ExternalLink className="w-4 h-4" />
                   <span>Live Demo</span>
@@ -176,7 +176,7 @@ const ProjectDetails = () => {
                     onClick={() => setActiveTab(tab)}
                     className={`flex-1 py-4 px-6 text-center relative transition-all ${
                       activeTab === tab 
-                        ? 'text-blue-500 bg-blue-50 dark:bg-blue-900/20' 
+                        ? 'text-orange-500 bg-orange-50 dark:bg-orange-900/20' 
                         : 'text-gray-500 hover:text-gray-700 hover:bg-gray-50 dark:hover:bg-gray-700/50'
                     }`}
                   >
@@ -187,7 +187,7 @@ const ProjectDetails = () => {
                       <span className="capitalize">{tab}</span>
                     </div>
                     {activeTab === tab && (
-                      <div className="absolute bottom-0 left-0 w-full h-0.5 bg-blue-500" />
+                      <div className="absolute bottom-0 left-0 w-full h-0.5 bg-orange-500" />
                     )}
                   </button>
                 ))}

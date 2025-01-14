@@ -31,14 +31,14 @@ const ContactPage = () => {
               
               {/* Email Card */}
               <div className="bg-white dark:bg-gray-800 rounded-lg p-4 sm:p-6 shadow-lg flex items-center min-h-[5rem] transition-all hover:shadow-xl">
-                <div className="bg-blue-100 dark:bg-blue-900 p-3 rounded-full flex justify-center items-center flex-shrink-0">
-                  <Mail className="w-5 h-5 sm:w-6 sm:h-6 text-blue-600 dark:text-blue-400" />
+                <div className="bg-orange-100 dark:bg-orange-900 p-3 rounded-full flex justify-center items-center flex-shrink-0">
+                  <Mail className="w-5 h-5 sm:w-6 sm:h-6 text-orange-600 dark:text-orange-400" />
                 </div>
                 <div className="ml-4 flex-1 min-w-0">
                   <h3 className="font-semibold text-sm sm:text-base">Email</h3>
                   <a
                     href="mailto:belgaregmohamedamine@outlook.fr"
-                    className="text-blue-600 dark:text-blue-400 hover:underline  block text-xs sm:text-sm break-all"
+                    className="text-orange-600 dark:text-orange-400 hover:underline  block text-xs sm:text-sm break-all"
                   >
                     belgaregmohamedamine@outlook.fr
                   </a>
@@ -119,7 +119,7 @@ const ContactPage = () => {
                         id="name"
                         type="text"
                         name="name"
-                        className="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-colors"
+                        className="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 focus:ring-2 focus:ring-orange-500 focus:border-transparent transition-colors"
                         placeholder="John Doe"
                       />
 
@@ -132,7 +132,7 @@ const ContactPage = () => {
                         id="email"
                         type="email"
                          name="email"
-                        className="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-colors"
+                        className="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 focus:ring-2 focus:ring-orange-500 focus:border-transparent transition-colors"
                         placeholder="john@example.com"
                       />
                     </div>
@@ -148,7 +148,7 @@ const ContactPage = () => {
                       id="phone"
                       type="tel"
                       name="phone"
-                      className="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-colors"
+                      className="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 focus:ring-2 focus:ring-orange-500 focus:border-transparent transition-colors"
                       placeholder="+216 56 490 416"
                       />
       
@@ -159,7 +159,7 @@ const ContactPage = () => {
                         <select
                         id="projectDomain"
                         name="projectDomain"
-                        className="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-colors"
+                        className="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 focus:ring-2 focus:ring-orange-500 focus:border-transparent transition-colors"
                         >
                           <option value="business intelligence">Business Intelligence</option>
                           <option value="data analyst">Data Analyst</option>
@@ -179,7 +179,7 @@ const ContactPage = () => {
                       id="subject"
                       type="text"
                       name="subject"
-                      className="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-colors"
+                      className="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 focus:ring-2 focus:ring-orange-500 focus:border-transparent transition-colors"
                       placeholder="What's this about?"
                     />
                   </div>
@@ -191,14 +191,14 @@ const ContactPage = () => {
                     <textarea
                       id="message"
                       name="message"
-                      className="w-full h-32 px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-colors resize-y"
+                      className="w-full h-32 px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 focus:ring-2 focus:ring-orange-500 focus:border-transparent transition-colors resize-y"
                       placeholder="Tell me about your project..."
                     ></textarea>
                   </div>
 
                   <button
                     type="submit"
-                    className="w-full bg-blue-600 hover:bg-blue-700 text-white font-medium py-3 px-6 rounded-lg transition-colors"
+                    className="w-full bg-orange-600 hover:bg-orange-700 text-white font-medium py-3 px-6 rounded-lg transition-colors"
                   >
                     Send Message
                   </button>

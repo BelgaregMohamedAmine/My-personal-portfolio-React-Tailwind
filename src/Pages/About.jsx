@@ -1,16 +1,19 @@
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
-import { GraduationCap, Briefcase, Heart, Award, ChevronRight } from 'lucide-react';
+import { GraduationCap, Briefcase, Building, Calendar,ArrowRight, ArrowUpRight, Building2, MapPin , ExternalLink, Heart, Award, ChevronRight } from 'lucide-react';
+
 
 import aboutData from '../data/aboutData.json';
+
 import  videoHeader from '../../public/videoHeder.mp4'
-import BioSection from "../components/layout/BioSection";
+import BioSection from "../components/about/BioSection";
+import VolunteerSection from "../components/about/VolunteerSection";
 
 const AboutPage = () => {
 
   const keywords = [
-    { text: "Business Intelligence", size: "text-4xl", color: "text-blue-400" },
+    { text: "Business Intelligence", size: "text-4xl", color: "text-orange-400" },
     { text: "Data Analysis", size: "text-3xl", color: "text-green-400" },
     { text: "Power BI", size: "text-2xl", color: "text-purple-400" },
     { text: "Dashboard", size: "text-xl", color: "text-yellow-400" },
@@ -118,8 +121,8 @@ const AboutPage = () => {
                   to={`#${item.id}`}
                   className={`px-6 py-4 text-sm font-medium whitespace-nowrap border-b-2 transition-colors duration-200 ${
                     activeSection === item.id
-                      ? 'border-blue-600 text-blue-600 dark:text-blue-400'
-                      : 'border-transparent text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400'
+                      ? 'border-orange-600 text-orange-600 dark:text-orange-400'
+                      : 'border-transparent text-gray-600 dark:text-gray-300 hover:text-orange-600 dark:hover:text-orange-400'
                   }`}
                   onClick={(e) => {
                     e.preventDefault();
@@ -131,121 +134,191 @@ const AboutPage = () => {
               ))}
             </nav>
           </div>
-      </div>
+        </div>
 
       {/* About Section */}
       <BioSection aboutData={aboutData} />
 
       {/* Education Section */}
       <section id="education" className="py-20 bg-white dark:bg-gray-800">
-        <div className="container mx-auto px-4">
-          <motion.div 
-            className="max-w-4xl mx-auto"
-            {...fadeIn}
-          >
-            <div className="flex items-center gap-4 mb-12">
-              <GraduationCap className="w-8 h-8 text-blue-600" />
-              <h2 className="text-3xl font-bold dark:text-white">Education</h2>
-            </div>
-            <div className="space-y-8">
-              {aboutData.education.map((edu, index) => (
-                <motion.div 
-                  key={index}
-                  className="relative pl-8 border-l-2 border-blue-600"
-                  initial={{ opacity: 0, x: -20 }}
-                  whileInView={{ opacity: 1, x: 0 }}
-                  transition={{ delay: index * 0.2 }}
-                >
-                  <h3 className="text-xl font-bold dark:text-white">{edu.degree}</h3>
-                  <p className="text-gray-600 dark:text-gray-300">{edu.institution}</p>
-                  <p className="text-sm text-gray-500 dark:text-gray-400">{edu.period}</p>
-                  <p className="mt-2 text-gray-600 dark:text-gray-300">{edu.description}</p>
-                </motion.div>
-              ))}
-            </div>
-          </motion.div>
-        </div>
+      <div className="container mx-auto px-4">
+        <motion.div 
+          className="max-w-5xl mx-auto"
+          {...fadeIn}
+        >
+          {/* Header with decorated title */}
+          <div className="text-center mb-16">
+            <motion.div 
+              className="inline-block p-3 rounded-full bg-orange-50 dark:bg-orange-900/30 mb-4"
+              whileHover={{ scale: 1.05 }}
+            >
+              <GraduationCap className="w-10 h-10 text-orange-600 dark:text-orange-400" />
+            </motion.div>
+            <h2 className="text-4xl font-bold dark:text-white mb-4">Parcours Académique</h2>
+            <div className="w-24 h-1 bg-gradient-to-r from-orange-400 to-orange-600 mx-auto"></div>
+          </div>
+
+          {/* Timeline */}
+          <div className="relative space-y-12">
+            {/* Central line */}
+            <div className="absolute left-0 md:left-1/2 transform md:-translate-x-1/2 h-full w-1 bg-gradient-to-b from-orange-400 to-orange-600 rounded-full"></div>
+
+            {aboutData.education.map((edu, index) => (
+              <motion.div 
+                key={index}
+                initial={{ opacity: 0, y: 50 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: index * 0.2 }}
+                className={`relative flex flex-col md:flex-row gap-8 items-center md:items-start ${
+                  index % 2 === 0 ? 'md:flex-row-reverse' : ''
+                }`}
+              >
+                {/* Timeline dot */}
+                <div className="absolute left-0 md:left-1/2 transform -translate-x-1/2 w-4 h-4 bg-orange-600 rounded-full border-4 border-white dark:border-gray-800"></div>
+
+                {/* Content card */}
+                <div className="w-full md:w-5/12">
+                  <motion.div 
+                    className="bg-white dark:bg-gray-700 p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300"
+                    whileHover={{ scale: 1.02 }}
+                  >
+                    <h3 className="text-2xl font-bold text-gray-800 dark:text-white mb-2">
+                      {edu.degree}
+                    </h3>
+
+                    <div className="space-y-3">
+                      <div className="flex items-center gap-2 text-gray-600 dark:text-gray-300">
+                        <Building className="w-5 h-5 text-orange-600 dark:text-orange-400" />
+                        <span>{edu.institution}</span>
+                      </div>
+
+                      <div className="flex items-center gap-2 text-gray-600 dark:text-gray-300">
+                        <Calendar className="w-5 h-5 text-orange-600 dark:text-orange-400" />
+                        <span>{edu.period}</span>
+                      </div>
+
+                      {edu.description && (
+                        <div className="pt-3 border-t border-gray-200 dark:border-gray-700">
+                          <div className="flex items-start gap-2">
+                            <Award className="w-5 h-5 text-orange-600 dark:text-orange-400 mt-1 flex-shrink-0" />
+                            <p className="text-gray-600 dark:text-gray-300">{edu.description}</p>
+                          </div>
+                        </div>
+                      )}
+                    </div>
+
+                    {/* Hover effect arrow */}
+                    <div className="absolute right-4 bottom-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                      <ArrowRight className="w-5 h-5 text-orange-600 dark:text-orange-400" />
+                    </div>
+                  </motion.div>
+                </div>
+              </motion.div>
+            ))}
+          </div>
+        </motion.div>
+      </div>
       </section>
 
       {/* Experience Section */}
-      <section id="experience" className="py-20">
-        <div className="container mx-auto px-4">
-          <motion.div 
-            className="max-w-4xl mx-auto"
-            {...fadeIn}
-          >
-            <div className="flex items-center gap-4 mb-12">
-              <Briefcase className="w-8 h-8 text-blue-600" />
-              <h2 className="text-3xl font-bold dark:text-white">Experience</h2>
-            </div>
-            <div className="space-y-8">
-              {aboutData.experience.map((exp, index) => (
-                <motion.div 
-                  key={index}
-                  className="bg-white dark:bg-gray-800 rounded-lg p-6 shadow-lg"
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  transition={{ delay: index * 0.2 }}
-                >
-                  <h3 className="text-xl font-bold dark:text-white">{exp.role}</h3>
-                  <p className="text-gray-600 dark:text-gray-300">{exp.company}</p>
-                  <p className="text-sm text-gray-500 dark:text-gray-400">{exp.period}</p>
-                  <p className="mt-2 text-gray-600 dark:text-gray-300">{exp.description}</p>
-                  <ul className="mt-4 space-y-2">
+      <section id="experience" className="py-20 bg-gray-60 dark:bg-gray-900">
+      <div className="container mx-auto px-4">
+        {/* Header */}
+        <motion.div 
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          className="text-center mb-16 max-w-2xl mx-auto"
+        >
+          <span className="text-orange-600 dark:text-orange-400 text-sm font-semibold tracking-wider uppercase mb-2 block">
+            Mon Parcours
+          </span>
+          <h2 className="text-4xl font-bold text-gray-900 dark:text-white mb-4">
+            Expérience Professionnelle
+          </h2>
+          <div className="h-1 w-20 bg-orange-600 mx-auto rounded-full"></div>
+        </motion.div>
+
+        {/* Timeline */}
+        <div className="max-w-4xl mx-auto relative">
+          {/* Timeline line */}
+          <div className="absolute left-8 top-0 bottom-0 w-0.5 bg-gradient-to-b from-orange-600 via-orange-400 to-orange-300"></div>
+
+          {/* Experience Items */}
+          {aboutData.experience.map((exp, index) => (
+            <motion.div
+              key={index}
+              initial={{ opacity: 0, x: -20 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: index * 0.2 }}
+              className="relative mb-12 last:mb-0"
+            >
+              {/* Timeline dot */}
+              <div className="absolute left-8 -translate-x-1/2 w-4 h-4 bg-orange-600 rounded-full border-4 border-white dark:border-gray-800"></div>
+
+              {/* Content */}
+              <div className="ml-20">
+                <div className="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-6 group hover:shadow-xl transition-all duration-300">
+                  {/* Role and Company */}
+                  <div className="flex justify-between items-start mb-4 flex-wrap gap-4">
+                    <div>
+                      <h3 className="text-xl font-bold text-gray-900 dark:text-white group-hover:text-orange-600 dark:group-hover:text-orange-400 transition-colors">
+                        {exp.role}
+                      </h3>
+                      <div className="text-lg text-gray-700 dark:text-gray-300 font-medium">
+                        {exp.company}
+                      </div>
+                    </div>
+                    <div className="flex gap-4 text-sm text-gray-600 dark:text-gray-400">
+                      <div className="flex items-center gap-1">
+                        <Calendar className="w-4 h-4" />
+                        {exp.period}
+                      </div>
+                      <div className="flex items-center gap-1">
+                        <MapPin className="w-4 h-4" />
+                        {exp.location}
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Description */}
+                  <p className="text-gray-600 dark:text-gray-300 mb-6 leading-relaxed">
+                    {exp.description}
+                  </p>
+
+                  {/* Highlights */}
+                  <div className="space-y-3 relative">
+                    
                     {exp.highlights.map((highlight, i) => (
-                      <li key={i} className="flex items-center gap-2 text-gray-600 dark:text-gray-300">
-                        <ChevronRight className="w-4 h-4 text-blue-600" />
-                        {highlight}
-                      </li>
+                      <motion.div
+                        key={i}
+                        className="pl-6 relative group cursor-pointer"
+                        whileHover={{ x: 5 }}
+                        transition={{ type: "spring", stiffness: 300 }}
+                      >
+                        <div className="absolute left-0 top-2 w-2 h-2 bg-orange-600 rounded-full"></div>
+                        <div className="text-gray-600 dark:text-gray-300 group-hover:text-orange-600 dark:group-hover:text-orange-400 transition-colors">
+                          {highlight}
+                        </div>
+                      </motion.div>
                     ))}
-                  </ul>
-                </motion.div>
-              ))}
-            </div>
-          </motion.div>
+                  </div>
+
+                </div>
+              </div>
+            </motion.div>
+          ))}
         </div>
-      </section>
+      </div>
+     </section>
 
       {/* Volunteer Section */}
-      <section id="volunteer" className="py-20 bg-white dark:bg-gray-800">
-        <div className="container mx-auto px-4">
-          <motion.div 
-            className="max-w-4xl mx-auto"
-            {...fadeIn}
-          >
-            <div className="flex items-center gap-4 mb-12">
-              <Heart className="w-8 h-8 text-blue-600" />
-              <h2 className="text-3xl font-bold dark:text-white">Volunteer Work</h2>
-            </div>
-            <div className="grid md:grid-cols-2 gap-8">
-              {aboutData.volunteer.map((vol, index) => (
-                <motion.div 
-                  key={index}
-                  className="bg-gray-50 dark:bg-gray-700 rounded-lg overflow-hidden"
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  transition={{ delay: index * 0.2 }}
-                >
-                  <img 
-                    src={vol.image} 
-                    alt={vol.organization}
-                    className="w-full h-48 object-cover"
-                  />
-                  <div className="p-6">
-                    <h3 className="text-xl font-bold dark:text-white">{vol.role}</h3>
-                    <p className="text-gray-600 dark:text-gray-300">{vol.organization}</p>
-                    <p className="text-sm text-gray-500 dark:text-gray-400">{vol.period}</p>
-                    <p className="mt-2 text-gray-600 dark:text-gray-300">{vol.description}</p>
-                  </div>
-                </motion.div>
-              ))}
-            </div>
-          </motion.div>
-        </div>
-      </section>
+      <VolunteerSection aboutData={aboutData} />
 
       {/* Skills Section */}
-      <section id="skills" className="py-20">
+      <section id="skills" className="py-20 bg-gray-60 dark:bg-gray-900">
         <div className="container mx-auto px-4">
           <motion.div 
             className="max-w-4xl mx-auto"
@@ -266,7 +339,7 @@ const AboutPage = () => {
                     {category.skills.map((skill, i) => (
                       <span 
                         key={i}
-                        className="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-600 dark:text-blue-300 rounded-full text-sm"
+                        className="px-3 py-1 bg-orange-100 dark:bg-orange-900 text-orange-600 dark:text-orange-300 rounded-full text-sm"
                       >
                         {skill}
                       </span>
@@ -287,7 +360,7 @@ const AboutPage = () => {
             {...fadeIn}
           >
             <div className="flex items-center gap-4 mb-12">
-              <Award className="w-8 h-8 text-blue-600" />
+              <Award className="w-8 h-8 text-orange-600" />
               <h2 className="text-3xl font-bold dark:text-white">Certificates</h2>
             </div>
             <div className="grid md:grid-cols-3 gap-8">
