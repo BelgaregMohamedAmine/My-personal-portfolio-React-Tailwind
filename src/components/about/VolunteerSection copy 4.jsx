@@ -104,7 +104,7 @@ const FullscreenModal = ({ isOpen, onClose, children }) => {
 };
 
 // Composant Card
-const VolunteerCard = ({ data, isVisible, onNavigate, currentIndex, totalItems }) => {
+const VolunteerCard = ({ data, isVisible }) => {
   const [isFullscreen, setIsFullscreen] = useState(false);
   const [isHovering, setIsHovering] = useState(false);
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
@@ -121,39 +121,10 @@ const VolunteerCard = ({ data, isVisible, onNavigate, currentIndex, totalItems }
   if (!isVisible) return null;
 
   return (
-    <div className="m-4 bg-white dark:bg-gray-800 rounded-xl md:rounded-3xl overflow-hidden shadow-lg relative">
-      {/* Navigation Bar - New Elegant Design */}
-      <div className="top-0 left-0 right-0 bg-gradient-to-b from-black/50 to-transparent px-4 pt-4 flex justify-between items-center">
-        <div className="flex items-center gap-2">
-          <span className="text-white text-md font-medium">
-            {currentIndex + 1}/{totalItems}
-          </span>
-          <div className="h-2 bg-white/20 rounded-full w-24 overflow-hidden">
-            <div 
-              className="h-full bg-white rounded-full transition-all duration-500"
-              style={{ width: `${((currentIndex + 1) / totalItems) * 100}%` }}
-            />
-          </div>
-        </div>
-        <div className="flex gap-2">
-          <button
-            onClick={(e) => onNavigate(e, 'prev')}
-            className="bg-white/10 hover:bg-white/20 text-white p-2 rounded-lg backdrop-blur-sm transition-all duration-300 group"
-          >
-            <ChevronLeft className="w-4 h-4 group-hover:-translate-x-0.5 transition-transform" />
-          </button>
-          <button
-            onClick={(e) => onNavigate(e, 'next')}
-            className="bg-white/10 hover:bg-white/20 text-white p-2 rounded-lg backdrop-blur-sm transition-all duration-300 group"
-          >
-            <ChevronRight className="w-4 h-4 group-hover:translate-x-0.5 transition-transform" />
-          </button>
-        </div>
-      </div>
-
+    <div className="bg-white dark:bg-gray-800 rounded-xl md:rounded-3xl overflow-hidden shadow-lg">
       <div className="flex flex-col md:flex-row p-3 md:p-6 gap-4 md:gap-6">
         <div 
-          className="relative w-full md:w-[450px] h-[200px] md:h-[280px] rounded-lg md:rounded-2xl overflow-hidden"
+          className="relative w-full md:w-[280px] h-[200px] md:h-[280px] rounded-lg md:rounded-2xl overflow-hidden"
           onMouseEnter={() => setIsHovering(true)}
           onMouseLeave={() => setIsHovering(false)}
         >
@@ -177,7 +148,7 @@ const VolunteerCard = ({ data, isVisible, onNavigate, currentIndex, totalItems }
               e.preventDefault();
               setIsFullscreen(true);
             }}
-            className="absolute top-2 left-2 bg-black/50 p-1.5 rounded-full text-white hover:scale-110 transition-transform"
+            className="absolute top-2 right-2 bg-black/50 p-1.5 rounded-full text-white hover:scale-110 transition-transform"
           >
             <Maximize2 className="w-4 h-4" />
           </button>
@@ -191,7 +162,7 @@ const VolunteerCard = ({ data, isVisible, onNavigate, currentIndex, totalItems }
           <div className="space-y-2 md:space-y-3">
             <div className="flex items-center gap-2 text-sm md:text-base text-gray-600 dark:text-gray-300">
               <Building className="w-4 h-4 flex-shrink-0" />
-              <span className="">{data.organization}</span>
+              <span className="truncate">{data.organization}</span>
             </div>
             <div className="flex items-center gap-2 text-sm md:text-base text-gray-600 dark:text-gray-300">
               <Calendar className="w-4 h-4 flex-shrink-0" />
@@ -199,7 +170,7 @@ const VolunteerCard = ({ data, isVisible, onNavigate, currentIndex, totalItems }
             </div>
           </div>
 
-          <p className="mt-3 md:mt-4 text-sm md:text-base text-gray-600 dark:text-gray-300 leading-relaxed ">
+          <p className="mt-3 md:mt-4 text-sm md:text-base text-gray-600 dark:text-gray-300 leading-relaxed line-clamp-3">
             {data.description}
           </p>
         </div>
@@ -266,7 +237,7 @@ const VolunteerCard = ({ data, isVisible, onNavigate, currentIndex, totalItems }
 };
 
 // Composant principal
-const VolunteerSection = ({ aboutData }) => {
+const EnhancedVolunteerSection = ({ aboutData }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const handleNavigation = (e, direction) => {
@@ -280,7 +251,7 @@ const VolunteerSection = ({ aboutData }) => {
   };
 
   return (
-    <section id='volunteer' className="bg-gradient-to-br from-yellow-300 via-orange-400 to-red-500 py-8 md:py-16">
+    <section className="bg-gradient-to-br from-yellow-300 via-orange-400 to-red-500 py-8 md:py-16">
       <div className="container mx-auto px-1">
         <div className="text-center mb-8 md:mb-12">
           <div className="inline-block p-3 rounded-full bg-white/20 mb-4">
@@ -292,23 +263,36 @@ const VolunteerSection = ({ aboutData }) => {
           <div className="w-16 md:w-24 h-1 bg-white mx-auto"></div>
         </div>
 
-        <div className="relative max-w-5xl mx-auto mb-20">
+        <div className="relative max-w-4xl mx-auto mb-20">
+          {/* Navigation buttons in top bar */}
+          <div className="flex justify-end gap-2 mb-4">
+            <button
+              onClick={(e) => handleNavigation(e, 'prev')}
+              className="bg-white/80 text-gray-800 p-2 rounded-full shadow-lg hover:bg-white hover:scale-110 transition-all"
+            >
+              <ChevronLeft className="w-5 h-5" />
+            </button>
+            <button
+              onClick={(e) => handleNavigation(e, 'next')}
+              className="bg-white/80 text-gray-800 p-2 rounded-full shadow-lg hover:bg-white hover:scale-110 transition-all"
+            >
+              <ChevronRight className="w-5 h-5" />
+            </button>
+          </div>
+
           <div className="relative">
             {aboutData.volunteer.map((item, index) => (
               <div key={index} className={index === currentIndex ? 'block' : 'hidden'}>
                 <VolunteerCard 
                   data={item}
                   isVisible={index === currentIndex}
-                  onNavigate={handleNavigation}
-                  currentIndex={currentIndex}
-                  totalItems={aboutData.volunteer.length}
                 />
               </div>
             ))}
           </div>
 
-          {/* Elegant dots navigation */}
-          <div className="absolute -bottom-12 left-1/2 -translate-x-1/2 flex items-center gap-3">
+          {/* Dots navigation */}
+          <div className="absolute -bottom-12 left-1/2 -translate-x-1/2 flex items-center gap-2">
             {aboutData.volunteer.map((_, idx) => (
               <button
                 key={idx}
@@ -316,18 +300,12 @@ const VolunteerSection = ({ aboutData }) => {
                   e.preventDefault();
                   setCurrentIndex(idx);
                 }}
-                className={`transition-all duration-300 relative ${
+                className={`transition-all duration-300 ${
                   idx === currentIndex 
-                    ? 'w-8 h-2 bg-white rounded-full' 
-                    : 'w-2 h-2 bg-white/50 hover:bg-white/70 rounded-full hover:scale-110'
+                    ? 'w-6 h-2 bg-white rounded-full' 
+                    : 'w-2 h-2 bg-white/50 hover:bg-white/70 rounded-full'
                 }`}
-              >
-                {/*idx === currentIndex && (
-                  <span className="absolute -bottom-6 left-1/2 -translate-x-1/2 text-white text-xs font-medium opacity-75">
-                    {idx + 1}
-                  </span>
-                )*/}
-              </button>
+              />
             ))}
           </div>
         </div>
@@ -336,4 +314,4 @@ const VolunteerSection = ({ aboutData }) => {
   );
 };
 
-export default VolunteerSection;
+export default EnhancedVolunteerSection;
