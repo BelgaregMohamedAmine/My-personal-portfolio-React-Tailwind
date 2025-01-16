@@ -121,9 +121,9 @@ const VolunteerCard = ({ data, isVisible, onNavigate, currentIndex, totalItems }
   if (!isVisible) return null;
 
   return (
-    <div className="m-4 bg-white dark:bg-gray-800 rounded-xl md:rounded-3xl overflow-hidden shadow-lg relative">
+    <div className="m-4 bg-white dark:bg-gray-800 rounded-xl md:rounded-2xl overflow-hidden shadow-lg relative">
       {/* Navigation Bar - New Elegant Design */}
-      <div className="top-0 left-0 right-0 bg-gradient-to-b from-black/50 to-transparent px-4 pt-4 flex justify-between items-center">
+      <div className="top-0 left-0 right-0 bg-orange-700 dark:bg-gray-800  px-4 py-2 flex justify-between items-center">
         <div className="flex items-center gap-2">
           <span className="text-white text-md font-medium">
             {currentIndex + 1}/{totalItems}
@@ -140,13 +140,13 @@ const VolunteerCard = ({ data, isVisible, onNavigate, currentIndex, totalItems }
             onClick={(e) => onNavigate(e, 'prev')}
             className="bg-white/10 hover:bg-white/20 text-white p-2 rounded-lg backdrop-blur-sm transition-all duration-300 group"
           >
-            <ChevronLeft className="w-4 h-4 group-hover:-translate-x-0.5 transition-transform" />
+            <ChevronLeft className="w-4 h-4 md:w-8 md:h-8 group-hover:-translate-x-0.5 transition-transform" />
           </button>
           <button
             onClick={(e) => onNavigate(e, 'next')}
             className="bg-white/10 hover:bg-white/20 text-white p-2 rounded-lg backdrop-blur-sm transition-all duration-300 group"
           >
-            <ChevronRight className="w-4 h-4 group-hover:translate-x-0.5 transition-transform" />
+            <ChevronRight className="w-4 h-4 md:w-8 md:h-8 group-hover:translate-x-0.5 transition-transform" />
           </button>
         </div>
       </div>
