@@ -121,9 +121,9 @@ const VolunteerCard = ({ data, isVisible, onNavigate, currentIndex, totalItems }
   if (!isVisible) return null;
 
   return (
-    <div className="m-4 bg-white dark:bg-gray-800 rounded-xl md:rounded-2xl overflow-hidden shadow-lg relative">
+    <div className="m-4 bg-gray-100 dark:bg-gray-900 rounded-xl md:rounded-2xl overflow-hidden shadow-lg relative">
       {/* Navigation Bar - New Elegant Design */}
-      <div className="top-0 left-0 right-0 bg-orange-700 dark:bg-gray-800  px-4 py-2 flex justify-between items-center">
+      <div className="top-0 left-0 right-0 bg-orange-400 dark:bg-gray-700  px-4 py-2 flex justify-between items-center">
         <div className="flex items-center gap-2">
           <span className="text-white text-md font-medium">
             {currentIndex + 1}/{totalItems}
@@ -280,16 +280,16 @@ const VolunteerSection = ({ aboutData }) => {
   };
 
   return (
-    <section id='volunteer' className="bg-gradient-to-br from-yellow-300 via-orange-400 to-red-500 py-8 md:py-16">
+    <section id='volunteer' className="bg-white dark:bg-gray-800 py-8 md:py-16">
       <div className="container mx-auto px-1">
         <div className="text-center mb-8 md:mb-12">
-          <div className="inline-block p-3 rounded-full bg-white/20 mb-4">
-            <Heart className="w-6 h-6 md:w-8 md:h-8 text-white" />
+          <div className="inline-block p-3 rounded-full bg-orange-50 dark:bg-orange-900/30 mb-4">
+            <Heart className="w-6 h-6 md:w-8 md:h-8 text-orange-600 dark:text-orange-400" />
           </div>
-          <h2 className="text-2xl md:text-3xl font-bold text-white mb-2">
+          <h2 className="text-2xl md:text-3xl font-bold dark:text-white mb-2">
             Volunteer Work & Clubs
           </h2>
-          <div className="w-16 md:w-24 h-1 bg-white mx-auto"></div>
+          <div className="w-16 md:w-24 h-1 bg-gradient-to-r from-orange-400 to-orange-600 mx-auto"></div>
         </div>
 
         <div className="relative max-w-5xl mx-auto mb-20">

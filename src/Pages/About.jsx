@@ -1,14 +1,19 @@
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
-import { GraduationCap, Briefcase, Building, Calendar,ArrowRight, ArrowUpRight, Building2, MapPin , ExternalLink, Heart, Award, ChevronRight } from 'lucide-react';
+import { GraduationCap, Building, Calendar,ArrowRight, Layers , MapPin , Award } from 'lucide-react';
 
 
 import aboutData from '../data/aboutData.json';
 
 import  videoHeader from '../../public/videoHeder.mp4'
+
+import NavigationSection from "../components/about/NavigationSection"
 import BioSection from "../components/about/BioSection";
 import VolunteerSection from "../components/about/VolunteerSection";
+import SkillsSection from "../components/about/SkillsSection";
+import CertificatesSection from "../components/about/CertificatesSection";
+import CTASection from "../components/about/CTASection";
 
 const AboutPage = () => {
 
@@ -56,8 +61,8 @@ const AboutPage = () => {
 
   return (
     <div className="min-h-screen bg-gray-100 dark:bg-gray-900">
-       {/* Hero Section with Video Background */}
-        <div className="relative h-[40vh]">
+      {/* Hero Section with Video Background */}
+      <div className="relative h-[40vh]">
           {/* Video Background with blur effect */}
           <div className="absolute inset-0 overflow-hidden">
             <video 
@@ -97,32 +102,10 @@ const AboutPage = () => {
               Data Analyst || Business Intelligence Developer || web developer
             </motion.p>
           </div>
-        </div>
+      </div>
 
-        {/* Bottom Navigation Bar */}
-        <div className="sticky top-0 bg-white dark:bg-gray-800 shadow-lg top-16 z-10 ">
-          <div className="container mx-auto px-4">
-            <nav className="flex overflow-x-auto">
-              {navItems.map((item) => (
-                <Link
-                  key={item.id}
-                  to={`#${item.id}`}
-                  className={`px-6 py-4 text-sm font-medium whitespace-nowrap border-b-2 transition-colors duration-200 ${
-                    activeSection === item.id
-                      ? 'border-orange-600 text-orange-600 dark:text-orange-400'
-                      : 'border-transparent text-gray-600 dark:text-gray-300 hover:text-orange-600 dark:hover:text-orange-400'
-                  }`}
-                  onClick={(e) => {
-                    e.preventDefault();
-                    document.getElementById(item.id)?.scrollIntoView({ behavior: 'smooth' });
-                  }}
-                >
-                  {item.label}
-                </Link>
-              ))}
-            </nav>
-          </div>
-        </div>
+      {/* Bottom Navigation Bar */}
+    <NavigationSection activeSection={activeSection} />
 
       {/* About Section */}
       <BioSection aboutData={aboutData} />
@@ -142,7 +125,7 @@ const AboutPage = () => {
             >
               <GraduationCap className="w-10 h-10 text-orange-600 dark:text-orange-400" />
             </motion.div>
-            <h2 className="text-4xl font-bold dark:text-white mb-4">Parcours Académique</h2>
+            <h2 className="text-4xl font-bold dark:text-white mb-4">Educational Journey</h2>
             <div className="w-24 h-1 bg-gradient-to-r from-orange-400 to-orange-600 mx-auto"></div>
           </div>
 
@@ -176,21 +159,21 @@ const AboutPage = () => {
                     </h3>
 
                     <div className="space-y-3">
-                      <div className="flex items-center gap-2 text-gray-600 dark:text-gray-300">
+                      <div className="flex items-center gap-2 text-gray-700 dark:text-gray-300">
                         <Building className="w-5 h-5 text-orange-600 dark:text-orange-400" />
-                        <span>{edu.institution}</span>
+                        <span className="text-base md:text-lg font-medium">{edu.institution}</span>
                       </div>
 
-                      <div className="flex items-center gap-2 text-gray-600 dark:text-gray-300">
+                      <div className="flex items-center gap-2 text-gray-600 dark:text-gray-400">
                         <Calendar className="w-5 h-5 text-orange-600 dark:text-orange-400" />
-                        <span>{edu.period}</span>
+                        <span className='text-xs md:text-sm'>{edu.period}</span>
                       </div>
 
                       {edu.description && (
                         <div className="pt-3 border-t border-gray-200 dark:border-gray-700">
                           <div className="flex items-start gap-2">
                             <Award className="w-5 h-5 text-orange-600 dark:text-orange-400 mt-1 flex-shrink-0" />
-                            <p className="text-gray-600 dark:text-gray-300">{edu.description}</p>
+                            <p className="text-sm md:text-base text-gray-600 dark:text-gray-300">{edu.description}</p>
                           </div>
                         </div>
                       )}
@@ -209,24 +192,20 @@ const AboutPage = () => {
       </div>
       </section>
 
-    {/* Experience Section */}
-    <section id="experience" className="py-12 md:py-20 bg-gray-60 dark:bg-gray-900">
-      <div className="container mx-auto px-4">
+      {/* Experience Section */}
+      <section id="experience" className="py-12 md:py-20 bg-gray-60 dark:bg-gray-900">
+      <div className="container mx-auto px-4 ">
         {/* Header */}
-        <motion.div 
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          className="text-center mb-8 md:mb-16 max-w-2xl mx-auto"
-        >
-          <span className="text-orange-600 dark:text-orange-400 text-sm font-semibold tracking-wider uppercase mb-2 block">
-            Mon Parcours
-          </span>
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
-            Expérience Professionnelle
-          </h2>
-          <div className="h-1 w-20 bg-orange-600 mx-auto rounded-full"></div>
-        </motion.div>
+        <div className="text-center mb-16">
+            <motion.div 
+              className="inline-block p-3 rounded-full bg-orange-50 dark:bg-orange-900/30 mb-4"
+              whileHover={{ scale: 1.05 }}
+            >
+              <Layers className="w-10 h-10 text-orange-600 dark:text-orange-400" />
+            </motion.div>
+            <h2 className="text-4xl font-bold dark:text-white mb-4">Professional Experience</h2>
+            <div className="w-24 h-1 bg-gradient-to-r from-orange-400 to-orange-600 mx-auto"></div>
+          </div>
 
         {/* Timeline */}
         <div className="max-w-4xl mx-auto relative">
@@ -298,82 +277,19 @@ const AboutPage = () => {
           ))}
         </div>
       </div>
-    </section>
+      </section>
 
       {/* Volunteer Section */}
       <VolunteerSection aboutData={aboutData} />
 
       {/* Skills Section */}
-      <section id="skills" className="py-20 bg-gray-60 dark:bg-gray-900">
-        <div className="container mx-auto px-4">
-          <motion.div 
-            className="max-w-4xl mx-auto"
-            {...fadeIn}
-          >
-            <h2 className="text-3xl font-bold mb-12 text-center dark:text-white">Skills</h2>
-            <div className="grid md:grid-cols-3 gap-8">
-              {Object.values(aboutData.skills).map((category, index) => (
-                <motion.div 
-                  key={index}
-                  className="bg-white dark:bg-gray-800 rounded-lg p-6 shadow-lg"
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  transition={{ delay: index * 0.2 }}
-                >
-                  <h3 className="text-xl font-bold mb-4 dark:text-white">{category.title}</h3>
-                  <div className="flex flex-wrap gap-2">
-                    {category.skills.map((skill, i) => (
-                      <span 
-                        key={i}
-                        className="px-3 py-1 bg-orange-100 dark:bg-orange-900 text-orange-600 dark:text-orange-300 rounded-full text-sm"
-                      >
-                        {skill}
-                      </span>
-                    ))}
-                  </div>
-                </motion.div>
-              ))}
-            </div>
-          </motion.div>
-        </div>
-      </section>
+      <SkillsSection aboutData={aboutData} />
 
       {/* Certificates Section */}
-      <section id="certificates" className="py-20 bg-white dark:bg-gray-800">
-        <div className="container mx-auto px-4">
-          <motion.div 
-            className="max-w-4xl mx-auto"
-            {...fadeIn}
-          >
-            <div className="flex items-center gap-4 mb-12">
-              <Award className="w-8 h-8 text-orange-600" />
-              <h2 className="text-3xl font-bold dark:text-white">Certificates</h2>
-            </div>
-            <div className="grid md:grid-cols-3 gap-8">
-              {aboutData.certificates.map((cert, index) => (
-                <motion.div 
-                  key={index}
-                  className="bg-gray-50 dark:bg-gray-700 rounded-lg overflow-hidden"
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  transition={{ delay: index * 0.2 }}
-                >
-                  <img 
-                    src={cert.image} 
-                    alt={cert.title}
-                    className="w-full h-48 object-cover"
-                  />
-                  <div className="p-6">
-                    <h3 className="text-lg font-bold dark:text-white">{cert.title}</h3>
-                    <p className="text-gray-600 dark:text-gray-300">{cert.issuer}</p>
-                    <p className="text-sm text-gray-500 dark:text-gray-400">{cert.date}</p>
-                  </div>
-                </motion.div>
-              ))}
-            </div>
-          </motion.div>
-        </div>
-      </section>
+      <CertificatesSection aboutData={aboutData} />
+
+      {/* CALL TO ACTION SECTION */}
+      <CTASection/>
     </div>
   );
 };

@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { BookOpen, Database, Share2 } from 'lucide-react';
+import { BookOpen, Database, Share2, ChevronsLeftRightEllipsis } from 'lucide-react';
 
 const BioSection = ({ aboutData }) => {
   // Séparation du texte bio en trois parties
@@ -22,12 +22,17 @@ const BioSection = ({ aboutData }) => {
           viewport={{ once: true }}
           className="max-w-4xl mx-auto"
         >
-          {/* En-tête */}
-          <div className="text-center mb-12">
-            <h2 className="text-2xl sm:text-3xl font-bold mb-4 dark:text-white">
-              {aboutData.personalInfo.name}
-            </h2>
-            <div className="w-32 h-1 bg-gradient-to-r from-orange-400 to-red-600 mx-auto"></div>
+
+           {/* Header with decorated title */}
+           <div className="text-center mb-16">
+            <motion.div 
+              className="inline-block p-3 rounded-full bg-orange-50 dark:bg-orange-900/30 mb-4"
+              whileHover={{ scale: 1.05 }}
+            >
+              <ChevronsLeftRightEllipsis  className="w-10 h-10 text-orange-600 dark:text-orange-400" />
+            </motion.div>
+            <h2 className="text-4xl font-bold dark:text-white mb-4">{aboutData.personalInfo.name}</h2>
+            <div className="w-24 h-1 bg-gradient-to-r from-orange-400 to-orange-600 mx-auto"></div>
           </div>
 
           {/* Sections bio */}

@@ -143,38 +143,120 @@
       ]
     }
   ],
-  "skills": {
-    "dataAnalysis": {
-      "title": "BI & Data Analysis",
-      "skills": ["Python", "R", "SQL", "Tableau", "Power BI", "Excel", "Statistical Analysis"]
+  "Skills": {
+    "Business Intelligence": {
+      "Tools": [
+        "Power BI (DAX, Power Query)",
+        "Microsoft BI Suite (SSIS, SSAS, SSRS)",
+        "Tableau",
+        "SQL Server"
+      ],
+      "Competences": [
+        "Data Visualization",
+        "ETL Process",
+        "Data Modeling",
+        "Data Warehousing",
+        "Dashboard Creation",
+        "SQL Development",
+        "Business Analytics"
+      ]
     },
-    "webDevelopment": {
-      "title": "Web Development",
-      "skills": ["React", "Node.js", "JavaScript", "HTML5", "CSS3", "MongoDB", "Git"]
+    "Data Analysis": {
+      "Tools": [
+        "Python (Pandas, NumPy, Matplotlib)",
+        "R",
+        "Advanced Excel (Power Pivot, Macros)",
+        "SPSS"
+      ],
+      "Competences": [
+        "Statistical Analysis",
+        "Machine Learning",
+        "Data Mining",
+        "Predictive Analytics",
+        "Data Cleaning",
+        "Report Generation"
+      ]
     },
-    "design": {
-      "title": "Graphic Design",
-      "skills": ["Adobe Photoshop", "Illustrator", "Figma", "UI/UX Design", "Typography"]
+    "Web Development": {
+      "Tools": [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "React.js",
+        "Node.js/Express.js",
+        "MongoDB",
+        "Tailwind CSS",
+        "Bootstrap"
+      ],
+      "Competences": [
+        "Frontend Development",
+        "Backend Development",
+        "API Integration",
+        "Database Management",
+        "Responsive Design",
+        "Web Application Architecture"
+      ]
+    },
+    "Project Management": {
+      "Tools": [
+        "Jira",
+        "Microsoft Project"
+      ],
+      "Competences": [
+        "Agile Scrum",
+        "GIMSI Methodology",
+        "Team Leadership",
+        "Project Planning"
+      ]
+    },
+    "Design & Documentation": {
+      "Tools": [
+        "Photoshop",
+        "Canva",
+        "Microsoft Office Suite",
+        "LaTeX"
+      ],
+      "Competences": [
+        "Advanced Document Formatting",
+        "Professional Documentation",
+        "UI/UX Design",
+        "Graphic Design",
+        "Document Design"
+      ]
     }
   },
   "certificates": [
     {
-      "title": "Google Data Analytics Professional Certificate",
-      "issuer": "Google",
-      "date": "2023",
-      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCzZofKR8u-t0DE99jEL0wMaClQnHUrRaZfA&s"
+      "title": "PwC Switzerland - Power BI Job Simulation",
+      "issuer": "Forage",
+      "date": "September 27, 2024",
+      "Credential ID" : "vteEv4p3RAdgxWSNf",
+      "Credential URL" : "https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/PwC%20Switzerland/a87GpgE6tiku7q3gu_PwC%20Switzerland_A7L4tNaKBJ2hkx9Ed_1727461402943_completion_certificate.pdf",
+      "image": "https://res.cloudinary.com/medaminebelgareg/image/upload/v1737124024/portfolio/certificates/forage-pwc_iwkvnr.png"
     },
     {
-      "title": "AWS Certified Data Analytics",
-      "issuer": "Amazon Web Services",
-      "date": "2022",
-      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCzZofKR8u-t0DE99jEL0wMaClQnHUrRaZfA&s"
+      "title": "Microsoft PL-300 Exam Preparation and Practice course",
+      "issuer": "Microsoft",
+      "date": "August 14, 2024",
+      "Credential ID" : "QH25P7U7AL12",
+      "Credential URL" : "https://www.coursera.org/account/accomplishments/records/QH25P7U7AL12",
+      "image": "https://res.cloudinary.com/medaminebelgareg/image/upload/v1737124325/portfolio/certificates/pl-300_w0txvu.png"
     },
     {
-      "title": "Meta Front-End Developer Certificate",
-      "issuer": "Meta",
-      "date": "2022",
-      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCzZofKR8u-t0DE99jEL0wMaClQnHUrRaZfA&s"
+      "title": "Business Intelligence Foundation Professional Certification BIFPC™",
+      "issuer": "certiprof",
+      "date": "August 30, 2024",
+      "Credential ID" : "99556713",
+      "Credential URL" : "",
+      "image": "https://res.cloudinary.com/medaminebelgareg/image/upload/v1737124325/portfolio/certificates/Business-Intelligence-Foundation-Professional-Certification_BIFPC_be9efi.png"
+    },
+    {
+      "title": "Python for Data Science",
+      "issuer": "IBM",
+      "date": "May 17, 2021",
+      "Credential ID" : "ffce37ab9d484e47b93e18fd869e88f1",
+      "Credential URL" : "https://courses.cognitiveclass.ai/certificates/ffce37ab9d484e47b93e18fd869e88f1?fbclid=IwY2xjawEpwpxleHRuA2FlbQIxMAABHZQC-9eZjDy3MG0FGRpTHvT76MKEBbywF1Yz0QBdvzMqQ8ELz5Z3bbaSNQ_aem_FKAt-uSrHF6hLS5dDe9wKg",
+      "image": "https://res.cloudinary.com/medaminebelgareg/image/upload/v1737124024/portfolio/certificates/Python-for-Data-Science_qw6bbn.png"
     }
   ]
 }
