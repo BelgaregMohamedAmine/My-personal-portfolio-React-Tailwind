@@ -96,7 +96,7 @@ const HomePage = () => {
             Prêt à transformer vos données en valeur ajoutée ?
           </h2>
           <Link to="/contact" className="inline-flex items-center px-8 py-4 rounded-lg bg-white text-orange-600 hover:bg-gray-100 transition-colors">
-            Démarrons votre projet
+            Démarrons votre projet projet
             <ArrowRight className="ml-2 h-5 w-5" />
           </Link>
         </div>
