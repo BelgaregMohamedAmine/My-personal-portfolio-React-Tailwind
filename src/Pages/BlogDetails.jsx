@@ -8,6 +8,7 @@ import {
   Bookmark,
   ThumbsUp,
 } from "lucide-react";
+
 import blogData from "../data/blogData.json";
 import BlogSectionRenderer from "../components/layout/BlogSectionRenderer";
 
