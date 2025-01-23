@@ -46,9 +46,9 @@ const ProjectCarousel = () => {
       return (
         <div
           key="view-all"
-          className="carousel-item w-full md:w-1/2 lg:w-1/3 px-2 mb-4"
+          className="carousel-item w-full md:w-1/2 lg:w-1/3 px-2 mb-4 "
         >
-          <div className="card h-full bg-white dark:bg-gray-800 shadow-md dark:shadow-xl rounded-lg overflow-hidden hover:shadow-xl dark:hover:shadow-2xl transition-all duration-300 flex flex-col justify-center items-center">
+          <div className="card h-full bg-white dark:bg-gray-800 shadow-md dark:shadow-xl rounded-lg overflow-hidden hover:shadow-xl  dark:hover:shadow-2xl transition-all duration-300 flex flex-col justify-center items-center ">
             <CirclePlus className="h-12 w-12 text-orange-600 dark:text-orange-400 mb-4" />
             <h3 className="text-xl font-semibold mb-2 text-gray-900 dark:text-white">
               View All Projects
@@ -77,7 +77,7 @@ const ProjectCarousel = () => {
         onMouseEnter={() => setHoveredProject(project.id)}
         onMouseLeave={() => setHoveredProject(null)}
       >
-        <div className="card h-full bg-white dark:bg-gray-800 shadow-md dark:shadow-xl rounded-lg overflow-hidden hover:shadow-xl dark:hover:shadow-2xl transition-all duration-300">
+        <div className="card h-full bg-white dark:bg-gray-800 shadow-md dark:shadow-xl rounded-lg overflow-hidden hover:shadow-xl dark:hover:shadow-2xl transition-all duration-300 ">
           <div className="card-image relative">
             <img
               src={displayImage}
@@ -147,19 +147,6 @@ const ProjectCarousel = () => {
           >
             <ChevronRight className="h-6 w-6 text-gray-700 dark:text-gray-300" />
           </button>
-        </div>
-
-        <div className="carousel-indicators flex justify-center mt-4">
-          {Array.from({ length: Math.ceil(projects.length / visibleProjects) }).map((_, index) => (
-            <span
-              key={index}
-              className={`h-2 w-2 mx-1 rounded-full transition-all duration-300 ${
-                index === Math.floor(currentProjectIndex / visibleProjects)
-                  ? 'bg-orange-500 w-4' 
-                  : 'bg-gray-300 dark:bg-gray-600'
-              }`}
-            />
-          ))}
         </div>
       </div>
     </section>

@@ -1,131 +1,64 @@
-import React, { useEffect } from 'react';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import 'swiper/swiper-bundle.css'; // Import Swiper styles
-import SwiperCore, { Navigation, Pagination } from 'swiper/core'; // Correct import path
+import React from 'react';
+import { Carousel } from 'react-responsive-carousel';
+import 'react-responsive-carousel/lib/styles/carousel.min.css';
 
-// Install Swiper modules
-SwiperCore.use([Navigation, Pagination]);
+const Recommendations = () => {
+  const recommendations = [
+    {
+      name: "Makram BEN JEDDOU",
+      role: "Professeur Technologue, consultant et formateur en traitement et analyse de données",
+      date: "August 19, 2024",
+      text: "Mohamed Amine Belgareg fut un excellent étudiant doté d'une grande capacité d'analyse et d'autonomie. Il a surtout excellé lors de son travail de mémoire de master en accomplissant un travail de grande qualité. Je recommande vivement Mohamed Amine Belgareg pour son sérieux, sa persévérance, son autonomie et son abnégation.",
+      image: "https://media.licdn.com/dms/image/v2/C4E03AQHwyBrEZmoG6A/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1645391887696?e=1743033600&v=beta&t=m6lEiRRGJ34xfe4y4A9P7SSP1kMzkwN64JdyhSU2MG0",
+    },
+    {
+      name: "Nesrine Elleuch Jallouli",
+      role: "BI | UX/UI enthousiast | Women Techmakers Ambassador | SEO, GA, GTM | University Teacher",
+      date: "August 19, 2024",
+      text: "Mohamed Amine est un élément très sérieux qui a dépassé mes attentes dans tous les projets qu'il a réalisé. Il est autonome, persévérant et sait travailler en équipe. Je recommande vivement son profil.",
+      image: "https://media.licdn.com/dms/image/v2/D4D03AQHqO8umCEU26A/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1666868599148?e=1743033600&v=beta&t=IdezCr5W42tZ-EWFMNeJTnYu0IlTgFZDzXKpEbQFMTQ",
+    },
+    // Ajoutez d'autres recommandations ici
+  ];
 
-const Testimonials = () => {
   return (
-    <section className="py-24">
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className="mb-14 flex flex-col justify-center items-center sm:flex-row sm:items-center sm:justify-between max-sm:gap-8">
-          <h2 className="text-4xl text-center font-bold text-gray-900 lg:text-left">Testimonials</h2>
-          <div className="flex items-center gap-8">
-            <button
-              className="swiper-button-prev group flex justify-center items-center border border-solid border-indigo-600 w-12 h-12 transition-all duration-500 rounded-full hover:bg-indigo-600"
-              data-carousel-prev
-            >
-              <svg
-                className="h-6 w-6 text-indigo-600 group-hover:text-white"
-                viewBox="0 0 24 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M20.9999 12L4.99992 12M9.99992 6L4.70703 11.2929C4.3737 11.6262 4.20703 11.7929 4.20703 12C4.20703 12.2071 4.3737 12.3738 4.70703 12.7071L9.99992 18"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                />
-              </svg>
-            </button>
-            <button
-              className="swiper-button-next group flex justify-center items-center border border-solid border-indigo-600 w-12 h-12 transition-all duration-500 rounded-full hover:bg-indigo-600"
-              data-carousel-next
-            >
-              <svg
-                className="h-6 w-6 text-indigo-600 group-hover:text-white"
-                viewBox="0 0 24 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M3 12L19 12M14 18L19.2929 12.7071C19.6262 12.3738 19.7929 12.2071 19.7929 12C19.7929 11.7929 19.6262 11.6262 19.2929 11.2929L14 6"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                />
-              </svg>
-            </button>
-          </div>
-        </div>
-        <Swiper
-          className="lg:flex grid grid-cols-1 md:grid-cols-2 justify-center items-center gap-8"
-          slidesPerView={3}
-          spaceBetween={28}
-          centeredSlides={true}
-          loop={true}
-          navigation={{
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
-          }}
-          pagination={{
-            clickable: true,
-          }}
-          breakpoints={{
-            0: {
-              slidesPerView: 1,
-              spaceBetween: 20,
-              centeredSlides: false,
-            },
-            768: {
-              slidesPerView: 2,
-              spaceBetween: 28,
-              centeredSlides: true,
-            },
-            1024: {
-              slidesPerView: 3,
-              spaceBetween: 32,
-            },
-          }}
-        >
-          {[1, 2, 3, 4, 5, 6, 7].map((index) => (
-            <SwiperSlide
-              key={index}
-              className="swiper-slide group bg-white border border-solid h-auto border-gray-300 rounded-2xl p-6 transition-all duration-500 w-full hover:border-indigo-600 slide-active:border-indigo-600"
-            >
-              <div className="flex items-center mb-9 gap-2 text-amber-500 transition-all duration-500 group-hover:text-indigo-600 swiper-slide-active:text-indigo-600">
-                {[...Array(5)].map((_, i) => (
-                  <svg
-                    key={i}
-                    className="w-5 h-5"
-                    viewBox="0 0 18 17"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M8.10326 1.31699C8.47008 0.57374 9.52992 0.57374 9.89674 1.31699L11.7063 4.98347C11.8519 5.27862 12.1335 5.48319 12.4592 5.53051L16.5054 6.11846C17.3256 6.23765 17.6531 7.24562 17.0596 7.82416L14.1318 10.6781C13.8961 10.9079 13.7885 11.2389 13.8442 11.5632L14.5353 15.5931C14.6754 16.41 13.818 17.033 13.0844 16.6473L9.46534 14.7446C9.17402 14.5915 8.82598 14.5915 8.53466 14.7446L4.91562 16.6473C4.18199 17.033 3.32456 16.41 3.46467 15.5931L4.15585 11.5632C4.21148 11.2389 4.10393 10.9079 3.86825 10.6781L0.940384 7.82416C0.346867 7.24562 0.674378 6.23765 1.4946 6.11846L5.54081 5.53051C5.86652 5.48319 6.14808 5.27862 6.29374 4.98347L8.10326 1.31699Z"
-                      fill="currentColor"
-                    />
-                  </svg>
-                ))}
-              </div>
-              <p className="text-lg text-gray-500 leading-8 h-24 transition-all duration-500 mb-9 group-hover:text-gray-800">
-                Pagedone is simply the best tool of investment in the market right now.
-              </p>
-              <div className="flex items-center gap-5">
-                <img
-                  className="rounded-full object-cover"
-                  src="https://pagedone.io/asset/uploads/1696229969.png"
-                  alt="avatar"
-                />
-                <div className="grid gap-1">
-                  <h5 className="text-gray-900 font-medium transition-all duration-500 group-hover:text-indigo-600 swiper-slide-active:text-indigo-600">
-                    Jane D
-                  </h5>
-                  <span className="text-sm leading-6 text-gray-500">CEO</span>
+    <section className="py-12 bg-gray-50 dark:bg-gray-900">
+      <div className="container mx-auto px-4">
+        <h2 className="text-3xl font-bold text-center mb-8 text-gray-800 dark:text-white">
+          Recommendations
+        </h2>
+        <div className="">
+          <Carousel showArrows={true} showThumbs={false} infiniteLoop={true}>
+            {recommendations.map((rec, index) => (
+              <div key={index} className="p-6 rounded-lg shadow-lg bg-white dark:bg-gray-800">
+                <div className="flex items-center mb-4">
+                  <img
+                    src={rec.image}
+                    alt={rec.name}
+                    className="w-16 h-16 rounded-full mr-4"
+                  />
+                  <div>
+                    <h3 className="text-xl font-semibold text-gray-800 dark:text-white">
+                      {rec.name}
+                    </h3>
+                    <p className="text-sm text-gray-600 dark:text-gray-400">
+                      {rec.role}
+                    </p>
+                    <p className="text-xs text-gray-500 dark:text-gray-500">
+                      {rec.date}
+                    </p>
+                  </div>
                 </div>
+                <p className="text-gray-700 dark:text-gray-300">
+                  {rec.text}
+                </p>
               </div>
-            </SwiperSlide>
-          ))}
-        </Swiper>
+            ))}
+          </Carousel>
+        </div>
       </div>
     </section>
   );
 };
 
-export default Testimonials;
+export default Recommendations;
