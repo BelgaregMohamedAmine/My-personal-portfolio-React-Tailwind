@@ -109,7 +109,7 @@ const ProjectCarousel = () => {
   };
 
   return (
-    <section className="bg-gradient-to-br from-gray-50 to-gray-200 dark:from-gray-900 dark:to-gray-800 py-16 transition-colors duration-300">
+    <section className="  min-h-screen bg-gradient-to-br from-gray-50 to-gray-200 dark:from-gray-900 dark:to-gray-800 py-16 transition-colors duration-300">
       <div className="project-carousel w-full max-w-6xl mx-auto px-4">
         {/* header */}
         <header className="text-center mb-12 relative">
