@@ -302,7 +302,12 @@ const BlogPage = () => {
                       day: 'numeric'
                     })}
                   </span>
-                  <Link to={`/blog/${blog.slug}`} className="flex items-center gap-1 text-orange-600 dark:text-orange-400 hover:gap-2 transition-all">
+                  <Link 
+                  to={`/blog/${blog.slug}`} 
+                  className="flex items-center gap-1 text-orange-600 dark:text-orange-400 hover:gap-2 transition-all"
+                  aria-label={`Read more about ${blog.title}`}
+                  >
+                    
                     Read More <ChevronRight className="w-4 h-4" />
                   </Link>
                 </div>

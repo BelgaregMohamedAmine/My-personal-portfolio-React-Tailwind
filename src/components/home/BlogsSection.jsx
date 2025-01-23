@@ -1,5 +1,7 @@
 import React from 'react';
 import { ArrowRight, Clock, Calendar } from 'lucide-react';
+import {Link} from 'react-router-dom';
+
 import blogData from '../../data/blogData.json';
 
 const BlogSection = () => {
@@ -87,14 +89,14 @@ const BlogSection = () => {
                 </div>
 
                 {/* Read More Link */}
-                <a
-                  href={`/blog/${blog.slug}`}
+                <Link
+                  to={`/blog/${blog.slug}`}
                   className="inline-flex items-center gap-1.5 text-sm text-orange-500 hover:text-orange-600 transition-colors duration-300"
                   aria-label={`Read more about ${blog.title}`}
                 >
                   Read More
                   <ArrowRight className="w-4 h-4" />
-                </a>
+                </Link>
               </div>
             </article>
           ))}
@@ -102,13 +104,14 @@ const BlogSection = () => {
 
         {/* View All Link */}
         <div className="text-center mt-10">
-          <a
-            href="/blog"
+          <Link
+            to="/blog"
             className="inline-flex items-center gap-2 px-6 py-2.5 bg-gradient-to-r from-orange-500 to-orange-600 text-white rounded-lg font-medium text-sm transition-all duration-300 hover:shadow-lg hover:-translate-y-0.5 group"
+            aria-label="View all blog posts"
           >
             View All Posts
             <ArrowRight className="w-4 h-4 transform group-hover:translate-x-1 transition-transform" />
-          </a>
+          </Link>
         </div>
       </div>
     </section>

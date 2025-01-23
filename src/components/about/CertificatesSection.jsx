@@ -136,6 +136,7 @@ const CertificatesSection = ({ aboutData }) => {
                     text-orange-600 dark:text-orange-400 hover:text-orange-700 
                     dark:hover:text-orange-300 transition-colors duration-300"
                   whileHover={{ x: 5 }}
+                  
                 >
                   Voir le certificat
                   <ExternalLink className="w-3.5 h-3.5 sm:w-4 sm:h-4" />

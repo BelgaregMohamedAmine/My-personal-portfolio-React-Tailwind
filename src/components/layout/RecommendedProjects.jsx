@@ -105,6 +105,7 @@ const RecommendedProjects = ({ currentProject, allProjects }) => {
                   <Link 
                     to={`/portfolio/${project.slug}`}
                     className="block group h-full"
+                    aria-label={`View project ${project.title}`}
                     onClick={() => window.scrollTo(0, 0)}
                   >
                     <div className="bg-white dark:bg-gray-800 rounded-xl overflow-hidden shadow-lg group-hover:shadow-xl transition-all duration-300 h-full">
