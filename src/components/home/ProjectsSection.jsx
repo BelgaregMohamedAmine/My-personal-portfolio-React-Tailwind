@@ -130,6 +130,7 @@ const ProjectCarousel = () => {
             onClick={handlePrevious}
             disabled={currentProjectIndex === 0}
             className="carousel-prev z-10 absolute left-0 -translate-x-1/2 bg-white/80 dark:bg-gray-800/80 rounded-full p-2 shadow-md hover:bg-gray-100 dark:hover:bg-gray-700 transition-all disabled:opacity-50"
+            aria-label="Previous projects"
           >
             <ChevronLeft className="h-6 w-6 text-gray-700 dark:text-gray-300" />
           </button>
@@ -144,6 +145,7 @@ const ProjectCarousel = () => {
             onClick={handleNext}
             disabled={currentProjectIndex + visibleProjects >= projects.length}
             className="carousel-next z-10 absolute right-0 translate-x-1/2 bg-white/80 dark:bg-gray-800/80 rounded-full p-2 shadow-md hover:bg-gray-100 dark:hover:bg-gray-700 transition-all disabled:opacity-50"
+            aria-label="Next projects"
           >
             <ChevronRight className="h-6 w-6 text-gray-700 dark:text-gray-300" />
           </button>

@@ -1,5 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { Database, ChartBar, LineChart, Table, Mail, FolderKanban, ExternalLink } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const HeroSection = () => {
   const canvasRef = useRef(null);
@@ -168,15 +169,18 @@ const HeroSection = () => {
             </div>
 
             <div className="flex flex-wrap gap-4">
-              <button className="flex items-center gap-2 bg-orange-500 hover:bg-orange-600 dark:bg-orange-600 dark:hover:bg-orange-700 text-white px-8 py-3 rounded-lg transition-all duration-300 hover:shadow-lg hover:-translate-y-0.5">
+              <Link 
+               to="/contact" 
+               onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+               className="flex items-center gap-2 bg-orange-500 hover:bg-orange-600 dark:bg-orange-600 dark:hover:bg-orange-700 text-white px-8 py-3 rounded-lg transition-all duration-300 hover:shadow-lg hover:-translate-y-0.5">
                 <Mail className="w-5 h-5" />
                 Contact Me
                 <ExternalLink className="w-4 h-4 ml-1" />
-              </button>
-              <button className="flex items-center gap-2 border-2 border-orange-500 dark:border-orange-400 text-orange-500 dark:text-orange-400 hover:bg-orange-500 dark:hover:bg-orange-600 hover:text-white dark:hover:text-white px-8 py-3 rounded-lg transition-all duration-300 hover:shadow-lg hover:-translate-y-0.5">
+              </Link >
+              <Link to="/portfolio" className="flex items-center gap-2 border-2 border-orange-500 dark:border-orange-400 text-orange-500 dark:text-orange-400 hover:bg-orange-500 dark:hover:bg-orange-600 hover:text-white dark:hover:text-white px-8 py-3 rounded-lg transition-all duration-300 hover:shadow-lg hover:-translate-y-0.5">
                 <FolderKanban className="w-5 h-5" />
                 Projects
-              </button>
+              </Link>
             </div>
           </div>
 

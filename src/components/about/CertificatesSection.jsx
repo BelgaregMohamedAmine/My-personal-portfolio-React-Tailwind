@@ -50,9 +50,11 @@ const CertificatesSection = ({ aboutData }) => {
           onClick={e => e.stopPropagation()}
         >
           <button
+            aria-label="Close Image"
             onClick={onClose}
             className="absolute top-2 right-2 sm:top-4 sm:right-4 p-2 sm:p-3 bg-black/50 
               rounded-full hover:bg-black/70 transition-colors z-10"
+
           >
             <X className="w-5 h-5 sm:w-6 sm:h-6 text-white" />
           </button>

@@ -11,6 +11,7 @@ export const Header = ({ isLargeScreen, isSidebarOpen, setSidebarOpen }) => {
           <button
             onClick={() => setSidebarOpen(true)}
             className="mr-4 p-2 hover:bg-gray-100 dark:hover:bg-gray-700 rounded-lg text-gray-700 dark:text-white"
+            aria-label="Open Sidebar"
           >
             <Menu size={24} />
           </button>

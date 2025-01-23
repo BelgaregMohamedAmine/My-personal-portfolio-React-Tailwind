@@ -25,11 +25,13 @@ const ImageGallery = ({ images, currentIndex, setCurrentIndex, isHovering }) => 
             className={`absolute left-2 top-1/2 -translate-y-1/2 z-20 bg-black/50 p-2 
               rounded-full text-white transition-opacity duration-300 
               ${isHovering ? 'opacity-100' : 'opacity-0'} hover:bg-black/70`}
+              aria-label="Previous Image"
           >
             <ChevronLeft className="w-4 h-4" />
           </button>
           <button
             onClick={(e) => handleClick(e, 'next')}
+            aria-label="Next Image"
             className={`absolute right-2 top-1/2 -translate-y-1/2 z-20 bg-black/50 p-2 
               rounded-full text-white transition-opacity duration-300 
               ${isHovering ? 'opacity-100' : 'opacity-0'} hover:bg-black/70`}
@@ -43,6 +45,7 @@ const ImageGallery = ({ images, currentIndex, setCurrentIndex, isHovering }) => 
         {images.map((_, idx) => (
           <button
             key={idx}
+            aria-label = "Image Navigation"
             onClick={(e) => {
               e.preventDefault();
               e.stopPropagation();
@@ -137,6 +140,7 @@ const VolunteerCard = ({ data, isVisible, onNavigate, currentIndex, totalItems }
         </div>
         <div className="flex gap-2">
           <button
+            aria-label="Previous Item"
             onClick={(e) => onNavigate(e, 'prev')}
             className="bg-white/10 hover:bg-white/20 text-white p-2 rounded-lg backdrop-blur-sm transition-all duration-300 group"
           >
@@ -144,6 +148,7 @@ const VolunteerCard = ({ data, isVisible, onNavigate, currentIndex, totalItems }
           </button>
           <button
             onClick={(e) => onNavigate(e, 'next')}
+            aria-label="Next Item"
             className="bg-white/10 hover:bg-white/20 text-white p-2 rounded-lg backdrop-blur-sm transition-all duration-300 group"
           >
             <ChevronRight className="w-4 h-4 md:w-8 md:h-8 group-hover:translate-x-0.5 transition-transform" />
@@ -177,6 +182,7 @@ const VolunteerCard = ({ data, isVisible, onNavigate, currentIndex, totalItems }
               e.preventDefault();
               setIsFullscreen(true);
             }}
+            aria-label="View Fullscreen"
             className="absolute top-2 left-2 bg-black/50 p-1.5 rounded-full text-white hover:scale-110 transition-transform"
           >
             <Maximize2 className="w-4 h-4" />
@@ -223,6 +229,7 @@ const VolunteerCard = ({ data, isVisible, onNavigate, currentIndex, totalItems }
                 e.stopPropagation();
                 setCurrentImageIndex((prev) => (prev - 1 + data.images.length) % data.images.length);
               }}
+              aria-label="Previous Image"
               className="absolute left-4 top-1/2 -translate-y-1/2 z-20 bg-black/50 p-4 
                 rounded-full text-white hover:bg-black/70 transition-all"
             >
@@ -235,6 +242,7 @@ const VolunteerCard = ({ data, isVisible, onNavigate, currentIndex, totalItems }
                 e.stopPropagation();
                 setCurrentImageIndex((prev) => (prev + 1) % data.images.length);
               }}
+              aria-label="Next Image"
               className="absolute right-4 top-1/2 -translate-y-1/2 z-20 bg-black/50 p-4 
                 rounded-full text-white hover:bg-black/70 transition-all"
             >
@@ -250,6 +258,7 @@ const VolunteerCard = ({ data, isVisible, onNavigate, currentIndex, totalItems }
                     e.stopPropagation();
                     setCurrentImageIndex(idx);
                   }}
+                  aria-label="Image Navigation"
                   className={`transition-all duration-300 ${
                     idx === currentImageIndex 
                       ? 'w-8 h-2 bg-white rounded-full' 
@@ -316,6 +325,7 @@ const VolunteerSection = ({ aboutData }) => {
                   e.preventDefault();
                   setCurrentIndex(idx);
                 }}
+                aria-label="Navigate to Item"
                 className={`transition-all duration-300 relative ${
                   idx === currentIndex 
                     ? 'w-8 h-2 bg-white rounded-full' 

@@ -51,6 +51,7 @@ const AccordionItem = ({ category, categoryData, isExpanded, onToggle, index }) 
       } transition-all duration-300`}
     >
       <motion.button
+        aria-label={`Toggle ${category} skills`}
         className="w-full px-4 sm:px-6 py-3 sm:py-4 flex items-center justify-between group"
         onClick={onToggle}
       >

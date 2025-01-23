@@ -64,6 +64,7 @@ const ProjectDetails = () => {
         <button 
           onClick={() => window.history.back()} 
           className="flex items-center text-orange-500 hover:text-orange-700"
+          aria-label="Back to Projects"
         >
           <ArrowLeft className="w-5 h-5 mr-2" />
           Back to Projects
@@ -81,6 +82,7 @@ const ProjectDetails = () => {
           <button
             onClick={() => window.history.back()}
             className="flex items-center mb-8 hover:opacity-80 transition-opacity"
+            aria-label="Back to Projects 2"
           >
             <ArrowLeft className="w-5 h-5 mr-2" />
             Back to Projects
@@ -179,6 +181,7 @@ const ProjectDetails = () => {
                         ? 'text-orange-500 bg-orange-50 dark:bg-orange-900/20' 
                         : 'text-gray-500 hover:text-gray-700 hover:bg-gray-50 dark:hover:bg-gray-700/50'
                     }`}
+                    aria-label={`Show ${tab} content`}
                   >
                     <div className="flex items-center justify-center gap-2">
                       {tab === 'overview' && <Code className="w-4 h-4" />}
@@ -297,6 +300,7 @@ const ProjectDetails = () => {
                   );
                 }}
                 className="p-3 bg-white/10 rounded-full hover:bg-white/20 transition-colors"
+                aria-label="Previous Image"
               >
                 <ChevronLeft className="w-6 h-6 text-white" />
               </button>
@@ -308,6 +312,7 @@ const ProjectDetails = () => {
                   );
                 }}
                 className="p-3 bg-white/10 rounded-full hover:bg-white/20 transition-colors"
+                aria-label="Next Image"
               >
                 <ChevronRight className="w-6 h-6 text-white" />
               </button>

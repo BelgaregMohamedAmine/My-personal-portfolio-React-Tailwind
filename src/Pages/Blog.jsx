@@ -19,6 +19,7 @@ const DialogContent = ({ children, onClose }) => (
     <button 
       onClick={onClose}
       className="absolute right-4 top-4 hover:bg-gray-100 dark:hover:bg-gray-700 p-1 rounded-full"
+      aria-label="Close Dialog"
     >
       <X className="w-4 h-4" />
     </button>
@@ -168,6 +169,7 @@ const BlogPage = () => {
           <button 
             onClick={() => setIsFilterDialogOpen(true)}
             className="flex items-center gap-2 px-4 py-2 bg-white dark:bg-gray-800 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors"
+            aria-label="Open Filters Dialog"
           >
             <Filter className="w-4 h-4" />
             Filters
@@ -204,6 +206,7 @@ const BlogPage = () => {
                           ${selectedCategory === category 
                             ? 'bg-orange-600 text-white' 
                             : 'bg-gray-100 dark:bg-gray-700 hover:bg-gray-200 dark:hover:bg-gray-600'}`}
+                        aria-label={`Filter by ${category}`}
                       >
                         {category}
                       </button>
@@ -222,6 +225,7 @@ const BlogPage = () => {
                           ${selectedPeriod === period.value
                             ? 'bg-orange-600 text-white'
                             : 'bg-gray-100 dark:bg-gray-700 hover:bg-gray-200 dark:hover:bg-gray-600'}`}
+                        aria-label={`Filter by ${period.label}`}
                       >
                         {period.label}
                       </button>
@@ -233,6 +237,7 @@ const BlogPage = () => {
                   <button
                     onClick={handleResetFilters}
                     className="w-full px-4 py-2 bg-gray-100 dark:bg-gray-700 rounded-lg text-sm hover:bg-gray-200 dark:hover:bg-gray-600 transition-colors"
+                    aria-label="Reset Filters"
                   >
                     Reset all filters
                   </button>
@@ -313,6 +318,7 @@ const BlogPage = () => {
               onClick={() => handlePageChange(currentPage - 1)}
               disabled={currentPage === 1}
               className="p-2 rounded-lg bg-white dark:bg-gray-800 disabled:opacity-50"
+              aria-label="Previous Page"
             >
               <ChevronLeft className="w-5 h-5" />
             </button>
@@ -325,6 +331,7 @@ const BlogPage = () => {
                     ? 'bg-orange-600 text-white'
                     : 'bg-white dark:bg-gray-800 hover:bg-gray-100 dark:hover:bg-gray-700'
                 }`}
+                aria-label={`Page ${page}`}
               >
                 {page}
               </button>
@@ -333,6 +340,7 @@ const BlogPage = () => {
               onClick={() => handlePageChange(currentPage + 1)}
               disabled={currentPage === totalPages}
               className="p-2 rounded-lg bg-white dark:bg-gray-800 disabled:opacity-50"
+              aria-label="Next Page"
             >
               <ChevronRightIcon className="w-5 h-5" />
             </button>
@@ -349,6 +357,7 @@ const BlogPage = () => {
             <button
               onClick={handleResetFilters}
               className="mt-4 px-6 py-2 bg-orange-600 hover:bg-orange-700 text-white font-medium rounded-lg transition-colors"
+              aria-label="Reset Filters 2"
             >
               Clear all filters
             </button>
@@ -392,6 +401,7 @@ const BlogPage = () => {
                 <button
                   type="submit"
                   className="px-6 py-2 bg-orange-600 hover:bg-orange-700 text-white font-medium rounded-lg transition-colors"
+                  aria-label="Subscribe"
                 >
                   Subscribe
                 </button>

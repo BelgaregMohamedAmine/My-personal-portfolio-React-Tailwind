@@ -119,7 +119,8 @@ const BlogSectionRenderer = ({ section }) => {
                   }
                 }}
                 className="p-2 bg-white dark:bg-gray-800 rounded-full shadow-lg hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors"
-                title="Fullscreen"
+                aria-label="Fullscreen"
+
               >
                 <Maximize2 className="w-4 h-4 text-gray-700 dark:text-gray-300" />
               </button>
@@ -127,7 +128,7 @@ const BlogSectionRenderer = ({ section }) => {
                 href={section.srcLoad}
                 download
                 className="p-2 bg-white dark:bg-gray-800 rounded-full shadow-lg hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors"
-                title="Download"
+                aria-label="Download"
               >
                 <Download className="w-4 h-4 text-gray-700 dark:text-gray-300" />
               </a>

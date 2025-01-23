@@ -84,6 +84,7 @@ const NavigationSection = ({ activeSection }) => {
             {navItems.map((item) => (
               <button
                 key={item.id}
+                aria-label={item.label}
                 data-section={item.id}
                 className={`
                   px-3 md:px-6 h-full text-sm font-medium whitespace-nowrap border-b-2 transition-all duration-200

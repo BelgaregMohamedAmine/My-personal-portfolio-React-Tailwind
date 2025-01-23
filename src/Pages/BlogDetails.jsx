@@ -80,6 +80,7 @@ const BlogDetails = () => {
                     <button
                       className="px-2 py-1 text-xs rounded-full bg-gray-500 bg-opacity-50 
                             hover:bg-opacity-70 transition-colors"
+                      aria-label="More tags"
                     >
                       +{blog.tags.length - 5} more
                     </button>
@@ -129,15 +130,21 @@ const BlogDetails = () => {
 
               {/* Action buttons */}
               <div className="flex gap-4 mt-8 pt-8 border-t border-gray-200 dark:border-gray-700">
-                <button className="flex items-center gap-2 text-gray-600 dark:text-gray-400 hover:text-orange-600 dark:hover:text-orange-400">
+                <button 
+                aria-label="Like this post"
+                className="flex items-center gap-2 text-gray-600 dark:text-gray-400 hover:text-orange-600 dark:hover:text-orange-400">
                   <ThumbsUp className="w-5 h-5" />
                   Like
                 </button>
-                <button className="flex items-center gap-2 text-gray-600 dark:text-gray-400 hover:text-orange-600 dark:hover:text-orange-400">
+                <button 
+                aria-label="Share this post"
+                className="flex items-center gap-2 text-gray-600 dark:text-gray-400 hover:text-orange-600 dark:hover:text-orange-400">
                   <Share2 className="w-5 h-5" />
                   Share
                 </button>
-                <button className="flex items-center gap-2 text-gray-600 dark:text-gray-400 hover:text-orange-600 dark:hover:text-orange-400">
+                <button 
+                aria-label="Save this post"
+                className="flex items-center gap-2 text-gray-600 dark:text-gray-400 hover:text-orange-600 dark:hover:text-orange-400">
                   <Bookmark className="w-5 h-5" />
                   Save
                 </button>

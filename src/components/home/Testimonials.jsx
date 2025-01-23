@@ -56,12 +56,14 @@ const Recommendations = () => {
             <button 
               onClick={handlePrev}
               className="text-gray-500 hover:text-blue-600 dark:hover:text-blue-400 transition"
+              aria-label="Previous recommendation"
             >
               <ArrowLeft />
             </button>
             <button 
               onClick={handleNext}
               className="text-gray-500 hover:text-blue-600 dark:hover:text-blue-400 transition"
+              aria-label="Next recommendation"
             >
               <ArrowRight />
             </button>
