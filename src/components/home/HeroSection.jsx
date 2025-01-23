@@ -1,9 +1,31 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { Database, ChartBar, LineChart, Table, Mail, FolderKanban, ExternalLink } from 'lucide-react';
 
 const HeroSection = () => {
   const canvasRef = useRef(null);
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  
+  // Array of your professional images
+  const backgroundImages = [
+    "https://res.cloudinary.com/medaminebelgareg/image/upload/v1737398855/portfolio/me/0d54592e-99f9-4c64-9b41-385814053aba.png",
+    "https://res.cloudinary.com/medaminebelgareg/image/upload/v1737377139/portfolio/me/55f693a3-1c78-4d50-9e39-41df8507c845.png", // Replace with your actual image paths
+    "https://res.cloudinary.com/medaminebelgareg/image/upload/v1737377174/portfolio/me/1a0df7a6-2364-432d-9d43-41f765dad07b.png",
+    "https://res.cloudinary.com/medaminebelgareg/image/upload/v1737377235/portfolio/me/b949d459-282d-4e34-b475-96fca286110b.png",
+    "https://res.cloudinary.com/medaminebelgareg/image/upload/v1737377257/portfolio/me/ad55cbba-b83d-4696-b07c-6e196b475310.png",
+    "https://res.cloudinary.com/medaminebelgareg/image/upload/v1737394268/portfolio/me/30accd85-8241-427d-9afe-a3a5ad6fc62b_ky0u56.png"];
 
+  // Image carousel effect
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentImageIndex((prevIndex) => 
+        (prevIndex + 1) % backgroundImages.length
+      );
+    }, 5000); // Change image every 5 seconds
+
+    return () => clearInterval(interval);
+  }, []);
+
+  // Particle animation effect (keeping your existing code)
   useEffect(() => {
     const canvas = canvasRef.current;
     const ctx = canvas.getContext('2d');
@@ -102,8 +124,26 @@ const HeroSection = () => {
   }, []);
 
   return (
-    <div className="relative bg-gray-50 dark:bg-gray-900 min-h-[90vh] flex items-center overflow-hidden transition-colors duration-300">
-      {/* Interactive Background */}
+    <div className="relative bg-gray-50 dark:bg-gray-800 min-h-[90vh] flex items-center overflow-hidden transition-colors duration-300">
+      {/* Background Images */}
+      <div className="absolute inset-0 w-full h-full">
+        {backgroundImages.map((img, index) => (
+          <div
+            key={index}
+            className={`absolute inset-0 w-full h-full transition-opacity duration-1000 ${
+              currentImageIndex === index ? 'opacity-100' : 'opacity-0'
+            }`}
+          >
+            <img
+              src={img}
+              alt={`Professional background ${index + 1}`}
+              className="w-full h-full object-cover opacity-15 dark:opacity-16"
+            />
+          </div>
+        ))}
+      </div>
+
+      {/* Interactive Particle Layer */}
       <canvas 
         ref={canvasRef}
         className="absolute inset-0 w-full h-full"
@@ -115,7 +155,7 @@ const HeroSection = () => {
           {/* Left Side */}
           <div className="space-y-8">
             <div className="space-y-4">
-              <h1 className="text-5xl font-bold text-gray-900 dark:text-white transition-colors">
+              <h1 className="text-4xl md:text-6xl  font-bold text-gray-900 dark:text-white transition-colors">
                 Mohamed Amine Belagreg
                 <span className="block text-2xl text-orange-500 dark:text-orange-400 mt-3 transition-colors">
                   Data Analyst & BI Developer
@@ -141,7 +181,7 @@ const HeroSection = () => {
           </div>
 
           {/* Right Side */}
-          <div className="grid grid-cols-2 gap-6">
+          <div className="grid grid-cols-2 gap-2 md:gap-6">
             {[
               {
                 icon: <Database className="w-6 h-6" />,

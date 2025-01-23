@@ -27,8 +27,8 @@ const AboutSection = () => {
   ];
 
   return (
-    <div className="bg-gradient-to-br from-gray-50 to-gray-100 dark:from-gray-900 dark:to-gray-800 py-20 transition-colors duration-300">
-      <div className="max-w-6xl mx-auto px-4">
+    <div className="bg-gradient-to-br from-gray-50 to-gray-200 dark:from-gray-900 dark:to-gray-800 py-20 transition-colors duration-300 ">
+      <div className="max-w-6xl mx-auto px-4 relative">
         {/* Floating Elements Background */}
         <div className="absolute inset-0 overflow-hidden pointer-events-none opacity-20">
           <Database className="absolute top-20 left-10 w-24 h-24 text-orange-500 animate-float" />
