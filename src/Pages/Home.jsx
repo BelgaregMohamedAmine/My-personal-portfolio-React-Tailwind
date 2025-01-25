@@ -32,13 +32,6 @@ const HomePage = () => {
       {/* Testimonials Section */}
       <Testimonials />
 
-      <div className="text-center text-3xl mt-10">
-        <Link to="/contact" className="text-blue-600 hover:text-blue-800">Contact
-          <ArrowRight className="inline-block w-6 h-6" />
-        </Link>
-      </div>
-    
-
     </div>
   );
 };

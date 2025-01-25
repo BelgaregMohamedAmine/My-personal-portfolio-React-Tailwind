@@ -71,10 +71,14 @@ const App = () => {
             
             <Route path="/contact" element={<ContactForm />} />
           </Routes>
+          
+          {/* Footer */}
+          <Footer />
+
         </main>
 
-       {/* Footer */}
-        <div
+
+        {/* <div
           className={`${
             isSidebarOpen ? 'lg:ml-64' : ''
           } fixed bottom-0 left-0 w-full bg-orange-500 dark:bg-orange-500 text-gray-900 dark:text-white transition-colors duration-200`}
@@ -82,7 +86,7 @@ const App = () => {
           <div className="container mx-auto px-4 py-2">
             <Footer />
           </div>
-        </div>
+        </div> */}
 
 
       </div>
