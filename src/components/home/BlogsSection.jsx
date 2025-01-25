@@ -78,14 +78,14 @@ const BlogSection = () => {
 
                 {/* Tags */}
                 <div className="flex flex-wrap gap-2 mb-4">
-                  {blog.tags.slice(0, 3).map((tag) => (
-                    <span
-                      key={tag}
-                      className="px-2 py-1 text-xs font-medium bg-orange-50 dark:bg-orange-900/30 text-orange-600 dark:text-orange-400 rounded-full"
-                    >
-                      {tag}
-                    </span>
-                  ))}
+                {blog.tags.slice(0, 3).map((tag, index) => (
+                  <span
+                    key={`${blog.id}-${tag}-${index}`}
+                    className="px-2 py-1 text-xs font-medium bg-orange-50 dark:bg-orange-900/30 text-orange-600 dark:text-orange-400 rounded-full"
+                  >
+                    {tag}
+                  </span>
+                ))}
                 </div>
 
                 {/* Read More Link */}

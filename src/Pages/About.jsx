@@ -13,6 +13,7 @@ import BioSection from "../components/about/BioSection";
 import VolunteerSection from "../components/about/VolunteerSection";
 import SkillsSection from "../components/about/SkillsSection";
 import CertificatesSection from "../components/about/CertificatesSection";
+import InterestsSection from "../components/about/InterestsSection";
 import CTASection from "../components/about/CTASection";
 
 const AboutPage = () => {
@@ -105,7 +106,7 @@ const AboutPage = () => {
       </div>
 
       {/* Bottom Navigation Bar */}
-    <NavigationSection activeSection={activeSection} />
+      <NavigationSection activeSection={activeSection} />
 
       {/* About Section */}
       <BioSection aboutData={aboutData} />
@@ -287,6 +288,9 @@ const AboutPage = () => {
 
       {/* Certificates Section */}
       <CertificatesSection aboutData={aboutData} />
+
+      {/* Interests Section <InterestsSection /> */}
+      
 
       {/* CALL TO ACTION SECTION */}
       <CTASection/>

@@ -21,7 +21,8 @@ export default {
       },
       fontSize: {
         smm: '0.6rem',
-      }
+      },
+      
     },
    
   },

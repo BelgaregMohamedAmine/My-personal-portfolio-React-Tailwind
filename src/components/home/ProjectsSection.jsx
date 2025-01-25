@@ -42,11 +42,12 @@ const ProjectCarousel = () => {
   };
 
   const renderProjectCard = (project) => {
+   
     if (project.isViewAllCard) {
       return (
         <div
           key="view-all"
-          className="carousel-item w-full md:w-1/2 lg:w-1/3 px-2 mb-4 "
+          className="carousel-item w-full min-h-[350px] md:w-1/2 lg:w-1/3 px-2 mb-4 "
         >
           <div className="card h-full bg-white dark:bg-gray-800 shadow-md dark:shadow-xl rounded-lg overflow-hidden hover:shadow-xl  dark:hover:shadow-2xl transition-all duration-300 flex flex-col justify-center items-center ">
             <CirclePlus className="h-12 w-12 text-orange-600 dark:text-orange-400 mb-4" />
@@ -109,8 +110,8 @@ const ProjectCarousel = () => {
   };
 
   return (
-    <section className="  min-h-screen bg-gradient-to-br from-gray-50 to-gray-200 dark:from-gray-900 dark:to-gray-800 py-16 transition-colors duration-300">
-      <div className="project-carousel w-full max-w-6xl mx-auto px-4">
+    <section className="min-h-[calc(100vh-200px)] bg-gradient-to-br from-gray-50 to-gray-200 dark:from-gray-900 dark:to-gray-800 py-8 md:py-16 transition-colors duration-300">
+  <div className="max-w-6xl mx-auto px-4 flex flex-col min-h-full">
         {/* header */}
         <header className="text-center mb-12 relative">
           <div className="inline-block">
@@ -124,12 +125,11 @@ const ProjectCarousel = () => {
           </p>
         </header>
 
-
-        <div className="carousel relative flex items-center">
+        <div className="carousel relative flex items-center p-2">
           <button
             onClick={handlePrevious}
             disabled={currentProjectIndex === 0}
-            className="carousel-prev z-10 absolute left-0 -translate-x-1/2 bg-white/80 dark:bg-gray-800/80 rounded-full p-2 shadow-md hover:bg-gray-100 dark:hover:bg-gray-700 transition-all disabled:opacity-50"
+            className="carousel-prev z-10 absolute left-2 -translate-x-1/2 bg-white/80 dark:bg-gray-800/80 rounded-full p-2 shadow-md hover:bg-gray-100 dark:hover:bg-gray-700 transition-all disabled:opacity-50"
             aria-label="Previous projects"
           >
             <ChevronLeft className="h-6 w-6 text-gray-700 dark:text-gray-300" />
@@ -144,7 +144,7 @@ const ProjectCarousel = () => {
           <button
             onClick={handleNext}
             disabled={currentProjectIndex + visibleProjects >= projects.length}
-            className="carousel-next z-10 absolute right-0 translate-x-1/2 bg-white/80 dark:bg-gray-800/80 rounded-full p-2 shadow-md hover:bg-gray-100 dark:hover:bg-gray-700 transition-all disabled:opacity-50"
+            className="carousel-next z-10 absolute right-2 translate-x-1/2 bg-white/80 dark:bg-gray-800/80 rounded-full p-2 shadow-md hover:bg-gray-100 dark:hover:bg-gray-700 transition-all disabled:opacity-50"
             aria-label="Next projects"
           >
             <ChevronRight className="h-6 w-6 text-gray-700 dark:text-gray-300" />
