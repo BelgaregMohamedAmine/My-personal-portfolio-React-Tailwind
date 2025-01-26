@@ -33,7 +33,7 @@ const App = () => {
 
     const loadingTimer = setTimeout(() => {
       setIsLoading(false);
-    }, 4000);
+    }, 3000);
 
     handleResize();
     window.addEventListener('resize', handleResize);
