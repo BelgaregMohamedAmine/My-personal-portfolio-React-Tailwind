@@ -1,5 +1,6 @@
 import React from 'react';
-
+import { Link } from 'react-router-dom';
+import { ArrowRight, Database, BarChart2, GitBranch } from 'lucide-react';
 
 import HeroSection from "../components/home/HeroSection";
 import AboutResume from "../components/home/AboutResume.jsx";

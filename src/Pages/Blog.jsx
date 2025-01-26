@@ -373,15 +373,15 @@ const BlogPage = () => {
 
 
       {/* Newsletter Section */}
-      <div className="container mx-auto px-4 py-16">
+      {/* <div className="container mx-auto px-4 py-16">
         <div className="bg-white dark:bg-gray-800 rounded-lg p-8 text-center relative overflow-hidden">
-          {/* Background pattern */}
+          
           <div className="absolute inset-0 opacity-5">
             <div className="absolute inset-0 bg-gradient-to-r from-orange-600 to-purple-600"></div>
             <div className="absolute inset-0 bg-grid-pattern"></div>
           </div>
           
-          {/* Content */}
+          
           <div className="relative z-10">
             <Mail className="w-12 h-12 mx-auto mb-4 text-orange-600 dark:text-orange-400" />
             <h2 className="text-2xl font-bold mb-4">Subscribe to Our Newsletter</h2>
@@ -419,7 +419,7 @@ const BlogPage = () => {
             </p>
           </div>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };
