@@ -57,7 +57,8 @@ const AboutPage = () => {
     { id: 'experience', label: 'Experience' },
     { id: 'volunteer', label: 'Volunteer' },
     { id: 'skills', label: 'Skills' },
-    { id: 'certificates', label: 'Certificates' }
+    { id: 'certificates', label: 'Certificates' },
+    { id: 'interests', label: 'Interests' }
   ];
 
   return (
@@ -289,8 +290,8 @@ const AboutPage = () => {
       {/* Certificates Section */}
       <CertificatesSection aboutData={aboutData} />
 
-      {/* Interests Section <InterestsSection /> */}
-      
+      {/* Interests Section  */}
+      <InterestsSection />
 
       {/* CALL TO ACTION SECTION */}
       <CTASection/>

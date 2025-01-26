@@ -110,8 +110,8 @@ const ProjectCarousel = () => {
   };
 
   return (
-    <section className="min-h-[calc(100vh-200px)] bg-gradient-to-br from-gray-50 to-gray-200 dark:from-gray-900 dark:to-gray-800 py-8 md:py-16 transition-colors duration-300">
-  <div className="max-w-6xl mx-auto px-4 flex flex-col min-h-full">
+    <section className="min-h-[calc(100vh-200px)] bg-gray-200 dark:bg-gray-900 py-8 md:py-16 transition-colors duration-300">
+      <div className="max-w-6xl mx-auto px-4 flex flex-col min-h-full">
         {/* header */}
         <header className="text-center mb-12 relative">
           <div className="inline-block">
@@ -129,7 +129,7 @@ const ProjectCarousel = () => {
           <button
             onClick={handlePrevious}
             disabled={currentProjectIndex === 0}
-            className="carousel-prev z-10 absolute left-2 -translate-x-1/2 bg-white/80 dark:bg-gray-800/80 rounded-full p-2 shadow-md hover:bg-gray-100 dark:hover:bg-gray-700 transition-all disabled:opacity-50"
+            className="carousel-prev z-1 absolute left-2 -translate-x-1/2 bg-white/80 dark:bg-gray-800/80 rounded-full p-2 shadow-md hover:bg-gray-100 dark:hover:bg-gray-700 transition-all disabled:opacity-50"
             aria-label="Previous projects"
           >
             <ChevronLeft className="h-6 w-6 text-gray-700 dark:text-gray-300" />
@@ -144,7 +144,7 @@ const ProjectCarousel = () => {
           <button
             onClick={handleNext}
             disabled={currentProjectIndex + visibleProjects >= projects.length}
-            className="carousel-next z-10 absolute right-2 translate-x-1/2 bg-white/80 dark:bg-gray-800/80 rounded-full p-2 shadow-md hover:bg-gray-100 dark:hover:bg-gray-700 transition-all disabled:opacity-50"
+            className="carousel-next z-1 absolute right-2 translate-x-1/2 bg-white/80 dark:bg-gray-800/80 rounded-full p-2 shadow-md hover:bg-gray-100 dark:hover:bg-gray-700 transition-all disabled:opacity-50"
             aria-label="Next projects"
           >
             <ChevronRight className="h-6 w-6 text-gray-700 dark:text-gray-300" />

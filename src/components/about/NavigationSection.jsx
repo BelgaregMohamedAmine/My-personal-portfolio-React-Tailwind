@@ -12,7 +12,8 @@ const NavigationSection = ({ activeSection }) => {
     { id: 'experience', label: 'Experience' },
     { id: 'volunteer', label: 'Volunteer' },
     { id: 'skills', label: 'Skills' },
-    { id: 'certificates', label: 'Certificates' }
+    { id: 'certificates', label: 'Certificates' },
+    { id: 'interests', label: 'Interests' }
   ];
 
   const checkScroll = () => {

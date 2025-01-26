@@ -39,7 +39,7 @@ const Recommendations = () => {
     const recommendation = recommendations[currentIndex];
 
     return (
-        <section className="min-h-screen flex items-center justify-center bg-gradient-to-b from-white to-gray-50 dark:from-gray-800 dark:to-gray-900 p-4">
+        <section className="min-h-screen flex items-center justify-center bg-white dark:bg-gray-800 p-4">
             <div className="container mx-auto max-w-6xl w-full">
                 <header className="text-center mb-8 md:mb-12 relative">
                     <div className="inline-block">
@@ -50,7 +50,7 @@ const Recommendations = () => {
                     </div>
                 </header>
 
-                <div className="bg-white dark:bg-gray-800 shadow-xl rounded-xl p-16 relative">
+                <div className="bg-white dark:bg-gray-700 shadow-xl rounded-xl p-16 relative">
                     <div className="absolute top-4 right-4 flex space-x-2">
                         <button 
                             onClick={handlePrev}
@@ -88,7 +88,7 @@ const Recommendations = () => {
                             <p className="text-xs md:text-sm text-gray-600 dark:text-gray-400">
                                 {recommendation.role}
                             </p>
-                            <p className="text-[10px] md:text-xs text-gray-500 dark:text-gray-500">
+                            <p className="text-[10px] md:text-xs text-gray-500 dark:text-gray-400">
                                 {recommendation.date}
                             </p>
                         </div>

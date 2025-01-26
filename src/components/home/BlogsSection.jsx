@@ -11,7 +11,7 @@ const BlogSection = () => {
     .slice(0, 3);
 
   return (
-    <section className="bg-gradient-to-b from-white to-gray-50 dark:from-gray-800 dark:to-gray-900 py-16 transition-colors duration-300">
+    <section className="bg-white dark:bg-gray-800 py-16 transition-colors duration-300">
       <div className="max-w-6xl mx-auto px-4">
         {/* Header */}
         <header className="text-center mb-12 relative">
@@ -31,7 +31,7 @@ const BlogSection = () => {
           {recentBlogs.map((blog) => (
             <article 
               key={blog.id}
-              className="group bg-white dark:bg-gray-800 rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-500 transform hover:-translate-y-1"
+              className="group bg-white dark:bg-gray-700 rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-500 transform hover:-translate-y-1"
             >
               {/* Blog Image */}
               <div className="relative h-48 overflow-hidden">

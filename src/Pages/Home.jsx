@@ -8,6 +8,9 @@ import ProjectsSection from '../components/home/ProjectsSection';
 import BlogsSection from '../components/home/BlogsSection.jsx';
 import Testimonials from '../components/home/Testimonials.jsx';
 
+import CTASection from "../components/about/CTASection";
+
+
 
 //import FilmstripGallery from "../components/home/FilmstripGallery";
 import projectData from '../data/projectData.json';
@@ -17,6 +20,7 @@ const HomePage = () => {
   return (
     <div className="min-h-screen dark:bg-gray-900 bg-gray-50">
       {/* Hero Section */}
+      
       < HeroSection  />
 
       {/* About Section */}
@@ -31,6 +35,9 @@ const HomePage = () => {
 
       {/* Testimonials Section */}
       <Testimonials />
+
+      {/* CTA Section */}
+      <CTASection />
 
     </div>
   );
