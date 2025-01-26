@@ -226,6 +226,15 @@ const HeroSection = () => {
           </div>
         </div>
       </div>
+
+
+      <div className="absolute inset-0 flex items-end justify-center pb-2 md:pb-6">
+        <div className="relative w-[22px] md:w-[33px] h-[35px] md:h-[50px] border-2 border-orange-500 dark:border-white rounded-full flex justify-center items-start animate-bounce">
+          <div className="absolute w-[3px] md:w-[6px] h-[3px] md:h-[6px] bg-orange-500 dark:bg-white rounded-full top-2 animate-blink"></div>
+        </div>
+      </div>
+   
+    
     </div>
   );
 };
