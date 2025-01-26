@@ -50,7 +50,7 @@ const Recommendations = () => {
                     </div>
                 </header>
 
-                <div className="bg-white dark:bg-gray-700 shadow-xl rounded-xl p-16 relative">
+                <div className="bg-gray-50 dark:bg-gray-700 shadow-xl rounded-xl p-16 relative">
                     <div className="absolute top-4 right-4 flex space-x-2">
                         <button 
                             onClick={handlePrev}

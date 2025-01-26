@@ -3,7 +3,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { 
   Database, Code, Layout, 
   ProjectorIcon, PencilRuler, Briefcase,
-  ChevronDown, ArrowRight
+  ChevronDown
 } from 'lucide-react';
 
 const getIconForCategory = (category) => {
@@ -145,45 +145,93 @@ const SkillsSection = ({ aboutData }) => {
   const skills = aboutData.Skills;
   const [expandedIndex, setExpandedIndex] = useState(null);
 
+  const sectionVariants = {
+    hidden: { opacity: 0, y: 50 },
+    visible: {
+      opacity: 1, 
+      y: 0,
+      transition: {
+        duration: 0.6,
+        delayChildren: 0.3,
+        staggerChildren: 0.2
+      }
+    }
+  };
+
+  const headerVariants = {
+    hidden: { opacity: 0, y: -20 },
+    visible: {
+      opacity: 1, 
+      y: 0,
+      transition: { duration: 0.5 }
+    }
+  };
+
   return (
-    <section id='skills' className="py-8 sm:py-12 bg-gray-60 dark:bg-gray-900">
+    <motion.section 
+      id='skills' 
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true }}
+      variants={sectionVariants}
+      className="py-8 sm:py-12 bg-gray-60 dark:bg-gray-900"
+    >
       <div className="container mx-auto px-4">
         <motion.div 
           className="max-w-4xl mx-auto"
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
+          variants={sectionVariants}
         >
-          <div className="text-center mb-8 sm:mb-12">
+          <motion.div 
+            className="text-center mb-8 sm:mb-12"
+            variants={headerVariants}
+          >
             <motion.div 
-              className="inline-block p-3 sm:p-4 rounded-xl sm:rounded-2xl bg-gradient-to-br from-orange-100 to-orange-50 dark:from-orange-900/30 dark:to-orange-800/20 mb-3 sm:mb-4"
               whileHover={{ scale: 1.05 }}
+              className="inline-block p-3 sm:p-4 rounded-xl sm:rounded-2xl bg-gradient-to-br from-orange-100 to-orange-50 dark:from-orange-900/30 dark:to-orange-800/20 mb-3 sm:mb-4"
             >
               <Briefcase className="w-6 h-6 sm:w-8 sm:h-8 text-orange-500 dark:text-orange-400" />
             </motion.div>
-            <h2 className="text-2xl sm:text-3xl font-bold text-gray-800 dark:text-white mb-2 sm:mb-3">
+            <motion.h2 
+              variants={headerVariants}
+              className="text-2xl sm:text-3xl font-bold text-gray-800 dark:text-white mb-2 sm:mb-3"
+            >
               Technical Skills
-            </h2>
-            <p className="text-sm sm:text-base text-gray-600 dark:text-gray-400 max-w-md mx-auto">
+            </motion.h2>
+            <motion.p 
+              variants={headerVariants}
+              className="text-sm sm:text-base text-gray-600 dark:text-gray-400 max-w-md mx-auto"
+            >
               Explore My Professional Skills Across Various Domains
-            </p>
-          </div>
+            </motion.p>
+          </motion.div>
 
-          <div className="space-y-3 sm:space-y-4">
+          <motion.div 
+            className="space-y-3 sm:space-y-4"
+            variants={sectionVariants}
+          >
             {Object.entries(skills).map(([category, categoryData], index) => (
-              <AccordionItem 
+              <motion.div
                 key={category}
-                category={category}
-                categoryData={categoryData}
-                index={index}
-                isExpanded={expandedIndex === index}
-                onToggle={() => setExpandedIndex(expandedIndex === index ? null : index)}
-              />
+                initial={{ opacity: 0, x: -20 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ 
+                  delay: index * 0.2,
+                  duration: 0.5 
+                }}
+              >
+                <AccordionItem 
+                  category={category}
+                  categoryData={categoryData}
+                  index={index}
+                  isExpanded={expandedIndex === index}
+                  onToggle={() => setExpandedIndex(expandedIndex === index ? null : index)}
+                />
+              </motion.div>
             ))}
-          </div>
+          </motion.div>
         </motion.div>
       </div>
-    </section>
+    </motion.section>
   );
 };
 

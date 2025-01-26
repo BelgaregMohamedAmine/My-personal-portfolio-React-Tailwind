@@ -14,7 +14,7 @@ const BioSection = ({ aboutData }) => {
   ];
 
   return (
-    <section  id="about"className="py-20 bg-gray-60 dark:bg-gray-900">
+    <section  id="about" className="py-20 bg-gray-60 dark:bg-gray-900">
       <div className="container mx-auto px-4">
         <motion.div 
           initial={{ opacity: 0, y: 20 }}

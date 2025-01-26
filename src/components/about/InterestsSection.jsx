@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
+import { motion } from 'framer-motion';
 import { BookmarkIcon, Code, ChartBar, Globe, Palette, Film } from 'lucide-react';
 
 const InterestsSection = () => {
-  const [activeInterest, setActiveInterest] = useState(null);
+  const [hoveredInterest, setHoveredInterest] = useState(null);
 
   const interests = [
     {
@@ -43,31 +44,63 @@ const InterestsSection = () => {
     }
   ];
 
+  const containerVariants = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        delayChildren: 0.2,
+        staggerChildren: 0.1
+      }
+    }
+  };
+
+  const itemVariants = {
+    hidden: { y: 20, opacity: 0 },
+    visible: {
+      y: 0,
+      opacity: 1,
+      transition: { duration: 0.5 }
+    }
+  };
+
   return (
-    <section id='interests' className="bg-gradient-to-br from-gray-50 to-gray-100 dark:from-gray-900 dark:to-gray-800 py-16 px-4">
+    <motion.section 
+      id='interests'
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true }}
+      variants={containerVariants}
+      className="bg-gradient-to-br from-gray-50 to-gray-100 dark:from-gray-900 dark:to-gray-800 py-16 px-4"
+    >
       <div className="max-w-6xl mx-auto">
-        <div className="text-center mb-12">
+        <motion.div 
+          initial={{ opacity: 0, y: -20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5 }}
+          className="text-center mb-12"
+        >
           <h2 className="text-4xl font-bold text-gray-900 dark:text-white mb-4">
             My Interests
           </h2>
           <div className="h-1.5 w-24 bg-gradient-to-r from-orange-500 via-orange-400 to-orange-300 mx-auto rounded-full" />
-          <p className="mt-4 text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
-            Exploring diverse domains of technology, creativity, and personal passions.
-          </p>
-        </div>
+        </motion.div>
         
-        <div className="grid grid-cols-2 md:grid-cols-3 gap-6">
+        <motion.div 
+          className="grid grid-cols-2 md:grid-cols-3 gap-6"
+          variants={containerVariants}
+        >
           {interests.map((interest, index) => (
-            <div 
+            <motion.div 
               key={index}
-              onMouseEnter={() => setActiveInterest(index)}
-              onMouseLeave={() => setActiveInterest(null)}
+              variants={itemVariants}
+              onHoverStart={() => setHoveredInterest(index)}
+              onHoverEnd={() => setHoveredInterest(null)}
               className={`
                 group relative overflow-hidden rounded-lg shadow-lg transform transition-all duration-300
-                ${activeInterest === index 
-                  ? 'scale-105 shadow-xl' 
-                  : 'scale-100 shadow-md'}
                 bg-white dark:bg-gray-800 p-6 text-center
+                ${hoveredInterest === index ? 'scale-105 shadow-xl' : ''}
               `}
             >
               <interest.icon 
@@ -81,17 +114,17 @@ const InterestsSection = () => {
                 {interest.title}
               </h3>
               <p className={`
-                text-gray-600 dark:text-gray-400 text-sm 
-                ${activeInterest === index ? 'opacity-100' : 'opacity-0'}
-                transition-opacity duration-300 mt-2
+                text-gray-600 dark:text-gray-400 text-sm mt-2
+                transition-all duration-300
+                ${hoveredInterest === index ? 'opacity-100' : 'opacity-100'}
               `}>
                 {interest.description}
               </p>
-            </div>
+            </motion.div>
           ))}
-        </div>
+        </motion.div>
       </div>
-    </section>
+    </motion.section>
   );
 };
 

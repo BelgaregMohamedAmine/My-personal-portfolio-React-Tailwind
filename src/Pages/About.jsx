@@ -23,7 +23,7 @@ const AboutPage = () => {
   // Handle scroll and highlight active section
   useEffect(() => {
     const handleScroll = () => {
-      const sections = ['about', 'education', 'experience', 'volunteer', 'skills', 'certificates'];
+      const sections = ['about', 'education', 'experience', 'volunteer', 'skills', 'certificates', 'interests'];
       const scrollPosition = window.scrollY + 100;
 
       for (const section of sections) {
@@ -50,16 +50,7 @@ const AboutPage = () => {
     transition: { duration: 0.6 }
   };
 
-  // Navigation items
-  const navItems = [
-    { id: 'about', label: 'About' },
-    { id: 'education', label: 'Education' },
-    { id: 'experience', label: 'Experience' },
-    { id: 'volunteer', label: 'Volunteer' },
-    { id: 'skills', label: 'Skills' },
-    { id: 'certificates', label: 'Certificates' },
-    { id: 'interests', label: 'Interests' }
-  ];
+
 
   return (
     <div className="min-h-screen bg-gray-100 dark:bg-gray-900">

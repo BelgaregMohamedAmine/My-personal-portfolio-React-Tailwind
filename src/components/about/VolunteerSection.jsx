@@ -288,23 +288,75 @@ const VolunteerSection = ({ aboutData }) => {
     });
   };
 
+  const sectionVariants = {
+    hidden: { opacity: 0, y: 50 },
+    visible: {
+      opacity: 1, 
+      y: 0,
+      transition: {
+        duration: 0.6,
+        delayChildren: 0.3,
+        staggerChildren: 0.2
+      }
+    }
+  };
+
+  const headerVariants = {
+    hidden: { opacity: 0, y: -20 },
+    visible: {
+      opacity: 1, 
+      y: 0,
+      transition: { duration: 0.5 }
+    }
+  };
+
   return (
-    <section id='volunteer' className="bg-white dark:bg-gray-800 py-8 md:py-16">
+    <motion.section 
+      id='volunteer' 
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true }}
+      variants={sectionVariants}
+      className="bg-white dark:bg-gray-800 py-8 md:py-16"
+    >
       <div className="container mx-auto px-1">
-        <div className="text-center mb-8 md:mb-12">
-          <div className="inline-block p-3 rounded-full bg-orange-50 dark:bg-orange-900/30 mb-4">
+        <motion.div 
+          className="text-center mb-8 md:mb-12"
+          variants={headerVariants}
+        >
+          <motion.div 
+            className="inline-block p-3 rounded-full bg-orange-50 dark:bg-orange-900/30 mb-4"
+            whileHover={{ scale: 1.1 }}
+          >
             <Heart className="w-6 h-6 md:w-8 md:h-8 text-orange-600 dark:text-orange-400" />
-          </div>
-          <h2 className="text-2xl md:text-3xl font-bold dark:text-white mb-2">
+          </motion.div>
+          <motion.h2 
+            variants={headerVariants}
+            className="text-2xl md:text-3xl font-bold dark:text-white mb-2"
+          >
             Volunteer Work & Clubs
-          </h2>
-          <div className="w-16 md:w-24 h-1 bg-gradient-to-r from-orange-400 to-orange-600 mx-auto"></div>
-        </div>
+          </motion.h2>
+          <motion.div 
+            variants={headerVariants}
+            className="w-16 md:w-24 h-1 bg-gradient-to-r from-orange-400 to-orange-600 mx-auto"
+          />
+        </motion.div>
 
         <div className="relative max-w-5xl mx-auto mb-20">
-          <div className="relative">
+          <motion.div 
+            className="relative"
+            variants={sectionVariants}
+          >
             {aboutData.volunteer.map((item, index) => (
-              <div key={index} className={index === currentIndex ? 'block' : 'hidden'}>
+              <motion.div 
+                key={index} 
+                initial={{ opacity: 0 }}
+                animate={{ 
+                  opacity: index === currentIndex ? 1 : 0,
+                  transition: { duration: 0.5 }
+                }}
+                className={index === currentIndex ? 'block' : 'hidden'}
+              >
                 <VolunteerCard 
                   data={item}
                   isVisible={index === currentIndex}
@@ -312,15 +364,22 @@ const VolunteerSection = ({ aboutData }) => {
                   currentIndex={currentIndex}
                   totalItems={aboutData.volunteer.length}
                 />
-              </div>
+              </motion.div>
             ))}
-          </div>
+          </motion.div>
 
           {/* Elegant dots navigation */}
-          <div className="absolute -bottom-12 left-1/2 -translate-x-1/2 flex items-center gap-3">
+          <motion.div 
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.5 }}
+            className="absolute -bottom-12 left-1/2 -translate-x-1/2 flex items-center gap-3"
+          >
             {aboutData.volunteer.map((_, idx) => (
-              <button
+              <motion.button
                 key={idx}
+                whileHover={{ scale: 1.2 }}
+                whileTap={{ scale: 0.9 }}
                 onClick={(e) => {
                   e.preventDefault();
                   setCurrentIndex(idx);
@@ -329,20 +388,14 @@ const VolunteerSection = ({ aboutData }) => {
                 className={`transition-all duration-300 relative ${
                   idx === currentIndex 
                     ? 'w-8 h-2 bg-white rounded-full' 
-                    : 'w-2 h-2 bg-white/50 hover:bg-white/70 rounded-full hover:scale-110'
+                    : 'w-2 h-2 bg-white/50 hover:bg-white/70 rounded-full'
                 }`}
-              >
-                {/*idx === currentIndex && (
-                  <span className="absolute -bottom-6 left-1/2 -translate-x-1/2 text-white text-xs font-medium opacity-75">
-                    {idx + 1}
-                  </span>
-                )*/}
-              </button>
+              />
             ))}
-          </div>
+          </motion.div>
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 };
 
