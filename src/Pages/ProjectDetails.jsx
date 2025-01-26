@@ -299,10 +299,10 @@ const ProjectDetails = () => {
                     prev === 0 ? project.images.length - 1 : prev - 1
                   );
                 }}
-                className="p-3 bg-white/10 rounded-full hover:bg-white/20 transition-colors"
+                className="p-3 bg-gray-400/50 rounded-full hover:bg-gray-500/20 transition-colors"
                 aria-label="Previous Image"
               >
-                <ChevronLeft className="w-6 h-6 text-white" />
+                <ChevronLeft className="w-6 h-6 text-blue" />
               </button>
               <button
                 onClick={(e) => {
@@ -311,10 +311,10 @@ const ProjectDetails = () => {
                     prev === project.images.length - 1 ? 0 : prev + 1
                   );
                 }}
-                className="p-3 bg-white/10 rounded-full hover:bg-white/20 transition-colors"
+                className="p-3 bg-gray-400/50 rounded-full hover:bg-gray-500/20 transition-colors"
                 aria-label="Next Image"
               >
-                <ChevronRight className="w-6 h-6 text-white" />
+                <ChevronRight className="w-6 h-6 text-blue" />
               </button>
             </div>
           </div>
