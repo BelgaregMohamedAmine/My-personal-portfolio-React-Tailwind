@@ -113,18 +113,18 @@ const AboutPage = () => {
             {isOpen && (
               <div className="absolute mt-2 w-48 bg-white dark:bg-gray-800 rounded-lg shadow-xl z-50 overflow-hidden">
                 <a
-                  href="https://res.cloudinary.com/medaminebelgareg/image/upload/v1738074189/portfolio/Pdfs/CV_Mohamed_Amine_Belgareg_EN.pdf"
+                  href="/public/pdfs/CV_Mohamed_Amine_Belgareg_EN.pdf"
                   className="flex items-center gap-2 px-4 py-3 text-gray-700 dark:text-gray-200 hover:bg-orange-50 dark:hover:bg-gray-700 transition-colors duration-200"
-                  download="CV_English.pdf"
+                  download="CV_Mohamed_Amine_Belgareg_EN.pdf"
                   onClick={() => setIsOpen(false)}
                 >
                   <Download className="w-4 h-4" />
                   English Version
                 </a>
                 <a
-                  href="https://res.cloudinary.com/medaminebelgareg/image/upload/v1738074189/portfolio/Pdfs/CV_Mohamed_Amine_Belgareg_Fr.pdf"
+                  href="/public/pdfs/CV_Mohamed_Amine_Belgareg_fr.pdf"
                   className="flex items-center gap-2 px-4 py-3 text-gray-700 dark:text-gray-200 hover:bg-orange-50 dark:hover:bg-gray-700 transition-colors duration-200"
-                  download="CV_Mohamed_Amine_Belgareg.pdf"
+                  download="CV_Mohamed_Amine_Belgareg_FR.pdf"
                   onClick={() => setIsOpen(false)}
                 >
                   <Download className="w-4 h-4" />
