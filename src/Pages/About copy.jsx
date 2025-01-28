@@ -1,12 +1,14 @@
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
-import { GraduationCap, Download, ChevronDown, Building, Calendar, ArrowRight, Layers, MapPin, Award } from 'lucide-react';
+import { GraduationCap, Building, Calendar,ArrowRight, Layers , MapPin , Award } from 'lucide-react';
+
 
 import aboutData from '../data/aboutData.json';
-import videoHeader from '../../public/videoHeder.mp4';
 
-import NavigationSection from "../components/about/NavigationSection";
+import  videoHeader from '../../public/videoHeder.mp4'
+
+import NavigationSection from "../components/about/NavigationSection"
 import BioSection from "../components/about/BioSection";
 import VolunteerSection from "../components/about/VolunteerSection";
 import SkillsSection from "../components/about/SkillsSection";
@@ -15,8 +17,8 @@ import InterestsSection from "../components/about/InterestsSection";
 import CTASection from "../components/about/CTASection";
 
 const AboutPage = () => {
+
   const [activeSection, setActiveSection] = useState('about');
-  const [isOpen, setIsOpen] = useState(false);
 
   // Handle scroll and highlight active section
   useEffect(() => {
@@ -48,92 +50,51 @@ const AboutPage = () => {
     transition: { duration: 0.6 }
   };
 
+
+
   return (
     <div className="min-h-screen bg-gray-100 dark:bg-gray-900">
       {/* Hero Section with Video Background */}
       <div className="relative h-[40vh]">
-        {/* Video Background with blur effect */}
-        <div className="absolute inset-0 overflow-hidden">
-          <video 
-            autoPlay 
-            muted 
-            loop 
-            playsInline
-            className="absolute top-0 left-0 w-full h-full object-cover scale-110 blur-[2px]"
-          >
-            <source src={videoHeader} type="video/mp4" />
-            {/* Fallback image */}
-            <img 
-              src="./assets/cover-about.webp" 
-              alt="Background" 
-              className="w-full h-full object-cover"
-            />
-          </video>
-        </div>
-
-        {/* Enhanced overlay for better text visibility */}
-        <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-black/20 to-black/50 backdrop-blur-sm"></div>
-
-        {/* Content */}
-        <div className="relative container mx-auto px-4 h-full flex flex-col justify-center">
-          <motion.h1 
-            className="text-4xl md:text-5xl font-bold text-white mb-4 drop-shadow-lg"
-            {...fadeIn}
-          >
-            About Me
-          </motion.h1>
-          <motion.p
-            className="text-xl text-white/90 max-w-2xl drop-shadow-lg mb-6"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 0.2 }}
-          >
-            Data Analyst || Business Intelligence Developer || web developer
-          </motion.p>
-
-          {/* CV Download Button */}
-          <motion.div
-            className="relative inline-block"
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.4 }}
-          >
-            <button
-              onClick={() => setIsOpen(!isOpen)}
-              className="group flex items-center gap-2 px-6 py-3 bg-orange-600 hover:bg-orange-700 text-white rounded-lg transition-all duration-300 shadow-lg hover:shadow-xl"
+          {/* Video Background with blur effect */}
+          <div className="absolute inset-0 overflow-hidden">
+            <video 
+              autoPlay 
+              muted 
+              loop 
+              playsInline
+              className="absolute top-0 left-0 w-full h-full object-cover scale-110 blur-[2px]"
             >
-              <Download className="w-5 h-5 group-hover:scale-110 transition-transform duration-300" />
-              <span className="font-medium">Download CV</span>
-              <ChevronDown 
-                className={`w-5 h-5 transition-transform duration-300 ${isOpen ? 'rotate-180' : ''}`}
+              <source src={videoHeader} type="video/mp4" />
+              {/* Fallback image */}
+              <img 
+                src="./assets/cover-about.webp" 
+                alt="Background" 
+                className="w-full h-full object-cover"
               />
-            </button>
+            </video>
+          </div>
 
-            {/* Dropdown Menu */}
-            {isOpen && (
-              <div className="absolute mt-2 w-48 bg-white dark:bg-gray-800 rounded-lg shadow-xl z-50 overflow-hidden">
-                <a
-                  href="https://res.cloudinary.com/medaminebelgareg/image/upload/v1738074189/portfolio/Pdfs/CV_Mohamed_Amine_Belgareg_EN.pdf"
-                  className="flex items-center gap-2 px-4 py-3 text-gray-700 dark:text-gray-200 hover:bg-orange-50 dark:hover:bg-gray-700 transition-colors duration-200"
-                  download="CV_English.pdf"
-                  onClick={() => setIsOpen(false)}
-                >
-                  <Download className="w-4 h-4" />
-                  English Version
-                </a>
-                <a
-                  href="https://res.cloudinary.com/medaminebelgareg/image/upload/v1738074189/portfolio/Pdfs/CV_Mohamed_Amine_Belgareg_Fr.pdf"
-                  className="flex items-center gap-2 px-4 py-3 text-gray-700 dark:text-gray-200 hover:bg-orange-50 dark:hover:bg-gray-700 transition-colors duration-200"
-                  download="CV_Mohamed_Amine_Belgareg.pdf"
-                  onClick={() => setIsOpen(false)}
-                >
-                  <Download className="w-4 h-4" />
-                  Version Française
-                </a>
-              </div>
-            )}
-          </motion.div>
-        </div>
+          {/* Enhanced overlay for better text visibility */}
+          <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-black/20 to-black/50 backdrop-blur-sm"></div>
+
+          {/* Content */}
+          <div className="relative container mx-auto px-4 h-full flex flex-col justify-center">
+            <motion.h1 
+              className="text-4xl md:text-5xl font-bold text-white mb-4 drop-shadow-lg"
+              {...fadeIn}
+            >
+              About Me
+            </motion.h1>
+            <motion.p
+              className="text-xl text-white/90 max-w-2xl drop-shadow-lg"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ delay: 0.2 }}
+            >
+              Data Analyst || Business Intelligence Developer || web developer
+            </motion.p>
+          </div>
       </div>
 
       {/* Bottom Navigation Bar */}
