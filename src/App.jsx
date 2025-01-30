@@ -9,6 +9,7 @@ import PageLoader from './components/layout/LoaderPortfolio';
 import { Header } from './components/layout/Header';
 import { Sidebar } from './components/layout/Sidebar';
 import Footer from './components/layout/Footer';
+import ScrollToTop from './components/layout/scroll-to-top';
 
 /** pages */
 import Home from './Pages/Home';
@@ -49,6 +50,8 @@ const App = () => {
       <AnimatePresence>
         {isLoading && <PageLoader key="loader" />}
       </AnimatePresence>
+
+      <ScrollToTop />
 
       {!isLoading && (
         <div className="min-h-screen bg-white dark:bg-gray-900 transition-colors duration-200">
