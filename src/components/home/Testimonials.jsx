@@ -71,26 +71,21 @@ const Recommendations = () => {
                         </button>
                     </div>
 
-                    <blockquote className="relative pl-8 mb-6">
-                        <Quote className="absolute left-0 top-0 text-orange-500 dark:text-orange-400 w-6 h-6 opacity-30" />
+                    <blockquote className="relative  md:pl-8 mb-6">
+                        <Quote className="absolute -left-8 sm:left-0 top-0 text-orange-500 dark:text-orange-400 w-6 h-6 opacity-30" />
                         <p className="text-base md:text-lg italic text-gray-700 dark:text-gray-300">
                             "{recommendation.text}"
                         </p>
                     </blockquote>
 
-                    <div className="mt-6 border-t pt-4 border-gray-200 dark:border-gray-700 flex items-center">
-                        <a 
-                            href={recommendation.linkedin}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="mr-4 transition-transform hover:scale-105"
-                        >
-                            <img 
+                    <div className="mt-6 border-t pt-4 border-gray-200 dark:border-gray-700 flex-none md:flex items-center">
+                     
+                        <img 
                                 src={recommendation.image} 
                                 alt={recommendation.name}
-                                className="w-12 h-12 md:w-16 md:h-16 rounded-full object-cover border-2 md:border-4 border-white dark:border-gray-700"
-                            />
-                        </a>
+                                className="w-16 h-16 md:w-16 md:h-16 rounded-full object-cover border-2 md:border-4 border-white dark:border-gray-700 mb-3 md:mb-0 md:mr-3"
+                        />
+                       
                         <div>
                             <a 
                                 href={recommendation.linkedin}
