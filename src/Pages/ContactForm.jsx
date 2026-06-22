@@ -215,7 +215,7 @@ const ContactPage = () => {
           <div className="bg-white dark:bg-gray-800 rounded-lg p-4 shadow-lg">
             <div className="aspect-w-16 aspect-h-9 h-60 sm:h-80 lg:h-96">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d17039.34280113019!2d9.235828299999996!3d36.4031271!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sen!2stn!4v1735938649669!5m2!1sen!2stn"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7419.838200803993!2d10.560391621169684!3d36.407483989379394!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12fd6118b4cc910f%3A0x1bb7701023d79446!2sBaraket%20essahel!5e0!3m2!1sen!2stn!4v1782165745399!5m2!1sen!2stn"
                 className="w-full h-full rounded-lg"
                 style={{ border: 0 }}
                 allowFullScreen={true}
