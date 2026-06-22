@@ -8,7 +8,7 @@ const Recommendations = () => {
           role: "Professeur Technologue, consultant et formateur en traitement et analyse de données",
           date: "August 19, 2024",
           text: "Mohamed Amine Belgareg fut un excellent étudiant doté d'une grande capacité d'analyse et d'autonomie. Il a surtout excellé lors de son travail de mémoire de master en accomplissant un travail de grande qualité. Je recommande vivement Mohamed Amine Belgareg pour son sérieux, sa persévérance, son autonomie et son abnégation.",
-          image: "https://media.licdn.com/dms/image/v2/C4E03AQHwyBrEZmoG6A/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1645391887696?e=1743033600&v=beta&t=m6lEiRRGJ34xfe4y4A9P7SSP1kMzkwN64JdyhSU2MG0",
+          image: ".\\public\\assets\\Makrem.jpg",
           linkedin: "https://www.linkedin.com/in/makram-ben-jeddou-3a3aa7182/",
         },
         {
@@ -16,7 +16,7 @@ const Recommendations = () => {
           role: "BI | UX/UI enthousiast | Women Techmakers Ambassador | SEO, GA, GTM | University Teacher",
           date: "August 19, 2024",
           text: "Mohamed Amine est un élément très sérieux qui a dépassé mes attentes dans tous les projets qu'il a réalisé. Il est autonome, persévérant et sait travailler en équipe. Je recommande vivement son profil.",
-          image: "https://media.licdn.com/dms/image/v2/D4D03AQHqO8umCEU26A/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1666868599148?e=1743033600&v=beta&t=IdezCr5W42tZ-EWFMNeJTnYu0IlTgFZDzXKpEbQFMTQ",
+          image: ".\\public\\assets\\Nesrine.jpg",
           linkedin: "https://www.linkedin.com/in/nesrineelleuch/",
         },
         {
@@ -24,7 +24,7 @@ const Recommendations = () => {
           role: "Directeur Commercial TOYOTA",
           date: "August 19, 2024",
           text: "Dès le début de votre stage et mon encadrement de votre groupe. J'ai eu l'impression que vous êtes professionnel, intelligent et innovant. Je vous souhaite le succès personnel et professionnel. Nchalah bel tawfik",
-          image: "https://media.licdn.com/dms/image/v2/C4E03AQHXmuLeHiTQCQ/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1651374954242?e=1743033600&v=beta&t=cSnQ3hzMH0rd8vQqwX1twbynjhe5ICEShoWLfJQln6U",
+          image: ".\\public\\assets\\Islam.jpg",
           linkedin: "https://www.linkedin.com/in/islam-attaoui-77947217b/",
         }
     ];
