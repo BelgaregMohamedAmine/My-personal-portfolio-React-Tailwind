@@ -8,7 +8,7 @@ const Recommendations = () => {
           role: "Professeur Technologue, consultant et formateur en traitement et analyse de données",
           date: "August 19, 2024",
           text: "Mohamed Amine Belgareg fut un excellent étudiant doté d'une grande capacité d'analyse et d'autonomie. Il a surtout excellé lors de son travail de mémoire de master en accomplissant un travail de grande qualité. Je recommande vivement Mohamed Amine Belgareg pour son sérieux, sa persévérance, son autonomie et son abnégation.",
-          image: "./public/assets/Makrem.jpg",
+          image: "/public/assets/Makrem.jpg",
           linkedin: "https://www.linkedin.com/in/makram-ben-jeddou-3a3aa7182/",
         },
         {
