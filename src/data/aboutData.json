@@ -26,7 +26,35 @@
       "description": "Built a strong foundation in management and economic principles, covering economic analysis, business strategy, and financial management. Developed analytical and problem-solving skills through practical applications and real-world scenarios."
     }
   ],
-  "experience": [
+      "experience": [
+        {
+      "role": "Data Analyst & Management Control (Internal Audit)",
+      "company": "Siège La Paix – Poulina Group",
+      "period": "Aug 2025 - Present",
+      "location": "Hammamet Sud, Tunisia · On-site",
+      "description": "Analysis, control, and visualization of data related to hospitality, leisure parks, and retail activities within the group. The objective is to detect anomalies, ensure data reliability, and support internal audit missions through accurate analysis and performance indicators.",
+      "highlights": [
+        "Collected and consolidated data from multiple sources (PMS, Data Warehouse, Excel files) covering reservations, billing, leisure activities, purchases, and consumption.",
+        "Developed BI solutions (Excel, Power BI) to monitor activities and detect anomalies across different business units.",
+        "Produced daily, weekly, and monthly reports for each activity, highlighting discrepancies such as unpaid transactions, missing records, zero values, and system errors.",
+        "Performed internal audit missions on revenues, procurement, and leisure park operations to ensure compliance and data accuracy.",
+        "Conducted on-site inspections including cash register checks, verification of internal procedures, and compliance with operational standards."
+      ]
+    },
+    {
+      "role": "IT Manager",
+      "company": "Speedway Rent a Car",
+      "period": "Feb 2025 - Jul 2025",
+      "location": "Ech-Charguia, Tunis, Tunisia · On-site",
+      "description": "Managed and optimized the company's IT infrastructure while leading the deployment and testing of the Nexus Rent Car ERP system. Supported business operations through data analysis, system maintenance, and technology-driven process improvements to enhance operational efficiency and decision-making.",
+      "highlights": [
+        "Managed and optimized IT infrastructure, contributing to improved system reliability and operational efficiency.",
+        "Led the deployment, testing, and support of the Nexus Rent Car ERP system, ensuring alignment with business requirements.",
+        "Analyzed customer, rental, and vehicle data to identify trends and support strategic decision-making.",
+        "Provided technical support and troubleshooting to ensure business continuity and minimize downtime.",
+        "Collaborated with different departments to improve workflows through technology and data-driven solutions."
+      ]
+    },
     {
       "role": "Field Data Collector",
       "company": "Institut National de la Statistique",

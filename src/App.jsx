@@ -34,7 +34,7 @@ const App = () => {
 
     const loadingTimer = setTimeout(() => {
       setIsLoading(false);
-    }, 3000);
+    }, 1500);
 
     handleResize();
     window.addEventListener('resize', handleResize);

@@ -14,6 +14,13 @@
         "Bootstrap"
       ],
       "thumbnail": "https://res.cloudinary.com/medaminebelgareg/image/upload/v1736501100/portfolio/number-one-online-meal-explorer/numberone_po7aau.webp",
+        "documents": [
+        {
+          "title": "Project Documentation",
+          "type": "slide",
+          "url": "https://drive.google.com/file/d/13hx7R9iTNMKF8kimsUyJR1v9kE0V__U_/preview"
+        }
+      ],
       "images": [
         {
           "url": "https://res.cloudinary.com/medaminebelgareg/image/upload/v1736501100/portfolio/number-one-online-meal-explorer/numberonep1_pmvoqk.webp",
@@ -48,7 +55,7 @@
         },
         {
           "name": "CSS",
-          "icon": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJDwBd9LoQzBAZigXXxzQ0kKn6TwyrE0Y7Rg&s"
+          "icon": "https://res.cloudinary.com/medaminebelgareg/image/upload/v1738313234/portfolio/tech-logos/css-icon_xgblaa.png"
         },
         {
           "name": "JavaScript",
@@ -56,7 +63,7 @@
         },
         {
           "name": "Bootstrap",
-          "icon": "https://cdn-icons-png.flaticon.com/512/5968/5968672.png"
+          "icon": "https://res.cloudinary.com/medaminebelgareg/image/upload/v1738313082/portfolio/tech-logos/5968672_qjacfm.png"
         },
         {
           "name": "Photoshop",
@@ -64,7 +71,7 @@
         },
         {
           "name": "UX/UI",
-          "icon": "https://cdn-icons-png.flaticon.com/256/7858/7858975.png"
+          "icon": "https://res.cloudinary.com/medaminebelgareg/image/upload/v1738313166/portfolio/tech-logos/8448634_n3tnmu.png"
         }
       ],
       "githubUrl": "https://github.com/BelgaregMohamedAmine/Number-One",
@@ -98,6 +105,13 @@
         "Stripe Payment"
       ],
       "thumbnail": "https://res.cloudinary.com/medaminebelgareg/image/upload/v1736501105/portfolio/shopit-ecommerce/shopit-twopng_khoerb.webp",
+        "documents": [
+        {
+          "title": "Project Documentation",
+          "type": "pdf",
+          "url": "https://drive.google.com/file/d/13hx7R9iTNMKF8kimsUyJR1v9kE0V__U_/preview"
+        }
+      ],
       "images": [
         {
           "url": "https://res.cloudinary.com/medaminebelgareg/image/upload/v1736501106/portfolio/shopit-ecommerce/shopit-order_swibxc.webp",
@@ -120,27 +134,27 @@
       "technologies": [
         {
           "name": "Full Stack JS (MERN)",
-          "icon": "https://example.com/mern-icon.png"
+          "icon": "https://res.cloudinary.com/medaminebelgareg/image/upload/v1738313032/portfolio/tech-logos/becomeamernstackdeveloper-mobile_qlrg4v.png"
         },
         {
           "name": "Postman",
-          "icon": "https://example.com/postman-icon.png"
+          "icon": "https://res.cloudinary.com/medaminebelgareg/image/upload/v1738312942/portfolio/tech-logos/postman-icon_ebncr8.png"
         },
         {
           "name": "Bootstrap",
-          "icon": "https://example.com/bootstrap-icon.png"
+          "icon": "https://res.cloudinary.com/medaminebelgareg/image/upload/v1738313082/portfolio/tech-logos/5968672_qjacfm.png"
         },
         {
           "name": "CSS",
-          "icon": "https://example.com/css-icon.png"
+          "icon": "https://res.cloudinary.com/medaminebelgareg/image/upload/v1738313234/portfolio/tech-logos/css-icon_xgblaa.png"
         },
         {
           "name": "ECMAScript",
-          "icon": "https://example.com/ecmascript-icon.png"
+          "icon": "https://res.cloudinary.com/medaminebelgareg/image/upload/v1738313315/portfolio/tech-logos/68747470733a2f2f692e70696e696d672e636f6d2f6f726967696e616c732f62352f35372f36342f62353537363434313638333065376438623031333363376330656561663434352e706e67_j3ks3b.png"
         },
         {
           "name": "Cloudinary",
-          "icon": "https://example.com/cloudinary-icon.png"
+          "icon": "https://res.cloudinary.com/medaminebelgareg/image/upload/v1738313368/portfolio/tech-logos/kisspng-cloudinary-computer-software-software-as-a-service-5ae2211173ebf6.3513513815247690414748_sir9j8.jpg"
         },
         {
           "name": "Stripe Payment",
@@ -148,7 +162,7 @@
         }
       ],
       "githubUrl": "https://github.com/BelgaregMohamedAmine/shopit-ecommerce",
-      "liveUrl": "https://shopit-ecommerce.vercel.app/",
+      "liveUrl": "",
       "startDate": "2022-02-07",
       "endDate": "2022-04-01",
       "date": "2022-04-01",
@@ -175,6 +189,13 @@
         "Graphic Design"
       ],
       "thumbnail": "https://res.cloudinary.com/medaminebelgareg/image/upload/v1736501114/portfolio/web-development-bi-project/photo1_ojg69m.png",
+        "documents": [
+        {
+          "title": "Project Documentation",
+          "type": "pdf",
+          "url": "https://drive.google.com/file/d/13hx7R9iTNMKF8kimsUyJR1v9kE0V__U_/preview"
+        }
+      ],
       "images": [
         {
           "url": "https://res.cloudinary.com/medaminebelgareg/image/upload/v1736501118/portfolio/web-development-bi-project/photo1_w0zos3.png",
@@ -213,40 +234,40 @@
       "technologies": [
         {
           "name": "Full Stack JS (MERN)",
-          "icon": "https://example.com/mern-icon.png"
+          "icon": "https://res.cloudinary.com/medaminebelgareg/image/upload/v1738313032/portfolio/tech-logos/becomeamernstackdeveloper-mobile_qlrg4v.png"
         },
         {
           "name": "Postman",
-          "icon": "https://example.com/postman-icon.png"
+          "icon": "https://res.cloudinary.com/medaminebelgareg/image/upload/v1738312942/portfolio/tech-logos/postman-icon_ebncr8.png"
         },
         {
           "name": "Bootstrap",
-          "icon": "https://example.com/bootstrap-icon.png"
+          "icon": "https://res.cloudinary.com/medaminebelgareg/image/upload/v1738313082/portfolio/tech-logos/5968672_qjacfm.png"
         },
         {
           "name": "CSS",
-          "icon": "https://example.com/css-icon.png"
+          "icon": "https://res.cloudinary.com/medaminebelgareg/image/upload/v1738313234/portfolio/tech-logos/css-icon_xgblaa.png"
         },
         {
           "name": "ECMAScript",
-          "icon": "https://example.com/ecmascript-icon.png"
+          "icon": "https://res.cloudinary.com/medaminebelgareg/image/upload/v1738313315/portfolio/tech-logos/68747470733a2f2f692e70696e696d672e636f6d2f6f726967696e616c732f62352f35372f36342f62353537363434313638333065376438623031333363376330656561663434352e706e67_j3ks3b.png"
         },
         {
           "name": "Cloudinary",
-          "icon": "https://example.com/cloudinary-icon.png"
+          "icon": "https://res.cloudinary.com/medaminebelgareg/image/upload/v1738313368/portfolio/tech-logos/kisspng-cloudinary-computer-software-software-as-a-service-5ae2211173ebf6.3513513815247690414748_sir9j8.jpg"
         },
         {
           "name": "Dashboards",
-          "icon": "https://example.com/dashboard-icon.png"
+          "icon": "https://res.cloudinary.com/medaminebelgareg/image/upload/v1738313433/portfolio/tech-logos/6821002_rw6tgh.png"
         },
         {
           "name": "Graphic Design",
-          "icon": "https://example.com/graphic-design-icon.png"
+          "icon": "https://res.cloudinary.com/medaminebelgareg/image/upload/v1738313487/portfolio/tech-logos/4668243_sqg9yq.png"
         }
       ],
-      "githubUrl": "https://github.com/BelgaregMohamedAmine/mec-art-toyota-ecommerce",
-      "liveUrl": "https://mec-art-toyota-ecommerce.vercel.app/",
-       "startDate": "2022-02-07",
+      "githubUrl": "",
+      "liveUrl": "",
+      "startDate": "2022-02-07",
       "endDate": "2022-07-01",
       "date": "2022-07-01",
       "client": "Mec Art Toyota Teboulba",
@@ -268,6 +289,13 @@
         "DAX"
       ],
       "thumbnail": "https://res.cloudinary.com/medaminebelgareg/image/upload/v1736501141/portfolio/toyota-ssis-ssas/cube_desgin_lpkn2q.png",
+        "documents": [
+        {
+          "title": "Project Documentation",
+          "type": "pdf",
+          "url": "https://drive.google.com/file/d/13hx7R9iTNMKF8kimsUyJR1v9kE0V__U_/preview"
+        }
+      ],
       "images": [
         {
           "url": "https://res.cloudinary.com/medaminebelgareg/image/upload/v1736501143/portfolio/toyota-ssis-ssas/cube_desgin_hxa0ue.png",
@@ -302,15 +330,15 @@
       "technologies": [
         {
           "name": "SQL Server Analysis Services (SSAS)",
-          "icon": "https://example.com/ssas-icon.png"
+          "icon": "https://res.cloudinary.com/medaminebelgareg/image/upload/v1738313560/portfolio/tech-logos/img.icons8_hw2mnw.png"
         },
         {
           "name": "SQL Server Integration Services (SSIS)",
-          "icon": "https://res.cloudinary.com/medaminebelgareg/image/upload/v1736506912/portfolio/tech-logos/png-transparent-microsoft-sql-server-sql-server-management-studio-sql-server-integration-services-database-server-microsoft-angle-text-logo-thumbnail.png"
+          "icon": "https://res.cloudinary.com/medaminebelgareg/image/upload/v1738313560/portfolio/tech-logos/img.icons8_hw2mnw.png"
         },
         {
           "name": "Data Warehousing",
-          "icon": "https://example.com/data-warehousing-icon.png"
+          "icon": "https://res.cloudinary.com/medaminebelgareg/image/upload/v1738313850/portfolio/tech-logos/png-clipart-data-warehouse-computer-icons-graphics-data-warehouse-building-blue-angle_j1ncgs.png"
         },
         {
           "name": "DAX",
@@ -340,6 +368,13 @@
         "Business Intelligence"
       ],
       "thumbnail": "https://res.cloudinary.com/medaminebelgareg/image/upload/v1736501175/portfolio/power-bi-dax-adventure-works/adventureWorks-portable-dashbord-1_ppcstx.png",
+        "documents": [
+        {
+          "title": "Project Documentation",
+          "type": "pdf",
+          "url": "https://drive.google.com/file/d/13hx7R9iTNMKF8kimsUyJR1v9kE0V__U_/preview"
+        }
+      ],
       "images": [
         {
           "url": "https://res.cloudinary.com/medaminebelgareg/image/upload/v1736501177/portfolio/power-bi-dax-adventure-works/adventureWorks-portable-dashbord-1_untnmx.png",
@@ -370,16 +405,16 @@
         },
         {
           "name": "Data Visualization",
-          "icon": "https://example.com/data-visualization-icon.png"
+          "icon": "https://res.cloudinary.com/medaminebelgareg/image/upload/v1738313433/portfolio/tech-logos/6821002_rw6tgh.png"
         },
         {
           "name": "Business Intelligence",
-          "icon": "https://example.com/bi-icon.png"
+          "icon": "https://res.cloudinary.com/medaminebelgareg/image/upload/v1738313711/portfolio/tech-logos/3343849_x8efex.png"
         }
       ],
       "githubUrl": "https://github.com/BelgaregMohamedAmine/AdventureWorksDashboard",
       "liveUrl": "empty",
-       "startDate": "2023-12-01",
+      "startDate": "2023-12-01",
       "endDate": "2023-12-01",
       "date": "2023-12-01",
       "client": "N/A",
@@ -401,6 +436,13 @@
         "Data Warehousing"
       ],
       "thumbnail": "https://res.cloudinary.com/medaminebelgareg/image/upload/v1736501199/portfolio/analyse-humanitaire-besoins-refugies/p1_z9fakm.png",
+        "documents": [
+        {
+          "title": "Project Documentation",
+          "type": "pdf",
+          "url": "https://drive.google.com/file/d/13hx7R9iTNMKF8kimsUyJR1v9kE0V__U_/preview"
+        }
+      ],
       "images": [
         {
           "url": "https://res.cloudinary.com/medaminebelgareg/image/upload/v1736501203/portfolio/analyse-humanitaire-besoins-refugies/p1_so8vpp.png",
@@ -443,7 +485,7 @@
         },
         {
           "name": "Data Warehousing",
-          "icon": "https://example.com/data-warehousing-icon.png"
+          "icon": "https://res.cloudinary.com/medaminebelgareg/image/upload/v1738313850/portfolio/tech-logos/png-clipart-data-warehouse-computer-icons-graphics-data-warehouse-building-blue-angle_j1ncgs.png"
         },
         {
           "name": "Data Analysis",
@@ -451,8 +493,8 @@
         }
       ],
       "githubUrl": "https://github.com/BelgaregMohamedAmine/Donations",
-      "liveUrl": "empty",
-       "startDate": "2023-12-29",
+      "liveUrl": "",
+      "startDate": "2023-12-29",
       "endDate": "2024-01-01",
       "date": "2024-01-01",
       "client": "Humanitarian Educational Project",
@@ -475,6 +517,13 @@
         "SQL Server"
       ],
       "thumbnail": "https://res.cloudinary.com/medaminebelgareg/image/upload/v1736501240/portfolio/business-intelligence-solutions-el-mazraa-sales-production-data-analysis/model_bim_hfd7lb.png",
+        "documents": [
+        {
+          "title": "Project Documentation",
+          "type": "pdf",
+          "url": "https://drive.google.com/file/d/13hx7R9iTNMKF8kimsUyJR1v9kE0V__U_/preview"
+        }
+      ],
       "images": [
         {
           "url": "https://res.cloudinary.com/medaminebelgareg/image/upload/v1736501242/portfolio/business-intelligence-solutions-el-mazraa-sales-production-data-analysis/jiratable_ubskbj.png",
@@ -561,7 +610,7 @@
         },
         {
           "name": "SQL Server - SSIS - SSAS",
-          "icon": "https://res.cloudinary.com/medaminebelgareg/image/upload/v1736506912/portfolio/tech-logos/png-transparent-microsoft-sql-server-sql-server-management-studio-sql-server-integration-services-database-server-microsoft-angle-text-logo-thumbnail.png"
+          "icon": "https://res.cloudinary.com/medaminebelgareg/image/upload/v1738313560/portfolio/tech-logos/img.icons8_hw2mnw.png"
         },
         {
           "name": "SSMS",
@@ -585,7 +634,7 @@
         }
       ],
       "githubUrl": "",
-      "liveUrl": "empty",
+      "liveUrl": "",
       "startDate": "2024-02-10",
       "endDate": "2024-07-01",
       "date": "2024-07-01",
@@ -607,6 +656,13 @@
         "Data Visualization"
       ],
       "thumbnail": "https://res.cloudinary.com/medaminebelgareg/image/upload/v1736501386/portfolio/blinkit-grocery-sales-analysis-dashboard/Dashbord_1_hgv7b1.png",
+        "documents": [
+        {
+          "title": "Project Documentation",
+          "type": "pdf",
+          "url": "https://drive.google.com/file/d/13hx7R9iTNMKF8kimsUyJR1v9kE0V__U_/preview"
+        }
+      ],
       "images": [
         {
           "url": "https://res.cloudinary.com/medaminebelgareg/image/upload/v1736501388/portfolio/blinkit-grocery-sales-analysis-dashboard/Dashbord_1_uo96gb.png",
@@ -669,6 +725,13 @@
         "Visualization"
       ],
       "thumbnail": "https://res.cloudinary.com/medaminebelgareg/image/upload/v1736501396/portfolio/amazon-sales-analysis-power-bi-project/overview_dashboard_fbdkuw.png",
+        "documents": [
+        {
+          "title": "Project Documentation",
+          "type": "pdf",
+          "url": "https://drive.google.com/file/d/13hx7R9iTNMKF8kimsUyJR1v9kE0V__U_/preview"
+        }
+      ],
       "images": [
         {
           "url": "https://res.cloudinary.com/medaminebelgareg/image/upload/v1736501401/portfolio/amazon-sales-analysis-power-bi-project/overview_dashboard_be4lzt.png",
@@ -732,6 +795,13 @@
         "Data Visualization"
       ],
       "thumbnail": "https://res.cloudinary.com/medaminebelgareg/image/upload/v1736501423/portfolio/pwc-customer-agent-behavior-analysis/dashbord2_umya8f.png",
+        "documents": [
+        {
+          "title": "Project Documentation",
+          "type": "pdf",
+          "url": "https://drive.google.com/file/d/13hx7R9iTNMKF8kimsUyJR1v9kE0V__U_/preview"
+        }
+      ],
       "images": [
         {
           "url": "https://res.cloudinary.com/medaminebelgareg/image/upload/v1736501425/portfolio/pwc-customer-agent-behavior-analysis/dashbord2_crqalx.png",
@@ -787,6 +857,13 @@
         "Power Query"
       ],
       "thumbnail": "https://res.cloudinary.com/medaminebelgareg/image/upload/v1736501429/portfolio/customer-retention-analysis/accueil_e5uqxg.webp",
+        "documents": [
+        {
+          "title": "Project Documentation",
+          "type": "pdf",
+          "url": "https://drive.google.com/file/d/13hx7R9iTNMKF8kimsUyJR1v9kE0V__U_/preview"
+        }
+      ],
       "images": [
         {
           "url": "https://res.cloudinary.com/medaminebelgareg/image/upload/v1736501430/portfolio/customer-retention-analysis/accueil_ug1nv4.webp",
@@ -859,6 +936,13 @@
         "Power Query"
       ],
       "thumbnail": "https://res.cloudinary.com/medaminebelgareg/image/upload/v1736501439/portfolio/diversity-inclusion-analysis/DiversityInclusion1_slylna.webp",
+        "documents": [
+        {
+          "title": "Project Documentation",
+          "type": "pdf",
+          "url": "https://drive.google.com/file/d/13hx7R9iTNMKF8kimsUyJR1v9kE0V__U_/preview"
+        }
+      ],
       "images": [
         {
           "url": "https://res.cloudinary.com/medaminebelgareg/image/upload/v1736501440/portfolio/diversity-inclusion-analysis/DiversityInclusion1_f7rliy.webp",
@@ -894,7 +978,7 @@
       ],
       "githubUrl": "empty",
       "liveUrl": "empty",
-       "startDate": "2024-10-14",
+      "startDate": "2024-10-14",
       "endDate": "2024-10-15",
       "date": "2024-10-15",
       "client": "Virtual Case Experience | PwC Switzerland",

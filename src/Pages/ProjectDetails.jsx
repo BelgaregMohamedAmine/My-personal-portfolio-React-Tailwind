@@ -2,13 +2,13 @@ import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import { 
   ArrowLeft, ExternalLink, Github, Calendar, 
-  ChevronRight, ChevronLeft, User, Timer,
-  Clock, Briefcase, Award, Code
+  ChevronRight, ChevronLeft, Timer,
+  Briefcase, Award, Code,
+  Maximize2, Download, ChevronDown
 } from 'lucide-react';
 
+// Import your project data
 import projectData from '../data/projectData.json';
-import RecommendedProjects from "../components/layout/RecommendedProjects.jsx";
-
 
 const ProjectDetails = () => {
   const { slug } = useParams();
@@ -17,6 +17,10 @@ const ProjectDetails = () => {
   const [activeTab, setActiveTab] = useState('overview');
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const [showLightbox, setShowLightbox] = useState(false);
+  const [showFullPdf, setShowFullPdf] = useState(false);
+  const [showPdfPreview, setShowPdfPreview] = useState(false);
+  const [currentPage, setCurrentPage] = useState(1);
+  const [showFullContent, setShowFullContent] = useState(false);
 
   useEffect(() => {
     loadProject();
@@ -25,7 +29,10 @@ const ProjectDetails = () => {
   const loadProject = () => {
     setIsLoading(true);
     try {
+      // Access the projects array directly from the imported projectData
       const foundProject = projectData.projects.find(p => p.slug === slug);
+      console.log('Loading project for slug:', slug); // Debug log
+      console.log('Found project:', foundProject); // Debug log
       setProject(foundProject);
     } catch (error) {
       console.error('Error loading project:', error);
@@ -48,6 +55,135 @@ const ProjectDetails = () => {
                   (end.getMonth() - start.getMonth());
     return months <= 1 ? '1 month' : `${months} months`;
   };
+
+  const renderPdfViewer = (url, isFullScreen = false) => {
+    // Modify URL to include page parameter
+    const pdfUrl = `${url}#page=${currentPage}`;
+    
+    return (
+      <>
+        {!isFullScreen ? (
+          <div className="relative h-[400px] mt-6 bg-gray-100 dark:bg-gray-800 rounded-xl overflow-hidden">
+            <div className="absolute top-4 right-4 flex gap-2 z-10">
+              <button
+                onClick={() => setShowFullPdf(true)}
+                className="p-2 bg-black/20 hover:bg-black/30 backdrop-blur rounded-lg transition-colors"
+                aria-label="Full Screen"
+              >
+                <Maximize2 className="w-5 h-5 text-white" />
+              </button>
+              <a
+                href={url.replace('/preview', '/view')}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="p-2 bg-black/20 hover:bg-black/30 backdrop-blur rounded-lg transition-colors"
+                aria-label="Download PDF"
+              >
+                <Download className="w-5 h-5 text-white" />
+              </a>
+            </div>
+            <iframe
+              src={pdfUrl}
+              className="w-full h-full"
+              title="PDF Preview"
+            />
+            <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex items-center gap-4 bg-black/20 backdrop-blur px-4 py-2 rounded-full">
+              <button
+                onClick={() => setCurrentPage(prev => Math.max(1, prev - 1))}
+                className="text-white hover:text-gray-300 disabled:opacity-50"
+                disabled={currentPage === 1}
+              >
+                <ChevronLeft className="w-5 h-5" />
+              </button>
+              <span className="text-white">Page {currentPage}</span>
+              <button
+                onClick={() => setCurrentPage(prev => prev + 1)}
+                className="text-white hover:text-gray-300"
+              >
+                <ChevronRight className="w-5 h-5" />
+              </button>
+            </div>
+          </div>
+        ) : (
+          <div className="fixed inset-0 w-full h-full bg-gray-900 z-50 flex flex-col">
+            <div className="relative h-16 bg-gray-800 flex items-center justify-between px-4 shadow-lg">
+              <button
+                onClick={() => setShowFullPdf(false)}
+                className="flex items-center gap-2 text-white hover:text-gray-300 transition-colors"
+              >
+                <ArrowLeft className="w-5 h-5" />
+                <span>Exit Full Screen</span>
+              </button>
+              
+              <div className="flex items-center gap-4">
+                <div className="flex items-center gap-2 bg-gray-700 px-4 py-2 rounded-lg">
+                  <button
+                    onClick={() => setCurrentPage(prev => Math.max(1, prev - 1))}
+                    className="text-white hover:text-gray-300 disabled:opacity-50"
+                    disabled={currentPage === 1}
+                  >
+                    <ChevronLeft className="w-5 h-5" />
+                  </button>
+                  <span className="text-white">Page {currentPage}</span>
+                  <button
+                    onClick={() => setCurrentPage(prev => prev + 1)}
+                    className="text-white hover:text-gray-300"
+                  >
+                    <ChevronRight className="w-5 h-5" />
+                  </button>
+                </div>
+                <a
+                  href={url.replace('/preview', '/view')}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-2 px-4 py-2 bg-gray-700 hover:bg-gray-600 rounded-lg text-white transition-colors"
+                >
+                  <Download className="w-4 h-4" />
+                  <span>Download</span>
+                </a>
+              </div>
+            </div>
+            
+            <div className="flex-1 bg-gray-900">
+              <iframe
+                src={pdfUrl}
+                className="w-full h-full"
+                title="PDF Fullscreen"
+              />
+            </div>
+          </div>
+        )}
+      </>
+    );
+  };
+
+  // Modify the overview tab content
+  const renderOverviewContent = () => (
+    <div className="prose dark:prose-invert max-w-none">
+      <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
+        {showFullContent ? project.description : project.description.slice(0, 200) + '...'}
+      </p>
+      
+      {project.documents?.length > 0 && (
+        <div className="mt-6">
+          {renderPdfViewer(project.documents[0].url)}
+          {!showFullContent && (
+            <button
+              onClick={() => {
+                setShowFullContent(true);
+                setCurrentPage(prev => prev + 1);
+              }}
+              className="flex items-center gap-2 text-orange-500 hover:text-orange-600 mt-4"
+            >
+              <ChevronDown className="w-4 h-4" />
+              <span>Read More</span>
+            </button>
+          )}
+        </div>
+      )}
+    </div>
+  );
+
 
   if (isLoading) {
     return (
@@ -74,15 +210,15 @@ const ProjectDetails = () => {
   }
 
   return (
-    <div className="min-h-screen bg-gray-50 dark:bg-gray-900 ">
-      {/* Simplified Header */}
-      <header className="relative bg-gradient-to-br from-gray-700 via-orange-500 to-gray-700 text-white py-16" >
-        <div className="absolute inset-0 bg-[url('https://img.freepik.com/free-photo/happy-young-asia-businessmen-businesswomen-meeting-brainstorming-ideas-about-new-paperwork-project-colleagues-working-together-planning-success-strategy-enjoy-teamwork-small-modern-office_7861-2537.jpg?t=st=1736576626~exp=1736580226~hmac=6dc6d0a1bf60bc52c90222047d40cf99ff40cafd985673753f4896bd35a7645c&w=1380')] opacity-30" />
+    <div className="min-h-screen bg-gray-50 dark:bg-gray-900">
+      {/* Header */}
+      <header className="relative bg-gradient-to-br from-gray-700 via-orange-500 to-gray-700 text-white py-16">
+        <div className="absolute inset-0 bg-[url('/api/placeholder/400/320')] opacity-30" />
         <div className="container mx-auto px-4 relative">
           <button
             onClick={() => window.history.back()}
             className="flex items-center mb-8 hover:opacity-80 transition-opacity"
-            aria-label="Back to Projects 2"
+            aria-label="Back to Projects"
           >
             <ArrowLeft className="w-5 h-5 mr-2" />
             Back to Projects
@@ -110,7 +246,6 @@ const ProjectDetails = () => {
         <div className="container mx-auto px-4">
           <div className="flex flex-wrap items-center justify-between py-4 gap-4">
             <div className="flex flex-col sm:flex-row sm:items-center gap-4 sm:gap-6">
-              {/* Période */}
               <div className="flex items-center gap-2 text-gray-600 dark:text-gray-300">
                 <Calendar className="w-5 h-5" />
                 <span>{formatDate(project.startDate)}</span>
@@ -118,13 +253,11 @@ const ProjectDetails = () => {
                 <span>{project.endDate ? formatDate(project.endDate) : 'Present'}</span>
               </div>
 
-              {/* Durée */}
               <div className="flex items-center gap-2 text-gray-600 dark:text-gray-300">
                 <Timer className="w-5 h-5" />
                 <span>{calculateDuration(project.startDate, project.endDate)}</span>
               </div>
 
-              {/* Client */}
               {project.client && (
                 <div className="flex items-center gap-2 text-gray-600 dark:text-gray-300">
                   <Briefcase className="w-5 h-5" />
@@ -133,9 +266,8 @@ const ProjectDetails = () => {
               )}
             </div>
 
-            {/* Boutons */}
             <div className="flex flex-wrap gap-3">
-              {project.liveUrl && (
+              {project.liveUrl && project.liveUrl !== "empty" && (
                 <a
                   href={project.liveUrl}
                   target="_blank"
@@ -146,7 +278,7 @@ const ProjectDetails = () => {
                   <span>Live Demo</span>
                 </a>
               )}
-              {project.githubUrl && (
+              {project.githubUrl && project.githubUrl !== "empty" && (
                 <a
                   href={project.githubUrl}
                   target="_blank"
@@ -162,15 +294,12 @@ const ProjectDetails = () => {
         </div>
       </div>
 
-
       {/* Main Content */}
       <main className="container mx-auto px-0 md:px-4 py-4 pb-14">
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 ">
-          {/* Left Content */}
-          <div className="lg:col-span-2 ">
-            <div className="bg-white dark:bg-gray-800 md:min-h-64 md:rounded-md shadow-xl overflow-hidden">
-              {/* Creative Tab Navigation */}
-              
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-4">
+          <div className="lg:col-span-2">
+            <div className="bg-white dark:bg-gray-800 md:rounded-md shadow-xl overflow-hidden">
+              {/* Tab Navigation */}
               <div className="flex border-b dark:border-gray-700">
                 {['overview', 'gallery', 'results'].map(tab => (
                   <button
@@ -181,7 +310,6 @@ const ProjectDetails = () => {
                         ? 'text-orange-500 bg-orange-50 dark:bg-orange-900/20' 
                         : 'text-gray-500 hover:text-gray-700 hover:bg-gray-50 dark:hover:bg-gray-700/50'
                     }`}
-                    aria-label={`Show ${tab} content`}
                   >
                     <div className="flex items-center justify-center gap-2">
                       {tab === 'overview' && <Code className="w-4 h-4" />}
@@ -198,13 +326,7 @@ const ProjectDetails = () => {
 
               {/* Tab Content */}
               <div className="p-6">
-                {activeTab === 'overview' && (
-                  <div className="prose dark:prose-invert max-w-none">
-                    <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
-                      {project.description}
-                    </p>
-                  </div>
-                )}
+                 {activeTab === 'overview' && renderOverviewContent()}
 
                 {activeTab === 'gallery' && (
                   <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
@@ -273,13 +395,9 @@ const ProjectDetails = () => {
             </div>
           </div>
         </div>
-        <RecommendedProjects 
-          currentProject={project}
-          allProjects={projectData.projects}
-        />
       </main>
 
-      {/* Enhanced Lightbox */}
+      {/* Image Lightbox */}
       {showLightbox && (
         <div 
           className="fixed inset-0 bg-black/95 z-50 flex items-center justify-center backdrop-blur-sm"
@@ -302,7 +420,7 @@ const ProjectDetails = () => {
                 className="p-3 bg-gray-400/50 rounded-full hover:bg-gray-500/20 transition-colors"
                 aria-label="Previous Image"
               >
-                <ChevronLeft className="w-6 h-6 text-blue" />
+                <ChevronLeft className="w-6 h-6 text-white" />
               </button>
               <button
                 onClick={(e) => {
@@ -314,11 +432,16 @@ const ProjectDetails = () => {
                 className="p-3 bg-gray-400/50 rounded-full hover:bg-gray-500/20 transition-colors"
                 aria-label="Next Image"
               >
-                <ChevronRight className="w-6 h-6 text-blue" />
+                <ChevronRight className="w-6 h-6 text-white" />
               </button>
             </div>
           </div>
         </div>
+      )}
+
+      {/* Full Screen PDF Viewer */}
+      {showFullPdf && project.documents?.length > 0 && (
+        renderPdfViewer(project.documents[0].url, true)
       )}
     </div>
   );
