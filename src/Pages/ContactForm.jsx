@@ -69,7 +69,7 @@ const ContactPage = () => {
                 <div className="ml-4 flex-1">
                   <h3 className="font-semibold text-sm sm:text-base">Location</h3>
                   <p className="text-purple-600 dark:text-purple-400 text-xs sm:text-sm">
-                    Tunisia, Beja
+                    Tunisia, Hammamet
                   </p>
                 </div>
               </div>
