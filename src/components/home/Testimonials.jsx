@@ -8,7 +8,7 @@ const Recommendations = () => {
           role: "Professeur Technologue, consultant et formateur en traitement et analyse de données",
           date: "August 19, 2024",
           text: "Mohamed Amine Belgareg fut un excellent étudiant doté d'une grande capacité d'analyse et d'autonomie. Il a surtout excellé lors de son travail de mémoire de master en accomplissant un travail de grande qualité. Je recommande vivement Mohamed Amine Belgareg pour son sérieux, sa persévérance, son autonomie et son abnégation.",
-          image: "/public/assets/Makrem.jpg",
+          image: "/assets/Makrem.jpg",
           linkedin: "https://www.linkedin.com/in/makram-ben-jeddou-3a3aa7182/",
         },
         {
@@ -16,7 +16,7 @@ const Recommendations = () => {
           role: "BI | UX/UI enthousiast | Women Techmakers Ambassador | SEO, GA, GTM | University Teacher",
           date: "August 19, 2024",
           text: "Mohamed Amine est un élément très sérieux qui a dépassé mes attentes dans tous les projets qu'il a réalisé. Il est autonome, persévérant et sait travailler en équipe. Je recommande vivement son profil.",
-          image: "./public/assets/Nesrine.jpg",
+          image: "/assets/Nesrine.jpg",
           linkedin: "https://www.linkedin.com/in/nesrineelleuch/",
         },
         {
@@ -24,7 +24,7 @@ const Recommendations = () => {
           role: "Directeur Commercial TOYOTA",
           date: "August 19, 2024",
           text: "Dès le début de votre stage et mon encadrement de votre groupe. J'ai eu l'impression que vous êtes professionnel, intelligent et innovant. Je vous souhaite le succès personnel et professionnel. Nchalah bel tawfik",
-          image: "./public/assets/Islam.jpg",
+          image: "/assets/Islam.jpg",
           linkedin: "https://www.linkedin.com/in/islam-attaoui-77947217b/",
         }
     ];
