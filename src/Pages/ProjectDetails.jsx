@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import { 
   ArrowLeft, ExternalLink, Github, Calendar, 
@@ -18,11 +18,15 @@ const ProjectDetails = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const [showLightbox, setShowLightbox] = useState(false);
   const [showFullPdf, setShowFullPdf] = useState(false);
-  const [showPdfPreview, setShowPdfPreview] = useState(false);
   const [currentPage, setCurrentPage] = useState(1);
   const [showFullContent, setShowFullContent] = useState(false);
 
   useEffect(() => {
+    setActiveTab('overview');
+    setShowFullContent(false);
+    setShowFullPdf(false);
+    setCurrentPage(1);
+    setCurrentImageIndex(0);
     loadProject();
   }, [slug]);
 
@@ -56,9 +60,9 @@ const ProjectDetails = () => {
     return months <= 1 ? '1 month' : `${months} months`;
   };
 
-  const renderPdfViewer = (url, isFullScreen = false) => {
-    // Modify URL to include page parameter
-    const pdfUrl = `${url}#page=${currentPage}`;
+  const renderPdfViewer = (url, isFullScreen = false, doc = {}) => {
+    // Modify URL to include page parameter (slides don't support page navigation)
+    const pdfUrl = doc.type === 'slide' ? url : `${url}#page=${currentPage}`;
     
     return (
       <>
@@ -85,24 +89,26 @@ const ProjectDetails = () => {
             <iframe
               src={pdfUrl}
               className="w-full h-full"
-              title="PDF Preview"
+              title={doc.title || 'PDF Preview'}
             />
-            <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex items-center gap-4 bg-black/20 backdrop-blur px-4 py-2 rounded-full">
-              <button
-                onClick={() => setCurrentPage(prev => Math.max(1, prev - 1))}
-                className="text-white hover:text-gray-300 disabled:opacity-50"
-                disabled={currentPage === 1}
-              >
-                <ChevronLeft className="w-5 h-5" />
-              </button>
-              <span className="text-white">Page {currentPage}</span>
-              <button
-                onClick={() => setCurrentPage(prev => prev + 1)}
-                className="text-white hover:text-gray-300"
-              >
-                <ChevronRight className="w-5 h-5" />
-              </button>
-            </div>
+            {doc.type !== 'slide' && (
+              <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex items-center gap-4 bg-black/20 backdrop-blur px-4 py-2 rounded-full">
+                <button
+                  onClick={() => setCurrentPage(prev => Math.max(1, prev - 1))}
+                  className="text-white hover:text-gray-300 disabled:opacity-50"
+                  disabled={currentPage === 1}
+                >
+                  <ChevronLeft className="w-5 h-5" />
+                </button>
+                <span className="text-white">Page {currentPage}</span>
+                <button
+                  onClick={() => setCurrentPage(prev => prev + 1)}
+                  className="text-white hover:text-gray-300"
+                >
+                  <ChevronRight className="w-5 h-5" />
+                </button>
+              </div>
+            )}
           </div>
         ) : (
           <div className="fixed inset-0 w-full h-full bg-gray-900 z-50 flex flex-col">
@@ -148,7 +154,7 @@ const ProjectDetails = () => {
               <iframe
                 src={pdfUrl}
                 className="w-full h-full"
-                title="PDF Fullscreen"
+                title={doc.title || 'PDF Fullscreen'}
               />
             </div>
           </div>
@@ -158,31 +164,34 @@ const ProjectDetails = () => {
   };
 
   // Modify the overview tab content
-  const renderOverviewContent = () => (
-    <div className="prose dark:prose-invert max-w-none">
-      <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
-        {showFullContent ? project.description : project.description.slice(0, 200) + '...'}
-      </p>
-      
-      {project.documents?.length > 0 && (
-        <div className="mt-6">
-          {renderPdfViewer(project.documents[0].url)}
-          {!showFullContent && (
-            <button
-              onClick={() => {
-                setShowFullContent(true);
-                setCurrentPage(prev => prev + 1);
-              }}
-              className="flex items-center gap-2 text-orange-500 hover:text-orange-600 mt-4"
-            >
-              <ChevronDown className="w-4 h-4" />
-              <span>Read More</span>
-            </button>
-          )}
-        </div>
-      )}
-    </div>
-  );
+  const renderOverviewContent = () => {
+    const doc = project.documents?.[0];
+    const needsReadMore = project.description.length > 200;
+
+    return (
+      <div className="prose dark:prose-invert max-w-none">
+        <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
+          {showFullContent ? project.description : project.description.slice(0, 200) + '...'}
+        </p>
+
+        {doc && (
+          <div className="mt-6">
+            {renderPdfViewer(doc.url, false, doc)}
+          </div>
+        )}
+
+        {needsReadMore && !showFullContent && (
+          <button
+            onClick={() => setShowFullContent(true)}
+            className={`flex items-center gap-2 text-orange-500 hover:text-orange-600 ${doc ? 'mt-4' : 'mt-6'}`}
+          >
+            <ChevronDown className="w-4 h-4" />
+            <span>Read More</span>
+          </button>
+        )}
+      </div>
+    );
+  };
 
 
   if (isLoading) {
@@ -441,7 +450,7 @@ const ProjectDetails = () => {
 
       {/* Full Screen PDF Viewer */}
       {showFullPdf && project.documents?.length > 0 && (
-        renderPdfViewer(project.documents[0].url, true)
+        renderPdfViewer(project.documents[0].url, true, project.documents[0])
       )}
     </div>
   );

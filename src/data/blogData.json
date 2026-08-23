@@ -1172,38 +1172,38 @@
 
   "trending": [
     {
-      "title": "Top  10  DAX  Formulas  You  Absolutely  Need  to  Know | ",
-      "url": "blog-details.html?blog=top-10-dax-formulas-power-bi"
+      "title": "Top 10 DAX Formulas You Absolutely Need to Know",
+      "url": "/blog/top-10-dax-formulas-power-bi"
     },
     {
-      "title": "The Ultimate Guide to Data Cleaning with SQL | ",
-      "url": "blog-details.html?blog=the-ultimate-guide-to-data-cleaning-with-sql"
+      "title": "The Ultimate Guide to Data Cleaning with SQL",
+      "url": "/blog/the-ultimate-guide-to-data-cleaning-with-sql"
     },
     {
-      "title": "Choosing the Right Chart for Your Data | ",
-      "url": "blog-details.html?blog=choosing-right-chart-for-data"
+      "title": "Choosing the Right Chart for Your Data",
+      "url": "/blog/choosing-right-chart-for-data"
     },
     {
-      "title": "Mastering Data Loading in ETL Processes |",
-      "url": "blog-details.html?blog=etl-load-types-guide-full-incremental-delta"
+      "title": "Mastering Data Loading in ETL Processes",
+      "url": "/blog/etl-load-types-guide-full-incremental-delta"
     }
   ],
   "latest": [
     {
       "title": "Understanding ETL, ELT, and ETLT: Navigating Data Integration Approaches",
-      "url": "blog-details.html?blog=understanding-etl-elt-etlt-data-integration-approaches"
+      "url": "/blog/understanding-etl-elt-etlt-data-integration-approaches"
     },
     {
       "title": "Essential Vocabulary for Success",
-      "url": "blog-details.html?blog=enhance-data-analysis-vocabulary-expertise"
+      "url": "/blog/enhance-data-analysis-vocabulary-expertise"
     },
     {
       "title": "Choosing the Right Chart for Your Data",
-      "url": "blog-details.html?blog=choosing-right-chart-for-data"
+      "url": "/blog/choosing-right-chart-for-data"
     },
     {
-      "title": "Top  10  DAX  Formulas  You  Absolutely  Need  to  Know ",
-      "url": "blog-details.html?blog=etl-load-types-guide-full-incremental-delta"
+      "title": "Mastering Data Loading in ETL Processes",
+      "url": "/blog/etl-load-types-guide-full-incremental-delta"
     }
   ],
   "tags": ["JavaScript", "Python", "Web Development", "Data Science"]

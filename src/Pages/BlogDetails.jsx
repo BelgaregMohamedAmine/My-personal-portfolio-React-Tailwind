@@ -1,5 +1,4 @@
-import React from "react";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import {
   Clock,
   User,
@@ -29,8 +28,7 @@ const BlogDetails = () => {
           >
             <ChevronLeft className="w-4 h-4" />
             Back to blogs
-          </a>
-        </div>
+          </a>        </div>
       </div>
     );
   }
@@ -178,15 +176,15 @@ const BlogDetails = () => {
               </h3>
               <div className="space-y-4">
                 {blogData.trending.map((post, index) => (
-                  <a
+                  <Link
                     key={index}
-                    href={post.url}
+                    to={post.url}
                     className="block hover:text-orange-600 dark:hover:text-orange-400"
                   >
                     <p className="text-gray-700 dark:text-gray-300">
                       {post.title}
                     </p>
-                  </a>
+                  </Link>
                 ))}
               </div>
             </div>
@@ -198,15 +196,15 @@ const BlogDetails = () => {
               </h3>
               <div className="space-y-4">
                 {blogData.latest.map((post, index) => (
-                  <a
+                  <Link
                     key={index}
-                    href={post.url}
+                    to={post.url}
                     className="block hover:text-orange-600 dark:hover:text-orange-400"
                   >
                     <p className="text-gray-700 dark:text-gray-300">
                       {post.title}
                     </p>
-                  </a>
+                  </Link>
                 ))}
               </div>
             </div>

@@ -14,7 +14,7 @@
         "Bootstrap"
       ],
       "thumbnail": "https://res.cloudinary.com/medaminebelgareg/image/upload/v1736501100/portfolio/number-one-online-meal-explorer/numberone_po7aau.webp",
-        "documents": [
+        "documentsx": [
         {
           "title": "Project Documentation",
           "type": "slide",
@@ -105,7 +105,7 @@
         "Stripe Payment"
       ],
       "thumbnail": "https://res.cloudinary.com/medaminebelgareg/image/upload/v1736501105/portfolio/shopit-ecommerce/shopit-twopng_khoerb.webp",
-        "documents": [
+        "documentsx": [
         {
           "title": "Project Documentation",
           "type": "pdf",
@@ -189,7 +189,7 @@
         "Graphic Design"
       ],
       "thumbnail": "https://res.cloudinary.com/medaminebelgareg/image/upload/v1736501114/portfolio/web-development-bi-project/photo1_ojg69m.png",
-        "documents": [
+        "documentsx": [
         {
           "title": "Project Documentation",
           "type": "pdf",
@@ -289,7 +289,7 @@
         "DAX"
       ],
       "thumbnail": "https://res.cloudinary.com/medaminebelgareg/image/upload/v1736501141/portfolio/toyota-ssis-ssas/cube_desgin_lpkn2q.png",
-        "documents": [
+        "documentsx": [
         {
           "title": "Project Documentation",
           "type": "pdf",
@@ -368,7 +368,7 @@
         "Business Intelligence"
       ],
       "thumbnail": "https://res.cloudinary.com/medaminebelgareg/image/upload/v1736501175/portfolio/power-bi-dax-adventure-works/adventureWorks-portable-dashbord-1_ppcstx.png",
-        "documents": [
+        "documentsx": [
         {
           "title": "Project Documentation",
           "type": "pdf",
@@ -436,7 +436,7 @@
         "Data Warehousing"
       ],
       "thumbnail": "https://res.cloudinary.com/medaminebelgareg/image/upload/v1736501199/portfolio/analyse-humanitaire-besoins-refugies/p1_z9fakm.png",
-        "documents": [
+        "documentsx": [
         {
           "title": "Project Documentation",
           "type": "pdf",
@@ -517,7 +517,7 @@
         "SQL Server"
       ],
       "thumbnail": "https://res.cloudinary.com/medaminebelgareg/image/upload/v1736501240/portfolio/business-intelligence-solutions-el-mazraa-sales-production-data-analysis/model_bim_hfd7lb.png",
-        "documents": [
+        "documentsx": [
         {
           "title": "Project Documentation",
           "type": "pdf",
@@ -656,7 +656,7 @@
         "Data Visualization"
       ],
       "thumbnail": "https://res.cloudinary.com/medaminebelgareg/image/upload/v1736501386/portfolio/blinkit-grocery-sales-analysis-dashboard/Dashbord_1_hgv7b1.png",
-        "documents": [
+        "documentsx": [
         {
           "title": "Project Documentation",
           "type": "pdf",
@@ -725,7 +725,7 @@
         "Visualization"
       ],
       "thumbnail": "https://res.cloudinary.com/medaminebelgareg/image/upload/v1736501396/portfolio/amazon-sales-analysis-power-bi-project/overview_dashboard_fbdkuw.png",
-        "documents": [
+        "documentsx": [
         {
           "title": "Project Documentation",
           "type": "pdf",
@@ -795,7 +795,7 @@
         "Data Visualization"
       ],
       "thumbnail": "https://res.cloudinary.com/medaminebelgareg/image/upload/v1736501423/portfolio/pwc-customer-agent-behavior-analysis/dashbord2_umya8f.png",
-        "documents": [
+        "documentsx": [
         {
           "title": "Project Documentation",
           "type": "pdf",
@@ -857,7 +857,7 @@
         "Power Query"
       ],
       "thumbnail": "https://res.cloudinary.com/medaminebelgareg/image/upload/v1736501429/portfolio/customer-retention-analysis/accueil_e5uqxg.webp",
-        "documents": [
+        "documentsx": [
         {
           "title": "Project Documentation",
           "type": "pdf",
@@ -936,13 +936,7 @@
         "Power Query"
       ],
       "thumbnail": "https://res.cloudinary.com/medaminebelgareg/image/upload/v1736501439/portfolio/diversity-inclusion-analysis/DiversityInclusion1_slylna.webp",
-        "documents": [
-        {
-          "title": "Project Documentation",
-          "type": "pdf",
-          "url": "https://drive.google.com/file/d/13hx7R9iTNMKF8kimsUyJR1v9kE0V__U_/preview"
-        }
-      ],
+      
       "images": [
         {
           "url": "https://res.cloudinary.com/medaminebelgareg/image/upload/v1736501440/portfolio/diversity-inclusion-analysis/DiversityInclusion1_f7rliy.webp",
